@@ -1,0 +1,2450 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.22.2/x64/bin/node",
+      "/home/runner/work/nextcloud/nextcloud/node_modules/.bin/playwright",
+      "test",
+      "--project=default",
+      "--project=admin-settings",
+      "--shard=3/8",
+      "--reporter=list,json"
+    ],
+    "configFile": "/home/runner/work/nextcloud/nextcloud/playwright.config.ts",
+    "rootDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+        "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+        "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+      },
+      "gitCommit": {
+        "shortHash": "3af9e8e",
+        "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+        "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+        "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+        "author": {
+          "name": "ohansemmanuel",
+          "email": "ohansemmanuel@outlook.com",
+          "time": 1795120792000
+        },
+        "committer": {
+          "name": "ohansemmanuel",
+          "email": "ohansemmanuel@outlook.com",
+          "time": 1795120799000
+        },
+        "branch": "main"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "admin-settings",
+        "name": "admin-settings",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [
+          "**/e2e/files_sharing/**"
+        ],
+        "testMatch": [
+          "**/admin-settings*.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "sharing",
+        "name": "sharing",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/e2e/files_sharing/**/*.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "default",
+        "name": "default",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [
+          "**/e2e/files_sharing/**"
+        ],
+        "testMatch": [
+          "/\\/(?!admin-settings)[^/]*\\.spec\\.ts$/"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "name": "admin-settings",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "snapshotDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": "**/e2e/files_sharing/**",
+        "testMatch": "**/admin-settings*.spec.ts",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://localhost:8042/index.php/",
+          "trace": "on-first-retry",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "admin-settings"
+      },
+      {
+        "grep": {},
+        "grepInvert": {},
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "name": "default",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "snapshotDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": "**/e2e/files_sharing/**",
+        "testMatch": {},
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://localhost:8042/index.php/",
+          "trace": "on-first-retry",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "default"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 3,
+      "total": 8
+    },
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node tests/playwright/start-nextcloud-server.js",
+      "env": {
+        "NEXTCLOUD_PORT": "8042"
+      },
+      "stderr": "pipe",
+      "stdout": "pipe",
+      "gracefulShutdown": {
+        "signal": "SIGTERM",
+        "timeout": 10000
+      },
+      "reuseExistingServer": false,
+      "timeout": 300000,
+      "wait": {
+        "stdout": {}
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "core/header-unified-search.spec.ts",
+      "file": "core/header-unified-search.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Header: unified search keyboard navigation",
+          "file": "core/header-unified-search.spec.ts",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Ctrl+K focuses the header search input",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4159,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:11:26.609Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7d02569d590c619652cf-c6cef2fb836956f0e462",
+              "file": "core/header-unified-search.spec.ts",
+              "line": 27,
+              "column": 2
+            },
+            {
+              "title": "Escape drops focus from the empty resting input",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3037,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:11:38.704Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7d02569d590c619652cf-8d95bcc88b0b984ee337",
+              "file": "core/header-unified-search.spec.ts",
+              "line": 36,
+              "column": 2
+            },
+            {
+              "title": "typing auto-selects the first result",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3644,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:11:41.758Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7d02569d590c619652cf-fd086544b9f5b1616af0",
+              "file": "core/header-unified-search.spec.ts",
+              "line": 48,
+              "column": 2
+            },
+            {
+              "title": "arrow keys move the selection while focus stays in the input",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3755,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:11:45.420Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7d02569d590c619652cf-e26dbace6ed6de2fcf10",
+              "file": "core/header-unified-search.spec.ts",
+              "line": 63,
+              "column": 2
+            },
+            {
+              "title": "Enter opens the selected result",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4188,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:11:49.190Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7d02569d590c619652cf-7f52589e80dc1c90adbb",
+              "file": "core/header-unified-search.spec.ts",
+              "line": 82,
+              "column": 2
+            },
+            {
+              "title": "Escape closes the open results popover",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3055,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:11:53.392Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7d02569d590c619652cf-de02f518e1b3f488181f",
+              "file": "core/header-unified-search.spec.ts",
+              "line": 105,
+              "column": 2
+            },
+            {
+              "title": "closing a funnel-opened popover returns focus to the input",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3154,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:11:56.458Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7d02569d590c619652cf-2c74f3e5ee0832d264bd",
+              "file": "core/header-unified-search.spec.ts",
+              "line": 115,
+              "column": 2
+            },
+            {
+              "title": "the trailing X clears a query, then dismisses the empty field",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3102,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:11:59.622Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7d02569d590c619652cf-2c7cefff709d012ed0e7",
+              "file": "core/header-unified-search.spec.ts",
+              "line": 132,
+              "column": 2
+            },
+            {
+              "title": "\"More from\" opens the uncapped detail view, pages it, and Back returns to the aggregate list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4469,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:02.735Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7d02569d590c619652cf-a5d1319d8605f96002ff",
+              "file": "core/header-unified-search.spec.ts",
+              "line": 148,
+              "column": 2
+            },
+            {
+              "title": "the open search overlay suppresses the app keyboard shortcuts behind it",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3887,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:07.215Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7d02569d590c619652cf-1cc2b8c207dc6606ae72",
+              "file": "core/header-unified-search.spec.ts",
+              "line": 179,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "core/login-flow.spec.ts",
+      "file": "core/login-flow.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "core: Login flow",
+          "file": "core/login-flow.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "v1 grants a client access and hands it the app password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3118,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:11.120Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "cf2c7f69faeff244dc32-a8b163b20ed46276f67c",
+              "file": "core/login-flow.spec.ts",
+              "line": 12,
+              "column": 2
+            },
+            {
+              "title": "v2 grants a client access and hands it the app password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3613,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:14.260Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "cf2c7f69faeff244dc32-23c215c4be1e320852ee",
+              "file": "core/login-flow.spec.ts",
+              "line": 33,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "core/public-share-auth.spec.ts",
+      "file": "core/public-share-auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "core: Password-protected share",
+          "file": "core/public-share-auth.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "asks for the password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2245,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:17.908Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "57f17f1e8d7294378d33-1e5fe5103309949722b1",
+              "file": "core/public-share-auth.spec.ts",
+              "line": 13,
+              "column": 2
+            },
+            {
+              "title": "shows an error and keeps the form for a wrong password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2725,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:20.168Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "57f17f1e8d7294378d33-84374be50ac60344726a",
+              "file": "core/public-share-auth.spec.ts",
+              "line": 19,
+              "column": 2
+            },
+            {
+              "title": "opens the share with the correct password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2925,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:22.906Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "57f17f1e8d7294378d33-a14867bdaa55f09a4e66",
+              "file": "core/public-share-auth.spec.ts",
+              "line": 27,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "core/unsupported-browser.spec.ts",
+      "file": "core/unsupported-browser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "core: Unsupported browser",
+          "file": "core/unsupported-browser.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "lets the user continue and remembers the choice",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2857,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:25.849Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b675006a89a82ed9ad0a-c5d3b55fd0000e4e3925",
+              "file": "core/unsupported-browser.spec.ts",
+              "line": 11,
+              "column": 2
+            },
+            {
+              "title": "continues to the page the user was redirected from",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2589,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:28.716Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b675006a89a82ed9ad0a-aecbb5bfd5b93b47b65e",
+              "file": "core/unsupported-browser.spec.ts",
+              "line": 23,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dashboard/widget-performance.spec.ts",
+      "file": "dashboard/widget-performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "dashboard: only loads the data of enabled widgets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "default",
+              "projectName": "default",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4725,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:12:31.329Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cfe31eecef374d80b5c5-935f85dbc68774029f6e",
+          "file": "dashboard/widget-performance.spec.ts",
+          "line": 17,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "dav/availability.spec.ts",
+      "file": "dav/availability.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Calendar: Availability",
+          "file": "dav/availability.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "User can see the availability section in settings",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2855,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:36.069Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2d7715b9507ef894ee94-dde85cf210cea0360ede",
+              "file": "dav/availability.spec.ts",
+              "line": 12,
+              "column": 2
+            },
+            {
+              "title": "Users can set their availability status",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3091,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:38.944Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2d7715b9507ef894ee94-38e405c0df70dfc94b70",
+              "file": "dav/availability.spec.ts",
+              "line": 22,
+              "column": 2
+            },
+            {
+              "title": "Users can set their absence",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5105,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:42.047Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2d7715b9507ef894ee94-814241f2abdb2905f15e",
+              "file": "dav/availability.spec.ts",
+              "line": 48,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files/drag-n-drop.spec.ts",
+      "file": "files/drag-n-drop.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "files: Drag and Drop",
+          "file": "files/drag-n-drop.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "can drop a file",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2935,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:47.171Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b8cbdf1cf7a0f66527e2-1f5a5cc1468d4969cf96",
+              "file": "files/drag-n-drop.spec.ts",
+              "line": 16,
+              "column": 2
+            },
+            {
+              "title": "can drop multiple files",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2843,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:50.123Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b8cbdf1cf7a0f66527e2-a536199c40738188244d",
+              "file": "files/drag-n-drop.spec.ts",
+              "line": 30,
+              "column": 2
+            },
+            {
+              "title": "ignores dropped folders (legacy File API)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2852,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:52.984Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b8cbdf1cf7a0f66527e2-67ec9dedb027e34334db",
+              "file": "files/drag-n-drop.spec.ts",
+              "line": 45,
+              "column": 2
+            }
+          ]
+        },
+        {
+          "title": "files: Drag and Drop onto a folder row",
+          "file": "files/drag-n-drop.spec.ts",
+          "line": 70,
+          "column": 6,
+          "specs": [
+            {
+              "title": "can drop a single file onto a subfolder row",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2928,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:55.851Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b8cbdf1cf7a0f66527e2-c1f417c704d4ef47f37f",
+              "file": "files/drag-n-drop.spec.ts",
+              "line": 77,
+              "column": 2
+            },
+            {
+              "title": "can drop multiple files onto a subfolder row",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2964,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:58.795Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b8cbdf1cf7a0f66527e2-4a96770ca0203d27a3fc",
+              "file": "files/drag-n-drop.spec.ts",
+              "line": 88,
+              "column": 2
+            },
+            {
+              "title": "opens the conflict picker when dropping a colliding name onto a subfolder row",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3415,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:01.777Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b8cbdf1cf7a0f66527e2-4718469fc706d6c1fd62",
+              "file": "files/drag-n-drop.spec.ts",
+              "line": 106,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files/duplicated-node-regression.spec.ts",
+      "file": "files/duplicated-node-regression.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Files: Duplicated node regression",
+          "file": "files/duplicated-node-regression.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "does not duplicate a node after delete and recreate",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3530,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:05.212Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e0108fc40b5123ddb9c9-b877401504e9e866aed1",
+              "file": "files/duplicated-node-regression.spec.ts",
+              "line": 19,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files/files-actions.spec.ts",
+      "file": "files/files-actions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Files: Actions",
+          "file": "files/files-actions.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "shows the standard row actions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2919,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:08.760Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0ec35ba8bd756bc3928d-e05595e046dd42ed1260",
+              "file": "files/files-actions.spec.ts",
+              "line": 21,
+              "column": 2
+            },
+            {
+              "title": "shows the standard actions for a selection",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2837,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:11.697Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0ec35ba8bd756bc3928d-347079e59fb7ffac9690",
+              "file": "files/files-actions.spec.ts",
+              "line": 30,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files/files-context-menu.spec.ts",
+      "file": "files/files-context-menu.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Files: right click actions menu",
+          "file": "files/files-context-menu.spec.ts",
+          "line": 93,
+          "column": 6,
+          "specs": [
+            {
+              "title": "menu stays at one position when opened",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4632,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:14.554Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "first-open",
+                          "contentType": "text/plain",
+                          "body": "ICAgIDFtcyAobm9uZSkKICAxOTBtcyBwb3BwZXJfNWU5OTNvZXBfbzFyajZ1W2JvdHRvbV0gQDQzMSwyMDQgaD0yOTEgbz0wLjAwMDEzNjU1NQogIDIwOW1zIHBvcHBlcl81ZTk5M29lcF9vMXJqNnVbYm90dG9tXSBANDMxLDIwNCBoPTI5MSBvPTAuMjE5OTY2CiAgMjIybXMgcG9wcGVyXzVlOTkzb2VwX28xcmo2dVtib3R0b21dIEA0MzEsMjA0IGg9MjkxIG89MC41NzU4NzQKICAyMzltcyBwb3BwZXJfNWU5OTNvZXBfbzFyajZ1W2JvdHRvbV0gQDQzMSwyMDQgaD0yOTEgbz0wLjgwMjc0MQogIDI1Nm1zIHBvcHBlcl81ZTk5M29lcF9vMXJqNnVbYm90dG9tXSBANDMxLDIwNCBoPTI5MSBvPTAuOTI0NjU2CiAgMjcybXMgcG9wcGVyXzVlOTkzb2VwX28xcmo2dVtib3R0b21dIEA0MzEsMjA0IGg9MjkxIG89MC45ODM0NzYKICAyOTBtcyBwb3BwZXJfNWU5OTNvZXBfbzFyajZ1W2JvdHRvbV0gQDQzMSwyMDQgaD0yOTEgbz0x"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "df358a6bd3c746284198-42b536c326f7b9057afe",
+              "file": "files/files-context-menu.spec.ts",
+              "line": 102,
+              "column": 2
+            },
+            {
+              "title": "no menu moves when switching rows",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5060,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:19.208Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "switch-rows",
+                          "contentType": "text/plain",
+                          "body": "ICAgIDFtcyBwb3BwZXJfMXFmbTJnMjZfbzFybXQwW2JvdHRvbV0gQDQzMSwyMDQgaD0yOTEgbz0xCiAgMTc4bXMgcG9wcGVyXzFxZm0yZzI2X28xcm10MFtib3R0b21dIEA0MzEsMjA0IGg9MjkxIG89MC40MjQ4OTMKICAxODRtcyBwb3BwZXJfMXFmbTJnMjZfbzFybXQwW2JvdHRvbV0gQDQzMSwyMDQgaD0yOTEgbz0wLjE5NzY4NiB8IHBvcHBlcl83OGszNWhjc19vMXJtdGdbYm90dG9tXSBANDMxLDM4MCBoPTI5MSBvPTAuMjIwNTA4CiAgMTk5bXMgcG9wcGVyXzFxZm0yZzI2X28xcm10MFtib3R0b21dIEA0MzEsMjA0IGg9MjkxIG89MC4wNzU1NjU5IHwgcG9wcGVyXzc4azM1aGNzX28xcm10Z1tib3R0b21dIEA0MzEsMzgwIGg9MjkxIG89MC41NzQ1MzYKICAyMTZtcyBwb3BwZXJfMXFmbTJnMjZfbzFybXQwW2JvdHRvbV0gQDQzMSwyMDQgaD0yOTEgbz0wLjAxNjQwNSB8IHBvcHBlcl83OGszNWhjc19vMXJtdGdbYm90dG9tXSBANDMxLDM4MCBoPTI5MSBvPTAuODAyOTg5CiAgMjM1bXMgcG9wcGVyXzc4azM1aGNzX28xcm10Z1tib3R0b21dIEA0MzEsMzgwIGg9MjkxIG89MC45MjQ3ODUKICAyNDltcyBwb3BwZXJfNzhrMzVoY3NfbzFybXRnW2JvdHRvbV0gQDQzMSwzODAgaD0yOTEgbz0wLjk4MzUyOAogIDI2Nm1zIHBvcHBlcl83OGszNWhjc19vMXJtdGdbYm90dG9tXSBANDMxLDM4MCBoPTI5MSBvPTE="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "df358a6bd3c746284198-34c5aced7d13bd82af6d",
+              "file": "files/files-context-menu.spec.ts",
+              "line": 111,
+              "column": 2
+            },
+            {
+              "title": "menu opened by its trigger after a right click opens under the trigger",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5278,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:24.287Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trigger-after-right-click",
+                          "contentType": "text/plain",
+                          "body": "ICAgIDJtcyBwb3BwZXJfc3A0cXBiMTZfbzFycXE3W2JvdHRvbV0gQDQzMSwyMDQgaD0yOTEgbz0xCiAgMTA4bXMgcG9wcGVyX3NwNHFwYjE2X28xcnFxN1tib3R0b21dIEA0MzEsMjA0IGg9MjkxIG89MC43NzkxMDIKICAxMTJtcyBwb3BwZXJfc3A0cXBiMTZfbzFycXE3W2JvdHRvbV0gQDQzMSwyMDQgaD0yOTEgbz0wLjQyNTE0MwogIDE0OG1zIHBvcHBlcl9zcDRxcGIxNl9vMXJxcTdbYm90dG9tXSBANDMxLDIwNCBoPTI5MSBvPTAuMDc1MTIyOAogIDE1OW1zIHBvcHBlcl9zcDRxcGIxNl9vMXJxcTdbYm90dG9tXSBANDMxLDIwNCBoPTI5MSBvPTAuMDE2NjQ0NCB8IHBvcHBlcl9sOTFmbzYzbl9vMXJxcWxbYm90dG9tXSBAOTE2LDQwMSBoPTI5MSBvPTAuMjE5NTEyCiAgMTc2bXMgcG9wcGVyX3NwNHFwYjE2X28xcnFxN1tib3R0b21dIEA0MzEsMjA0IGg9MjkxIG89Mi44MjE3MmUtMDggfCBwb3BwZXJfbDkxZm82M25fbzFycXFsW2JvdHRvbV0gQDkxNiw0MDEgaD0yOTEgbz0wLjU3NTUKICAxOTJtcyBwb3BwZXJfbDkxZm82M25fbzFycXFsW2JvdHRvbV0gQDkxNiw0MDEgaD0yOTEgbz0wLjgwMjUzMwogIDIxMm1zIHBvcHBlcl9sOTFmbzYzbl9vMXJxcWxbYm90dG9tXSBAOTE2LDQwMSBoPTI5MSBvPTAuOTI0NTQ4CiAgMjI2bXMgcG9wcGVyX2w5MWZvNjNuX28xcnFxbFtib3R0b21dIEA5MTYsNDAxIGg9MjkxIG89MC45ODM0MzEKICAyNDNtcyBwb3BwZXJfbDkxZm82M25fbzFycXFsW2JvdHRvbV0gQDkxNiw0MDEgaD0yOTEgbz0x"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "df358a6bd3c746284198-3d74123db364f6ca72c1",
+              "file": "files/files-context-menu.spec.ts",
+              "line": 122,
+              "column": 2
+            },
+            {
+              "title": "menu near the bottom opens next to the cursor",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4733,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:29.588Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "bottom-open",
+                          "contentType": "text/plain",
+                          "body": "ICAgIDRtcyAobm9uZSkKICAxODZtcyBwb3BwZXJfbmx4cnB2OGdfbzFydXZoW3RvcF0gQDQzMSw0ODUgaD0yOTEgbz0wLjIxOTAzNgogIDIwMm1zIHBvcHBlcl9ubHhycHY4Z19vMXJ1dmhbdG9wXSBANDMxLDQ4NSBoPTI5MSBvPTAuNTc1MTA3CiAgMjE4bXMgcG9wcGVyX25seHJwdjhnX28xcnV2aFt0b3BdIEA0MzEsNDg1IGg9MjkxIG89MC44MDIzMTQKICAyMzRtcyBwb3BwZXJfbmx4cnB2OGdfbzFydXZoW3RvcF0gQDQzMSw0ODUgaD0yOTEgbz0wLjkyNDk0OQogIDI1Mm1zIHBvcHBlcl9ubHhycHY4Z19vMXJ1dmhbdG9wXSBANDMxLDQ4NSBoPTI5MSBvPTAuOTgzMzg1CiAgMjY4bXMgcG9wcGVyX25seHJwdjhnX28xcnV2aFt0b3BdIEA0MzEsNDg1IGg9MjkxIG89MQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "df358a6bd3c746284198-9fb0c51daff40f450713",
+              "file": "files/files-context-menu.spec.ts",
+              "line": 141,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files/files-copy-move.spec.ts",
+      "file": "files/files-copy-move.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Files: Move or copy files",
+          "file": "files/files-copy-move.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "can copy a file to a new folder",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3605,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:34.351Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "77da964293c4a27c7fe0-027d8e11a8fd86b77933",
+              "file": "files/files-copy-move.spec.ts",
+              "line": 12,
+              "column": 2
+            },
+            {
+              "title": "can move a file to a new folder",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3509,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:37.977Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "77da964293c4a27c7fe0-7110cdc1c8167d3ac3bb",
+              "file": "files/files-copy-move.spec.ts",
+              "line": 26,
+              "column": 2
+            },
+            {
+              "title": "can move a file to a folder with a similar name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3460,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:41.507Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "77da964293c4a27c7fe0-ec0c6c737657985817ba",
+              "file": "files/files-copy-move.spec.ts",
+              "line": 45,
+              "column": 2
+            },
+            {
+              "title": "can move a file to its parent folder",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4148,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:44.987Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "77da964293c4a27c7fe0-ca98d60ee0c7ba7c0a41",
+              "file": "files/files-copy-move.spec.ts",
+              "line": 62,
+              "column": 2
+            },
+            {
+              "title": "can copy a file to the same folder",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3424,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:49.158Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "77da964293c4a27c7fe0-370f9b6a7d3d5b45910e",
+              "file": "files/files-copy-move.spec.ts",
+              "line": 84,
+              "column": 2
+            },
+            {
+              "title": "can copy a file multiple times to the same folder",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3283,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:52.617Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "77da964293c4a27c7fe0-ab0967dbc92abe4cf569",
+              "file": "files/files-copy-move.spec.ts",
+              "line": 95,
+              "column": 2
+            },
+            {
+              "title": "can copy a folder to the same folder",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3371,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:55.925Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "77da964293c4a27c7fe0-5afc7c7146d9a2b78cc9",
+              "file": "files/files-copy-move.spec.ts",
+              "line": 111,
+              "column": 2
+            }
+          ],
+          "suites": [
+            {
+              "title": "escaping file and folder names",
+              "file": "files/files-copy-move.spec.ts",
+              "line": 123,
+              "column": 7,
+              "specs": [
+                {
+                  "title": "can handle files with special characters",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 45000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "default",
+                      "projectName": "default",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3364,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:13:59.319Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77da964293c4a27c7fe0-a0d15dcbf169491313c9",
+                  "file": "files/files-copy-move.spec.ts",
+                  "line": 124,
+                  "column": 3
+                },
+                {
+                  "title": "does not incorrectly sanitize file names",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 45000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "default",
+                      "projectName": "default",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3592,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:14:02.705Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77da964293c4a27c7fe0-e92c39b110b07c11c195",
+                  "file": "files/files-copy-move.spec.ts",
+                  "line": 142,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files/files-delete.spec.ts",
+      "file": "files/files-delete.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Files: Delete",
+          "file": "files/files-delete.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "can delete a file",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3241,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:06.325Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c8e63d811a2bb2f8adc-5aa75a266c6934895217",
+              "file": "files/files-delete.spec.ts",
+              "line": 10,
+              "column": 2
+            },
+            {
+              "title": "can delete multiple files",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3574,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:09.601Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c8e63d811a2bb2f8adc-ebfe40ab915face0100d",
+              "file": "files/files-delete.spec.ts",
+              "line": 27,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files/files-download.spec.ts",
+      "file": "files/files-download.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Files: Download files using file actions",
+          "file": "files/files-download.spec.ts",
+          "line": 38,
+          "column": 6,
+          "specs": [
+            {
+              "title": "can download file",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3001,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:13.225Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "52659ac9b433ecbfb139-d8ddfedf2e2c096be12c",
+              "file": "files/files-download.spec.ts",
+              "line": 39,
+              "column": 2
+            },
+            {
+              "title": "can download folder",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3204,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:16.255Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "52659ac9b433ecbfb139-cdf0fdaeca56edb4fcf6",
+              "file": "files/files-download.spec.ts",
+              "line": 51,
+              "column": 2
+            },
+            {
+              "title": "can download file with hash name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3248,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:19.502Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "52659ac9b433ecbfb139-6418ec605d601c4b032c",
+              "file": "files/files-download.spec.ts",
+              "line": 70,
+              "column": 2
+            },
+            {
+              "title": "can download file from folder with hash name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3196,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:22.774Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "52659ac9b433ecbfb139-8f7a28d40e56a097702f",
+              "file": "files/files-download.spec.ts",
+              "line": 85,
+              "column": 2
+            }
+          ]
+        },
+        {
+          "title": "Files: Download files using default action",
+          "file": "files/files-download.spec.ts",
+          "line": 101,
+          "column": 6,
+          "specs": [
+            {
+              "title": "can download file",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2878,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:25.996Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "52659ac9b433ecbfb139-2f829384ae047b1f3e04",
+              "file": "files/files-download.spec.ts",
+              "line": 102,
+              "column": 2
+            },
+            {
+              "title": "can download file with hash name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2823,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:28.899Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "52659ac9b433ecbfb139-7817af262357facbb6ad",
+              "file": "files/files-download.spec.ts",
+              "line": 117,
+              "column": 2
+            },
+            {
+              "title": "can download file from folder with hash name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2827,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:31.747Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "52659ac9b433ecbfb139-4f36fb573f9b33aca8e8",
+              "file": "files/files-download.spec.ts",
+              "line": 132,
+              "column": 2
+            }
+          ]
+        },
+        {
+          "title": "Files: Download files using selection",
+          "file": "files/files-download.spec.ts",
+          "line": 148,
+          "column": 6,
+          "specs": [
+            {
+              "title": "can download selected files",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3047,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:34.603Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "52659ac9b433ecbfb139-7e50fe5be135efb4387f",
+              "file": "files/files-download.spec.ts",
+              "line": 149,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-19T21:09:34.662Z",
+    "duration": 304488.983,
+    "expected": 53,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

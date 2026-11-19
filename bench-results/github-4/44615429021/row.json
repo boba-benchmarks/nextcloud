@@ -1,0 +1,33 @@
+{
+ "at": "2026-11-19T21:19:03+00:00",
+ "suite": "nextcloud",
+ "repo": "boba-benchmarks/nextcloud",
+ "runner": "github-4",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021",
+ "run_id": 44615429021,
+ "sha": "3af9e8eacade880993c85cf3b175d53108652ea0",
+ "conclusion": "success",
+ "wall_s": 726,
+ "queue_s": 4,
+ "job_s": 4028,
+ "jobs": 10,
+ "job_max_s": 577,
+ "vcpu_min": 268.5,
+ "billed_min": 71,
+ "usd": 0.852,
+ "tests": {
+  "passed": 460,
+  "failed": 0,
+  "flaky": 3,
+  "skipped": 1,
+  "failed_tests": [],
+  "flaky_tests": [
+   "appstore/admin-settings-apps.spec.ts::Can enable an installed app::admin-settings",
+   "files/search.spec.ts::keeps the query in the URL::default",
+   "users/users-columns.spec.ts::can show the Language column::default"
+  ],
+  "files": 9
+ }
+}

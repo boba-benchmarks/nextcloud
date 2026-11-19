@@ -1,0 +1,690 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.22.2/x64/bin/node",
+      "/home/runner/work/nextcloud/nextcloud/node_modules/.bin/playwright",
+      "test",
+      "--project=setup",
+      "--reporter=list,json"
+    ],
+    "configFile": "/home/runner/work/nextcloud/nextcloud/playwright.config.ts",
+    "rootDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+        "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+        "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+      },
+      "gitCommit": {
+        "shortHash": "3af9e8e",
+        "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+        "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+        "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+        "author": {
+          "name": "ohansemmanuel",
+          "email": "ohansemmanuel@outlook.com",
+          "time": 1795120792000
+        },
+        "committer": {
+          "name": "ohansemmanuel",
+          "email": "ohansemmanuel@outlook.com",
+          "time": 1795120799000
+        },
+        "branch": "main"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "admin-settings",
+        "name": "admin-settings",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [
+          "**/e2e/files_sharing/**"
+        ],
+        "testMatch": [
+          "**/admin-settings*.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "sharing",
+        "name": "sharing",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/e2e/files_sharing/**/*.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "default",
+        "name": "default",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [
+          "**/e2e/files_sharing/**"
+        ],
+        "testMatch": [
+          "/\\/(?!admin-settings)[^/]*\\.spec\\.ts$/"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "name": "setup",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "snapshotDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://localhost:8042/index.php/",
+          "trace": "on-first-retry",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "setup"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node tests/playwright/start-nextcloud-server.js",
+      "env": {
+        "NEXTCLOUD_PORT": "8042"
+      },
+      "stderr": "pipe",
+      "stdout": "pipe",
+      "gracefulShutdown": {
+        "signal": "SIGTERM",
+        "timeout": 10000
+      },
+      "reuseExistingServer": false,
+      "timeout": 300000,
+      "wait": {
+        "stdout": {}
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "core/setup.spec.ts",
+      "file": "core/setup.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Nextcloud installation wizard",
+          "file": "core/setup.spec.ts",
+          "line": 99,
+          "column": 6,
+          "specs": [
+            {
+              "title": "installs with MySQL",
+              "ok": true,
+              "tags": [
+                "setup",
+                "db_mysql"
+              ],
+              "tests": [
+                {
+                  "timeout": 135000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/core/setup.spec.ts",
+                        "line": 138,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "setup",
+                  "projectName": "setup",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4908,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:10.531Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/core/setup.spec.ts",
+                            "line": 138,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b76fe55722821967624e-ea3ff167977e31d889cd",
+              "file": "core/setup.spec.ts",
+              "line": 137,
+              "column": 2
+            },
+            {
+              "title": "installs with MariaDB",
+              "ok": true,
+              "tags": [
+                "setup",
+                "db_mariadb"
+              ],
+              "tests": [
+                {
+                  "timeout": 135000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/core/setup.spec.ts",
+                        "line": 148,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "setup",
+                  "projectName": "setup",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4939,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:15.449Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/core/setup.spec.ts",
+                            "line": 148,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b76fe55722821967624e-88102268c78cc0af1c72",
+              "file": "core/setup.spec.ts",
+              "line": 147,
+              "column": 2
+            },
+            {
+              "title": "installs with PostgreSQL",
+              "ok": true,
+              "tags": [
+                "setup",
+                "db_postgres"
+              ],
+              "tests": [
+                {
+                  "timeout": 135000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/core/setup.spec.ts",
+                        "line": 158,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "setup",
+                  "projectName": "setup",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5317,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:20.408Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/core/setup.spec.ts",
+                            "line": 158,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b76fe55722821967624e-0f6d9d0eb949344fe853",
+              "file": "core/setup.spec.ts",
+              "line": 157,
+              "column": 2
+            },
+            {
+              "title": "installs with Oracle",
+              "ok": true,
+              "tags": [
+                "setup",
+                "db_oracle"
+              ],
+              "tests": [
+                {
+                  "timeout": 200000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/core/setup.spec.ts",
+                        "line": 168,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "setup",
+                  "projectName": "setup",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 26291,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:25.736Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/core/setup.spec.ts",
+                            "line": 168,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b76fe55722821967624e-f94ba28a2615a7e15be6",
+              "file": "core/setup.spec.ts",
+              "line": 167,
+              "column": 2
+            }
+          ],
+          "suites": [
+            {
+              "title": "SQLite",
+              "file": "core/setup.spec.ts",
+              "line": 106,
+              "column": 7,
+              "specs": [
+                {
+                  "title": "installs with SQLite",
+                  "ok": true,
+                  "tags": [
+                    "setup",
+                    "db_sqlite"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 135000,
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/core/setup.spec.ts",
+                            "line": 108,
+                            "column": 9
+                          }
+                        }
+                      ],
+                      "expectedStatus": "passed",
+                      "projectId": "setup",
+                      "projectName": "setup",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4542,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:13:19.654Z",
+                          "annotations": [
+                            {
+                              "type": "slow",
+                              "location": {
+                                "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/core/setup.spec.ts",
+                                "line": 108,
+                                "column": 9
+                              }
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b76fe55722821967624e-d478079290cadc557fb7",
+                  "file": "core/setup.spec.ts",
+                  "line": 107,
+                  "column": 3
+                },
+                {
+                  "title": "installs with SQLite and installs recommended apps (success)",
+                  "ok": true,
+                  "tags": [
+                    "setup",
+                    "db_sqlite"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 45000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "setup",
+                      "projectName": "setup",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 22626,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:13:24.901Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b76fe55722821967624e-05eebc8c4cb52c588254",
+                  "file": "core/setup.spec.ts",
+                  "line": 120,
+                  "column": 3
+                },
+                {
+                  "title": "installs with SQLite and reports failed recommended apps",
+                  "ok": true,
+                  "tags": [
+                    "setup",
+                    "db_sqlite"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 45000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "setup",
+                      "projectName": "setup",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 22964,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:13:47.554Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b76fe55722821967624e-2f238a53b0cae0ffbc3d",
+                  "file": "core/setup.spec.ts",
+                  "line": 128,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-19T21:11:00.761Z",
+    "duration": 231659.958,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

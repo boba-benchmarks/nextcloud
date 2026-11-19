@@ -1,0 +1,2774 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.22.3/x64/bin/node",
+      "/home/runner/work/nextcloud/nextcloud/node_modules/.bin/playwright",
+      "test",
+      "--project=default",
+      "--project=admin-settings",
+      "--shard=6/8",
+      "--reporter=list,json"
+    ],
+    "configFile": "/home/runner/work/nextcloud/nextcloud/playwright.config.ts",
+    "rootDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+        "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+        "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+      },
+      "gitCommit": {
+        "shortHash": "3af9e8e",
+        "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+        "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+        "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+        "author": {
+          "name": "ohansemmanuel",
+          "email": "ohansemmanuel@outlook.com",
+          "time": 1795120792000
+        },
+        "committer": {
+          "name": "ohansemmanuel",
+          "email": "ohansemmanuel@outlook.com",
+          "time": 1795120799000
+        },
+        "branch": "main"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "admin-settings",
+        "name": "admin-settings",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [
+          "**/e2e/files_sharing/**"
+        ],
+        "testMatch": [
+          "**/admin-settings*.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "sharing",
+        "name": "sharing",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/e2e/files_sharing/**/*.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "default",
+        "name": "default",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [
+          "**/e2e/files_sharing/**"
+        ],
+        "testMatch": [
+          "/\\/(?!admin-settings)[^/]*\\.spec\\.ts$/"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "name": "admin-settings",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "snapshotDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": "**/e2e/files_sharing/**",
+        "testMatch": "**/admin-settings*.spec.ts",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://localhost:8042/index.php/",
+          "trace": "on-first-retry",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "admin-settings"
+      },
+      {
+        "grep": {},
+        "grepInvert": {},
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44615429021"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "name": "default",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "snapshotDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": "**/e2e/files_sharing/**",
+        "testMatch": {},
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://localhost:8042/index.php/",
+          "trace": "on-first-retry",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "default"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 6,
+      "total": 8
+    },
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node tests/playwright/start-nextcloud-server.js",
+      "env": {
+        "NEXTCLOUD_PORT": "8042"
+      },
+      "stderr": "pipe",
+      "stdout": "pipe",
+      "gracefulShutdown": {
+        "signal": "SIGTERM",
+        "timeout": 10000
+      },
+      "reuseExistingServer": false,
+      "timeout": 300000,
+      "wait": {
+        "stdout": {}
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "files_trashbin/files.spec.ts",
+      "file": "files_trashbin/files.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "files_trashbin: download files",
+          "file": "files_trashbin/files.spec.ts",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "does not offer bulk download",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4965,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:11:15.675Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "283835596da859fea5e9-5d13d1e521ae49246d52",
+              "file": "files_trashbin/files.spec.ts",
+              "line": 46,
+              "column": 2
+            }
+          ]
+        },
+        {
+          "title": "files_trashbin: file row",
+          "file": "files_trashbin/files.spec.ts",
+          "line": 56,
+          "column": 6,
+          "specs": [
+            {
+              "title": "shows data for a file deleted by the owner",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3155,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:11:33.590Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "283835596da859fea5e9-19e8b87f49e65af9e0aa",
+              "file": "files_trashbin/files.spec.ts",
+              "line": 57,
+              "column": 2
+            },
+            {
+              "title": "shows data for a file deleted by a sharee in a group share",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6408,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:11:36.754Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "283835596da859fea5e9-b337a828fd80fa6c58f5",
+              "file": "files_trashbin/files.spec.ts",
+              "line": 67,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files_versions/version-creation.spec.ts",
+      "file": "files_versions/version-creation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "files_versions: versions creation",
+          "file": "files_versions/version-creation.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "opens the versions panel and shows the three versions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3569,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:11:43.177Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ee6e1048d7a4d6c7e9dc-a99604a8102430a0214b",
+              "file": "files_versions/version-creation.spec.ts",
+              "line": 18,
+              "column": 2
+            },
+            {
+              "title": "shows yourself as the version author",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3400,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:11:46.756Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ee6e1048d7a4d6c7e9dc-12c2fe52e7971b4a4670",
+              "file": "files_versions/version-creation.spec.ts",
+              "line": 24,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files_versions/version-cross-share-move-and-copy.spec.ts",
+      "file": "files_versions/version-cross-share-move-and-copy.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "files_versions: versions across a share move/copy",
+          "file": "files_versions/version-cross-share-move-and-copy.spec.ts",
+          "line": 123,
+          "column": 6,
+          "specs": [
+            {
+              "title": "moves the versions when the file is moved out of a received share",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 135000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/files_versions/version-cross-share-move-and-copy.spec.ts",
+                        "line": 126,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9334,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:11:50.172Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/files_versions/version-cross-share-move-and-copy.spec.ts",
+                            "line": 126,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c3c0c270ee1db752dbce-8b9a9ff8c561794c5dcd",
+              "file": "files_versions/version-cross-share-move-and-copy.spec.ts",
+              "line": 128,
+              "column": 2
+            },
+            {
+              "title": "copies the versions when the file is copied out of a received share",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 135000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/files_versions/version-cross-share-move-and-copy.spec.ts",
+                        "line": 126,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8867,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:11:59.516Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/files_versions/version-cross-share-move-and-copy.spec.ts",
+                            "line": 126,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c3c0c270ee1db752dbce-b8f7113ccbd153d8d729",
+              "file": "files_versions/version-cross-share-move-and-copy.spec.ts",
+              "line": 138,
+              "column": 2
+            },
+            {
+              "title": "moves the versions when a containing folder is moved out of a received share",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 135000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/files_versions/version-cross-share-move-and-copy.spec.ts",
+                        "line": 126,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11520,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:08.393Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/files_versions/version-cross-share-move-and-copy.spec.ts",
+                            "line": 126,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c3c0c270ee1db752dbce-ff820152199fa2392f3b",
+              "file": "files_versions/version-cross-share-move-and-copy.spec.ts",
+              "line": 149,
+              "column": 2
+            },
+            {
+              "title": "copies the versions when a containing folder is copied out of a received share",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 135000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/files_versions/version-cross-share-move-and-copy.spec.ts",
+                        "line": 126,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11525,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:19.923Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/files_versions/version-cross-share-move-and-copy.spec.ts",
+                            "line": 126,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c3c0c270ee1db752dbce-63a8c3eea350ef0cc6f1",
+              "file": "files_versions/version-cross-share-move-and-copy.spec.ts",
+              "line": 163,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files_versions/version-deletion.spec.ts",
+      "file": "files_versions/version-deletion.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "files_versions: versions deletion",
+          "file": "files_versions/version-deletion.spec.ts",
+          "line": 19,
+          "column": 6,
+          "specs": [
+            {
+              "title": "deletes the initial version of an own file",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3936,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:31.462Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "df87b60626084d911293-a7ddb1bc4cd8b28609c8",
+              "file": "files_versions/version-deletion.spec.ts",
+              "line": 20,
+              "column": 2
+            },
+            {
+              "title": "deletes versions of a shared file with delete permission",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5557,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:35.413Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "df87b60626084d911293-5eab9951277a73bd611c",
+              "file": "files_versions/version-deletion.spec.ts",
+              "line": 34,
+              "column": 2
+            },
+            {
+              "title": "cannot delete versions of a shared file without delete permission",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6333,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:40.981Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "df87b60626084d911293-dd7c6d877fb953a07fe5",
+              "file": "files_versions/version-deletion.spec.ts",
+              "line": 50,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files_versions/version-download.spec.ts",
+      "file": "files_versions/version-download.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "files_versions: versions download",
+          "file": "files_versions/version-download.spec.ts",
+          "line": 16,
+          "column": 6,
+          "specs": [
+            {
+              "title": "downloads versions of an own file and asserts their content",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4327,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:47.328Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dd90ad63be13e851abbd-9a4d402daa6f00c119e5",
+              "file": "files_versions/version-download.spec.ts",
+              "line": 17,
+              "column": 2
+            },
+            {
+              "title": "downloads versions of a shared file with download permission",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6070,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:51.666Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dd90ad63be13e851abbd-d9958dccb2531548644d",
+              "file": "files_versions/version-download.spec.ts",
+              "line": 29,
+              "column": 2
+            },
+            {
+              "title": "does not offer download of a shared file without download permission",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5889,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:12:57.750Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dd90ad63be13e851abbd-2710f00113a18307e7dd",
+              "file": "files_versions/version-download.spec.ts",
+              "line": 43,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files_versions/version-expiration.spec.ts",
+      "file": "files_versions/version-expiration.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "files_versions: versions expiration",
+          "file": "files_versions/version-expiration.spec.ts",
+          "line": 29,
+          "column": 6,
+          "specs": [
+            {
+              "title": "expires all but the current version",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4716,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:03.653Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8984378f1b1918b2bfb8-47c5eca7aadd9c21060b",
+              "file": "files_versions/version-expiration.spec.ts",
+              "line": 30,
+              "column": 2
+            },
+            {
+              "title": "keeps named versions when expiring",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6704,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:08.382Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8984378f1b1918b2bfb8-f5ab3b51c6d2e107a4b1",
+              "file": "files_versions/version-expiration.spec.ts",
+              "line": 42,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files_versions/version-naming.spec.ts",
+      "file": "files_versions/version-naming.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "files_versions: versions naming",
+          "file": "files_versions/version-naming.spec.ts",
+          "line": 19,
+          "column": 6,
+          "specs": [
+            {
+              "title": "names the versions of an own file",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4752,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:15.103Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ac7a0b2edc9e64723445-f3ae1ee270105498aa6c",
+              "file": "files_versions/version-naming.spec.ts",
+              "line": 20,
+              "column": 2
+            },
+            {
+              "title": "names the versions of a shared file with edit permission",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6337,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:19.869Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ac7a0b2edc9e64723445-c6d48b9a1ce6c86abb57",
+              "file": "files_versions/version-naming.spec.ts",
+              "line": 40,
+              "column": 2
+            },
+            {
+              "title": "cannot name versions of a shared file without edit permission",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6148,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:26.221Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ac7a0b2edc9e64723445-e4e271c26c580bcd54b5",
+              "file": "files_versions/version-naming.spec.ts",
+              "line": 62,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files_versions/version-restoration.spec.ts",
+      "file": "files_versions/version-restoration.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "files_versions: versions restoration",
+          "file": "files_versions/version-restoration.spec.ts",
+          "line": 38,
+          "column": 6,
+          "specs": [
+            {
+              "title": "restores the initial version of an own file",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5348,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:32.387Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c3fc20823926c2d4d2e8-357493f4e740a065e802",
+              "file": "files_versions/version-restoration.spec.ts",
+              "line": 39,
+              "column": 2
+            },
+            {
+              "title": "restores versions of a shared file with update permission",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6968,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:37.750Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c3fc20823926c2d4d2e8-7f7824696d1358447159",
+              "file": "files_versions/version-restoration.spec.ts",
+              "line": 55,
+              "column": 2
+            },
+            {
+              "title": "cannot restore versions of a shared file without update permission",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6416,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:44.743Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c3fc20823926c2d4d2e8-f2b68b15181507b93ee9",
+              "file": "files_versions/version-restoration.spec.ts",
+              "line": 71,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files_versions/version-sharing.spec.ts",
+      "file": "files_versions/version-sharing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "files_versions: versions on shares",
+          "file": "files_versions/version-sharing.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "shows the version author display name to the sharee",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5109,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:51.189Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0335e6e9bae95cffc386-9b7503917b5af91919b8",
+              "file": "files_versions/version-sharing.spec.ts",
+              "line": 19,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login/login-redirect.spec.ts",
+      "file": "login/login-redirect.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login: Redirect",
+          "file": "login/login-redirect.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "redirects to login with redirect_url when session expires",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1336,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:56.320Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2415755cd889c35e5aa3-2bab418a930735f0bd1d",
+              "file": "login/login-redirect.spec.ts",
+              "line": 25,
+              "column": 2
+            },
+            {
+              "title": "redirect_url parameter redirects to the original page after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1206,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:13:58.546Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2415755cd889c35e5aa3-28a76c0154a78749fcbe",
+              "file": "login/login-redirect.spec.ts",
+              "line": 42,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login/login.spec.ts",
+      "file": "login/login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login",
+          "file": "login/login.spec.ts",
+          "line": 31,
+          "column": 6,
+          "specs": [
+            {
+              "title": "successful login lands on the dashboard",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2239,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:00.216Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8efa2fccd8b5c3f9e367-31fe2d49bc0cfa1a2397",
+              "file": "login/login.spec.ts",
+              "line": 40,
+              "column": 2
+            },
+            {
+              "title": "wrong password shows error and marks both fields invalid",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1997,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:02.845Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8efa2fccd8b5c3f9e367-5c151318fa81606db08b",
+              "file": "login/login.spec.ts",
+              "line": 48,
+              "column": 2
+            },
+            {
+              "title": "wrong account name shows error and marks both fields invalid",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1869,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:04.868Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8efa2fccd8b5c3f9e367-6916f679506c6daae978",
+              "file": "login/login.spec.ts",
+              "line": 59,
+              "column": 2
+            },
+            {
+              "title": "disabled account shows disabled error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2222,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:06.760Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8efa2fccd8b5c3f9e367-321cacabef53b85094c4",
+              "file": "login/login.spec.ts",
+              "line": 70,
+              "column": 2
+            },
+            {
+              "title": "logout redirects to the login page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2555,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:09.008Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8efa2fccd8b5c3f9e367-07eb745449a42e6fbfc7",
+              "file": "login/login.spec.ts",
+              "line": 81,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login/webauth.spec.ts",
+      "file": "login/webauth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login: WebAuthn",
+          "file": "login/webauth.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "add and delete a WebAuthn device",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3124,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:11.976Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "818816714898dd309790-700cf49165c4bc8c7c45",
+              "file": "login/webauth.spec.ts",
+              "line": 46,
+              "column": 2
+            },
+            {
+              "title": "add a WebAuthn device and use it to log in",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3822,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:15.146Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "818816714898dd309790-4e5b88c552b645bffc9a",
+              "file": "login/webauth.spec.ts",
+              "line": 79,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "settings/access-levels.spec.ts",
+      "file": "settings/access-levels.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Settings: Access levels – regular user",
+          "file": "settings/access-levels.spec.ts",
+          "line": 11,
+          "column": 10,
+          "specs": [
+            {
+              "title": "cannot see the Administration section in the settings navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2726,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:19.023Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a1a7779e50a2b4256861-5adab252f57d28a0a52e",
+              "file": "settings/access-levels.spec.ts",
+              "line": 12,
+              "column": 2
+            }
+          ]
+        },
+        {
+          "title": "Settings: Access levels – admin user",
+          "file": "settings/access-levels.spec.ts",
+          "line": 27,
+          "column": 11,
+          "specs": [
+            {
+              "title": "can see the Administration section in the settings navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2011,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:21.767Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a1a7779e50a2b4256861-5810996b6baf57ee20c5",
+              "file": "settings/access-levels.spec.ts",
+              "line": 28,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "settings/devices-sessions.spec.ts",
+      "file": "settings/devices-sessions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Settings: Devices & sessions",
+          "file": "settings/devices-sessions.spec.ts",
+          "line": 16,
+          "column": 6,
+          "specs": [
+            {
+              "title": "revokes every other session but keeps the current one",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4012,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:23.809Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ba6c9dc47c45ecb92282-3aee708173645e5640ba",
+              "file": "settings/devices-sessions.spec.ts",
+              "line": 17,
+              "column": 2
+            },
+            {
+              "title": "revokes several devices at once",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4226,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:27.838Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ba6c9dc47c45ecb92282-58f2e3c9effbe4f01eba",
+              "file": "settings/devices-sessions.spec.ts",
+              "line": 38,
+              "column": 2
+            },
+            {
+              "title": "offers nothing to revoke when only the current session exists",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2963,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:32.082Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ba6c9dc47c45ecb92282-425da6f73c8b8d293020",
+              "file": "settings/devices-sessions.spec.ts",
+              "line": 51,
+              "column": 2
+            },
+            {
+              "title": "keeps every session when the confirmation is dismissed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3796,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:35.062Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ba6c9dc47c45ecb92282-9f4afd6d9676a6ffbd94",
+              "file": "settings/devices-sessions.spec.ts",
+              "line": 59,
+              "column": 2
+            },
+            {
+              "title": "creates an app password with limited access and changes it",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4584,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:38.877Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ba6c9dc47c45ecb92282-fca70fa661e7c86de196",
+              "file": "settings/devices-sessions.spec.ts",
+              "line": 71,
+              "column": 2
+            },
+            {
+              "title": "limits an app password to picked areas and apps",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4393,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:43.479Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ba6c9dc47c45ecb92282-04bf5158db36694839ec",
+              "file": "settings/devices-sessions.spec.ts",
+              "line": 81,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "settings/password.spec.ts",
+      "file": "settings/password.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Settings: Change password",
+          "file": "settings/password.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "changes the password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3703,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:47.895Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de3f2611cb22e6d4faad-3085bf5b2eb3bb6facaf",
+              "file": "settings/password.spec.ts",
+              "line": 18,
+              "column": 2
+            },
+            {
+              "title": "rejects a wrong current password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3171,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:14:51.621Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de3f2611cb22e6d4faad-936d8b27e640dcb208bd",
+              "file": "settings/password.spec.ts",
+              "line": 31,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "settings/personal-info.spec.ts",
+      "file": "settings/personal-info.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Settings: Change personal information",
+          "file": "settings/personal-info.spec.ts",
+          "line": 12,
+          "column": 6,
+          "specs": [
+            {
+              "title": "can enable and disable the profile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4312,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:15:07.770Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d82724ee87aa71ec9190-2ed029e5823ce988549c",
+              "file": "settings/personal-info.spec.ts",
+              "line": 24,
+              "column": 2
+            },
+            {
+              "title": "can open the own profile from the settings",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3223,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:15:12.465Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d82724ee87aa71ec9190-5e74352a1aea73299092",
+              "file": "settings/personal-info.spec.ts",
+              "line": 46,
+              "column": 2
+            },
+            {
+              "title": "can set primary email and change its scope",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6193,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:15:15.715Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d82724ee87aa71ec9190-83fd9bd83cea9020db7f",
+              "file": "settings/personal-info.spec.ts",
+              "line": 58,
+              "column": 2
+            },
+            {
+              "title": "can delete primary email",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5866,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:15:21.932Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d82724ee87aa71ec9190-67ec6d8f93aa7e1daabf",
+              "file": "settings/personal-info.spec.ts",
+              "line": 82,
+              "column": 2
+            },
+            {
+              "title": "can set and delete additional emails",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9629,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:15:27.823Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d82724ee87aa71ec9190-b91113c92fbe2bbf8a10",
+              "file": "settings/personal-info.spec.ts",
+              "line": 101,
+              "column": 2
+            },
+            {
+              "title": "can set full name and change its scope",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6420,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:15:37.476Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d82724ee87aa71ec9190-0be1bb635fb851c48a0f",
+              "file": "settings/personal-info.spec.ts",
+              "line": 135,
+              "column": 2
+            },
+            {
+              "title": "can set phone number and its scope",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6260,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:15:43.921Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d82724ee87aa71ec9190-911b73fc566d79a52bc6",
+              "file": "settings/personal-info.spec.ts",
+              "line": 154,
+              "column": 2
+            },
+            {
+              "title": "can set phone number with phone region",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6250,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:15:50.207Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d82724ee87aa71ec9190-c32b6c4362728289c934",
+              "file": "settings/personal-info.spec.ts",
+              "line": 168,
+              "column": 2
+            },
+            {
+              "title": "can reset phone number",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7565,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:15:56.480Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d82724ee87aa71ec9190-82548a3bb09ef33d5605",
+              "file": "settings/personal-info.spec.ts",
+              "line": 187,
+              "column": 2
+            },
+            {
+              "title": "can set website and change its scope",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7050,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:16:04.073Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d82724ee87aa71ec9190-e0af989d98dd94e50ea2",
+              "file": "settings/personal-info.spec.ts",
+              "line": 204,
+              "column": 2
+            },
+            {
+              "title": "can set the Fediverse handle and change its scope",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6324,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:16:11.147Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d82724ee87aa71ec9190-9dce899529f058dc173f",
+              "file": "settings/personal-info.spec.ts",
+              "line": 229,
+              "column": 2
+            },
+            {
+              "title": "can reset the Fediverse handle",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "default",
+                  "projectName": "default",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7482,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:16:17.495Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d82724ee87aa71ec9190-e83aa41f32030184fe1b",
+              "file": "settings/personal-info.spec.ts",
+              "line": 247,
+              "column": 2
+            }
+          ],
+          "suites": [
+            {
+              "title": "Language & locale",
+              "file": "settings/personal-info.spec.ts",
+              "line": 370,
+              "column": 7,
+              "specs": [
+                {
+                  "title": "can change language",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 45000,
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/settings/personal-info.spec.ts",
+                            "line": 370,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "expectedStatus": "passed",
+                      "projectId": "default",
+                      "projectName": "default",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3378,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:14:54.820Z",
+                          "annotations": [
+                            {
+                              "type": "serial",
+                              "location": {
+                                "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/settings/personal-info.spec.ts",
+                                "line": 370,
+                                "column": 7
+                              }
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "d82724ee87aa71ec9190-91e2682d6b8d270a0d20",
+                  "file": "settings/personal-info.spec.ts",
+                  "line": 387,
+                  "column": 3
+                },
+                {
+                  "title": "can change locale",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 45000,
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/settings/personal-info.spec.ts",
+                            "line": 370,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "expectedStatus": "passed",
+                      "projectId": "default",
+                      "projectName": "default",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3484,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:14:59.271Z",
+                          "annotations": [
+                            {
+                              "type": "serial",
+                              "location": {
+                                "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/settings/personal-info.spec.ts",
+                                "line": 370,
+                                "column": 7
+                              }
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "d82724ee87aa71ec9190-e9ee8ab418530c0b3321",
+                  "file": "settings/personal-info.spec.ts",
+                  "line": 397,
+                  "column": 3
+                },
+                {
+                  "title": "can change the first day of week",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 45000,
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/settings/personal-info.spec.ts",
+                            "line": 370,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "expectedStatus": "passed",
+                      "projectId": "default",
+                      "projectName": "default",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3887,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:15:02.775Z",
+                          "annotations": [
+                            {
+                              "type": "serial",
+                              "location": {
+                                "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/settings/personal-info.spec.ts",
+                                "line": 370,
+                                "column": 7
+                              }
+                            }
+                          ],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "d82724ee87aa71ec9190-ad78248b6ce8b0868f3a",
+                  "file": "settings/personal-info.spec.ts",
+                  "line": 411,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-19T21:09:41.316Z",
+    "duration": 405401.954,
+    "expected": 58,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
