@@ -1,0 +1,31 @@
+{
+ "at": "2026-11-19T21:06:28+00:00",
+ "suite": "nextcloud",
+ "repo": "boba-benchmarks/nextcloud",
+ "runner": "github-4",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44613495773",
+ "run_id": 44613495773,
+ "sha": "3af9e8eacade880993c85cf3b175d53108652ea0",
+ "conclusion": "success",
+ "wall_s": 645,
+ "queue_s": 4,
+ "job_s": 3783,
+ "jobs": 10,
+ "job_max_s": 528,
+ "vcpu_min": 252.2,
+ "billed_min": 69,
+ "usd": 0.828,
+ "tests": {
+  "passed": 462,
+  "failed": 0,
+  "flaky": 1,
+  "skipped": 1,
+  "failed_tests": [],
+  "flaky_tests": [
+   "files/files-renaming.spec.ts::correctly resets renaming state after virtual-scroll re-render::default"
+  ],
+  "files": 9
+ }
+}

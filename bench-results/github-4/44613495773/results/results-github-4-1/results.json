@@ -1,0 +1,3194 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.22.2/x64/bin/node",
+      "/home/runner/work/nextcloud/nextcloud/node_modules/.bin/playwright",
+      "test",
+      "--project=default",
+      "--project=admin-settings",
+      "--shard=1/8",
+      "--reporter=list,json"
+    ],
+    "configFile": "/home/runner/work/nextcloud/nextcloud/playwright.config.ts",
+    "rootDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+        "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+        "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44613495773"
+      },
+      "gitCommit": {
+        "shortHash": "3af9e8e",
+        "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+        "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+        "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+        "author": {
+          "name": "ohansemmanuel",
+          "email": "ohansemmanuel@outlook.com",
+          "time": 1795120792000
+        },
+        "committer": {
+          "name": "ohansemmanuel",
+          "email": "ohansemmanuel@outlook.com",
+          "time": 1795120799000
+        },
+        "branch": "main"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44613495773"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44613495773"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "admin-settings",
+        "name": "admin-settings",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [
+          "**/e2e/files_sharing/**"
+        ],
+        "testMatch": [
+          "**/admin-settings*.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44613495773"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "sharing",
+        "name": "sharing",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/e2e/files_sharing/**/*.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44613495773"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "default",
+        "name": "default",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": [
+          "**/e2e/files_sharing/**"
+        ],
+        "testMatch": [
+          "/\\/(?!admin-settings)[^/]*\\.spec\\.ts$/"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44613495773"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "name": "admin-settings",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "snapshotDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": "**/e2e/files_sharing/**",
+        "testMatch": "**/admin-settings*.spec.ts",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://localhost:8042/index.php/",
+          "trace": "on-first-retry",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "admin-settings"
+      },
+      {
+        "grep": {},
+        "grepInvert": {},
+        "outputDir": "/home/runner/work/nextcloud/nextcloud/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/boba-benchmarks/nextcloud/commit/3af9e8eacade880993c85cf3b175d53108652ea0",
+            "commitHash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "buildHref": "https://github.com/boba-benchmarks/nextcloud/actions/runs/44613495773"
+          },
+          "gitCommit": {
+            "shortHash": "3af9e8e",
+            "hash": "3af9e8eacade880993c85cf3b175d53108652ea0",
+            "subject": "Add the benchmark workflow; remove the other workflows and Dependabot config",
+            "body": "Add the benchmark workflow; remove the other workflows and Dependabot config\n",
+            "author": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120792000
+            },
+            "committer": {
+              "name": "ohansemmanuel",
+              "email": "ohansemmanuel@outlook.com",
+              "time": 1795120799000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "name": "default",
+        "testDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "snapshotDir": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e",
+        "testIgnore": "**/e2e/files_sharing/**",
+        "testMatch": {},
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://localhost:8042/index.php/",
+          "trace": "on-first-retry",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "default"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 1,
+      "total": 8
+    },
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": {
+      "command": "node tests/playwright/start-nextcloud-server.js",
+      "env": {
+        "NEXTCLOUD_PORT": "8042"
+      },
+      "stderr": "pipe",
+      "stdout": "pipe",
+      "gracefulShutdown": {
+        "signal": "SIGTERM",
+        "timeout": 10000
+      },
+      "reuseExistingServer": false,
+      "timeout": 300000,
+      "wait": {
+        "stdout": {}
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "appstore/admin-settings-apps.spec.ts",
+      "file": "appstore/admin-settings-apps.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Settings: App management",
+          "file": "appstore/admin-settings-apps.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Can enable an installed app",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3022,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:00:35.032Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "059e0da90e77a574fd67-b4507aaf94549bcb690f",
+              "file": "appstore/admin-settings-apps.spec.ts",
+              "line": 31,
+              "column": 2
+            },
+            {
+              "title": "Can disable an installed app",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2333,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:00:38.660Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "059e0da90e77a574fd67-4afb16001a331c9059a4",
+              "file": "appstore/admin-settings-apps.spec.ts",
+              "line": 57,
+              "column": 2
+            },
+            {
+              "title": "Browse enabled apps",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2216,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:00:41.008Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "059e0da90e77a574fd67-b91d4ad01464e35c0289",
+              "file": "appstore/admin-settings-apps.spec.ts",
+              "line": 83,
+              "column": 2
+            },
+            {
+              "title": "Browse disabled apps",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2144,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:00:43.241Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "059e0da90e77a574fd67-b5c2a1a98223f065c7e1",
+              "file": "appstore/admin-settings-apps.spec.ts",
+              "line": 106,
+              "column": 2
+            },
+            {
+              "title": "Browse app bundles",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2262,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:00:45.399Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "059e0da90e77a574fd67-fa8ad25f5b985a65ff90",
+              "file": "appstore/admin-settings-apps.spec.ts",
+              "line": 129,
+              "column": 2
+            },
+            {
+              "title": "View app details",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2037,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:00:47.676Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "059e0da90e77a574fd67-b622b1c704e4044d1693",
+              "file": "appstore/admin-settings-apps.spec.ts",
+              "line": 141,
+              "column": 2
+            },
+            {
+              "title": "Limit app usage to group",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3812,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:00:49.741Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "059e0da90e77a574fd67-3c5c2653d87c2ff46dae",
+              "file": "appstore/admin-settings-apps.spec.ts",
+              "line": 159,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "core/admin-settings-appstore-link.spec.ts",
+      "file": "core/admin-settings-appstore-link.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "core: app store link visibility",
+          "file": "core/admin-settings-appstore-link.spec.ts",
+          "line": 23,
+          "column": 10,
+          "specs": [
+            {
+              "title": "offers the \"App store\" tile only while an admin allows it",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3799,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:00:54.337Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a13c7bfbdf581153bdeb-4ab5c5a2a43e9e86b3fc",
+              "file": "core/admin-settings-appstore-link.spec.ts",
+              "line": 28,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files_external/admin-settings-external-storage.spec.ts",
+      "file": "files_external/admin-settings-external-storage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "files_external settings",
+          "file": "files_external/admin-settings-external-storage.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "can see the settings section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2005,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:00:58.525Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e7c9fcab37adbabab769-c1e55c480f0cc2d2dd0e",
+              "file": "files_external/admin-settings-external-storage.spec.ts",
+              "line": 23,
+              "column": 2
+            },
+            {
+              "title": "can see the dialog",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1724,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:01.005Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e7c9fcab37adbabab769-0234a90b19b84f9c4916",
+              "file": "files_external/admin-settings-external-storage.spec.ts",
+              "line": 28,
+              "column": 2
+            },
+            {
+              "title": "can create storage using the dialog",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2474,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:02.744Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e7c9fcab37adbabab769-95492ff3d79163e91a34",
+              "file": "files_external/admin-settings-external-storage.spec.ts",
+              "line": 41,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "files_external/admin-settings-home-folder-root-mount.spec.ts",
+      "file": "files_external/admin-settings-home-folder-root-mount.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Does not show write actions on read-only storage mounted at the root of the user's home folder",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "admin-settings",
+              "projectName": "admin-settings",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8124,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:01:05.251Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "07ac0e9fe183d9ae2784-60112b2ee059b802616b",
+          "file": "files_external/admin-settings-home-folder-root-mount.spec.ts",
+          "line": 22,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "files_external/admin-settings-user-credentials.spec.ts",
+      "file": "files_external/admin-settings-user-credentials.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Files user credentials",
+          "file": "files_external/admin-settings-user-credentials.spec.ts",
+          "line": 27,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Create a user storage with user credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/files_external/admin-settings-user-credentials.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8367,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:13.802Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/files_external/admin-settings-user-credentials.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed0ebaa442fca1222de7-ddcc442e3055c767afaa",
+              "file": "files_external/admin-settings-user-credentials.spec.ts",
+              "line": 57,
+              "column": 2
+            },
+            {
+              "title": "Create a user storage with GLOBAL user credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/files_external/admin-settings-user-credentials.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4849,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:25.605Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/files_external/admin-settings-user-credentials.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed0ebaa442fca1222de7-04a6a6e606cfb97373d2",
+              "file": "files_external/admin-settings-user-credentials.spec.ts",
+              "line": 78,
+              "column": 2
+            },
+            {
+              "title": "Create another user storage while reusing GLOBAL user credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/files_external/admin-settings-user-credentials.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4483,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:30.464Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/files_external/admin-settings-user-credentials.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed0ebaa442fca1222de7-58ac72190a2e453dfae9",
+              "file": "files_external/admin-settings-user-credentials.spec.ts",
+              "line": 96,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "settings/admin-settings-ai-security.spec.ts",
+      "file": "settings/admin-settings-ai-security.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Settings: artificial intelligence",
+          "file": "settings/admin-settings-ai-security.spec.ts",
+          "line": 29,
+          "column": 6,
+          "specs": [
+            {
+              "title": "guest usage setting is saved",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1767,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:36.388Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18ca69c5b110d9a7f6e4-b6e5f03299f0606827e8",
+              "file": "settings/admin-settings-ai-security.spec.ts",
+              "line": 39,
+              "column": 2
+            },
+            {
+              "title": "guest usage setting is reset when saving fails",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1116,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:38.550Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18ca69c5b110d9a7f6e4-630ddffe137248189823",
+              "file": "settings/admin-settings-ai-security.spec.ts",
+              "line": 51,
+              "column": 2
+            },
+            {
+              "title": "legacy image generation provider is saved",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1827,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:39.678Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18ca69c5b110d9a7f6e4-b31166e1ac54a3c418a3",
+              "file": "settings/admin-settings-ai-security.spec.ts",
+              "line": 64,
+              "column": 2
+            }
+          ]
+        },
+        {
+          "title": "Settings: security",
+          "file": "settings/admin-settings-ai-security.spec.ts",
+          "line": 79,
+          "column": 6,
+          "specs": [
+            {
+              "title": "two-factor enforcement for a group is saved",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2794,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:41.935Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18ca69c5b110d9a7f6e4-30d04b4ba5517eabff9a",
+              "file": "settings/admin-settings-ai-security.spec.ts",
+              "line": 91,
+              "column": 2
+            },
+            {
+              "title": "cancelling the encryption warning keeps encryption off",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1718,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:45.117Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "18ca69c5b110d9a7f6e4-ea4b24bde99379b6b6ed",
+              "file": "settings/admin-settings-ai-security.spec.ts",
+              "line": 105,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "settings/admin-settings-declarative-forms.spec.ts",
+      "file": "settings/admin-settings-declarative-forms.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Settings: declarative forms",
+          "file": "settings/admin-settings-declarative-forms.spec.ts",
+          "line": 52,
+          "column": 6,
+          "specs": [
+            {
+              "title": "saves a text field and shows it after reload",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2676,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:47.635Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e0cc035bfdd3c12224fe-700ff5735ca9a0fd42a7",
+              "file": "settings/admin-settings-declarative-forms.spec.ts",
+              "line": 71,
+              "column": 2
+            },
+            {
+              "title": "saves a select",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1610,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:53.362Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e0cc035bfdd3c12224fe-dc7b0a2f88958322bb2a",
+              "file": "settings/admin-settings-declarative-forms.spec.ts",
+              "line": 79,
+              "column": 2
+            },
+            {
+              "title": "saves a multi-select",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1525,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:54.982Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e0cc035bfdd3c12224fe-3327fec84ad8ca20028d",
+              "file": "settings/admin-settings-declarative-forms.spec.ts",
+              "line": 84,
+              "column": 2
+            },
+            {
+              "title": "saves a switch",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1401,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:56.523Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e0cc035bfdd3c12224fe-29b5e9e3872913e9f9cf",
+              "file": "settings/admin-settings-declarative-forms.spec.ts",
+              "line": 89,
+              "column": 2
+            },
+            {
+              "title": "saves a group of checkboxes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1299,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:57.937Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e0cc035bfdd3c12224fe-1182772df7b570e10c0a",
+              "file": "settings/admin-settings-declarative-forms.spec.ts",
+              "line": 95,
+              "column": 2
+            },
+            {
+              "title": "saves a radio group",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1385,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:01:59.244Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e0cc035bfdd3c12224fe-00ab334582f80b2529e8",
+              "file": "settings/admin-settings-declarative-forms.spec.ts",
+              "line": 101,
+              "column": 2
+            },
+            {
+              "title": "stores a sensitive field encrypted",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2434,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:00.639Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e0cc035bfdd3c12224fe-c885ceafb6c205d0490b",
+              "file": "settings/admin-settings-declarative-forms.spec.ts",
+              "line": 107,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "settings/admin-settings-sections.spec.ts",
+      "file": "settings/admin-settings-sections.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Settings: admin sections",
+          "file": "settings/admin-settings-sections.spec.ts",
+          "line": 29,
+          "column": 6,
+          "specs": [
+            {
+              "title": "overview shows the setup checks",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 961,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:06.136Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35659b55ba651f82d83c-d932622061856f7fce5a",
+              "file": "settings/admin-settings-sections.spec.ts",
+              "line": 30,
+              "column": 2
+            },
+            {
+              "title": "server page shows the email server and profile sections",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1070,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:07.108Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35659b55ba651f82d83c-2563ffd8f30155d5da29",
+              "file": "settings/admin-settings-sections.spec.ts",
+              "line": 35,
+              "column": 2
+            },
+            {
+              "title": "background jobs mode is saved",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2228,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:08.190Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35659b55ba651f82d83c-486eebc497b8868d75ab",
+              "file": "settings/admin-settings-sections.spec.ts",
+              "line": 42,
+              "column": 2
+            },
+            {
+              "title": "background jobs mode is reset when saving fails",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1053,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:10.426Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35659b55ba651f82d83c-7bcf3335bbb8bdeb5699",
+              "file": "settings/admin-settings-sections.spec.ts",
+              "line": 55,
+              "column": 2
+            },
+            {
+              "title": "profile setting is reset when saving fails",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1576,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:11.487Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35659b55ba651f82d83c-87b1d4a3061ef0fa50d8",
+              "file": "settings/admin-settings-sections.spec.ts",
+              "line": 70,
+              "column": 2
+            },
+            {
+              "title": "delegation page renders",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1005,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:13.078Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35659b55ba651f82d83c-0d6a0f3f1bd027104cd7",
+              "file": "settings/admin-settings-sections.spec.ts",
+              "line": 86,
+              "column": 2
+            },
+            {
+              "title": "presets page renders",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 952,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:14.093Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35659b55ba651f82d83c-d6a616eb129e3bc6007d",
+              "file": "settings/admin-settings-sections.spec.ts",
+              "line": 91,
+              "column": 2
+            },
+            {
+              "title": "sharing setting is saved",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1800,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:15.053Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "35659b55ba651f82d83c-608f3f0aae2a431ded4d",
+              "file": "settings/admin-settings-sections.spec.ts",
+              "line": 96,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "settings/admin-settings-sharing.spec.ts",
+      "file": "settings/admin-settings-sharing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Settings: Admin sharing settings",
+          "file": "settings/admin-settings-sharing.spec.ts",
+          "line": 98,
+          "column": 6,
+          "specs": [
+            {
+              "title": "shows the section with its documentation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1553,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:16.877Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-268980ed532c76f41bde",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 102,
+              "column": 2
+            },
+            {
+              "title": "shows the current configuration",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 23378,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:18.819Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-d3bf18631d6d32fe5ab6",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 110,
+              "column": 2
+            },
+            {
+              "title": "stores \"Allow apps to use the Share API\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2346,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:42.207Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-17d041276ad3e36029d8",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Allow resharing\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2421,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:44.561Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-e2bbb13ebfc186940c02",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Allow sharing with groups\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2480,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:46.994Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-814f1b038d928914801a",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Restrict users to only share with users in their groups\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2445,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:49.496Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-7b21ecd20b6d7926ef30",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Allow users to preview files even if download is disabled\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2295,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:51.954Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-94bce0acbd1bdb6db85f",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Allow users to share via link and emails\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2377,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:54.265Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-d883f0b90894cf024b26",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Allow public uploads\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2398,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:56.650Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-b369c92687cdeaef8b28",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Allow public shares to be added to other clouds by federation. This will add share permissions to all newly created link shares.\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2370,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:02:59.058Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-bff90112b40655fa6b9f",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Always ask for a password\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2243,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:01.439Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-6bf08cefb2255d9b6f18",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Enforce password protection\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3287,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:03.693Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-401baf098ac9a429f6c1",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Allow users to set custom share link tokens\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2295,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:06.994Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-3b6db63cb2fdec6acfd5",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Set default expiration date for internal shares\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2286,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:09.304Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-ce290a1b7f779abc422e",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Enforce expiration date\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3018,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:11.605Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-7bdfa3c1bb745bf4b8e6",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Set default expiration date for shares to other servers\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2319,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:14.636Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-a9362ce373b9d19eb731",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Enforce expiration date for remote shares\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3115,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:16.972Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-de4aa590668060fad176",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Set default expiration date for shares via link or mail\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2344,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:20.096Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-7e5efb379915dd30ddb8",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Enforce expiration date for link or mail shares\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3043,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:22.449Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-93df6d03d768bbbdd572",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Allow account name autocompletion in share dialog and allow access to the system address book\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2270,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:25.503Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-b388e6360876cd7feccd",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Restrict account name autocompletion and system address book access to users within the same groups\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2369,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:27.782Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-792a9e926bfeb0911448",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Restrict account name autocompletion to users based on their phonebook\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2271,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:30.160Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-30682dcc7b7b84fbdaa1",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Allow autocompletion to full match when entering the full name (ignoring restrictions like group membership or missing phonebook match)\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2524,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:32.441Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-1422484426a6fe92fa38",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Also allow autocompletion on full match of the user ID\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2375,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:34.980Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-13f2a1a26663977f1a8e",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Also allow autocompletion on full match of the display name\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2230,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:37.364Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-9c1e0b9104036218d0f1",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Also allow autocompletion on full match of the user email\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2382,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:39.611Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-d470c2dc4ca50ef08808",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "stores \"Do not use second user displayname for full match\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2357,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:42.001Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-416c0176e1ddaeaa1b2a",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "hides all sharing settings but the default permissions when the Share API is disabled",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2178,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:44.376Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-c0094a8b98a8d3227b5a",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 160,
+              "column": 2
+            },
+            {
+              "title": "shows the link share settings only while link sharing is allowed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2027,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:46.561Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-26ca7fc29cd3be838048",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 178,
+              "column": 2
+            },
+            {
+              "title": "only offers to enforce link passwords when asking for them",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1938,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:48.597Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-c9277632be29563d0ac4",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 195,
+              "column": 2
+            },
+            {
+              "title": "warns that previews do not protect against screenshots",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1930,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:03:50.545Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-81285f4064703ccb39e5",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 204,
+              "column": 2
+            },
+            {
+              "title": "stores the public share disclaimer",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3396,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:04:14.756Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-15d99a6efc6158c825f2",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 334,
+              "column": 2
+            },
+            {
+              "title": "stores the default share permissions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-settings",
+                  "projectName": "admin-settings",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2473,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T21:04:18.161Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2a88cd4ef587dd5fae2-35d361a70ab9deab9007",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 359,
+              "column": 2
+            }
+          ],
+          "suites": [
+            {
+              "title": "expiration dates",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 213,
+              "column": 7,
+              "specs": [
+                {
+                  "title": "stores the days of \"Set default expiration date for internal shares\"",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 45000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "admin-settings",
+                      "projectName": "admin-settings",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2701,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:03:52.484Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b2a88cd4ef587dd5fae2-1e0f2465b2a29efc174d",
+                  "file": "settings/admin-settings-sharing.spec.ts",
+                  "line": 221,
+                  "column": 4
+                },
+                {
+                  "title": "stores the days of \"Set default expiration date for shares to other servers\"",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 45000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "admin-settings",
+                      "projectName": "admin-settings",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2787,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:03:55.193Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b2a88cd4ef587dd5fae2-42be6327816fe01bedbc",
+                  "file": "settings/admin-settings-sharing.spec.ts",
+                  "line": 221,
+                  "column": 4
+                },
+                {
+                  "title": "stores the days of \"Set default expiration date for shares via link or mail\"",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 45000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "admin-settings",
+                      "projectName": "admin-settings",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2757,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:03:57.992Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b2a88cd4ef587dd5fae2-c40e79d249222bf454c7",
+                  "file": "settings/admin-settings-sharing.spec.ts",
+                  "line": 221,
+                  "column": 4
+                }
+              ]
+            },
+            {
+              "title": "group selection",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 239,
+              "column": 7,
+              "specs": [
+                {
+                  "title": "excludes groups from creating link shares",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 45000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "admin-settings",
+                      "projectName": "admin-settings",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2506,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:04:00.757Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b2a88cd4ef587dd5fae2-5b63e591811e957097ff",
+                  "file": "settings/admin-settings-sharing.spec.ts",
+                  "line": 251,
+                  "column": 3
+                },
+                {
+                  "title": "ignores groups when restricting sharing to group members",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 45000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "admin-settings",
+                      "projectName": "admin-settings",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2895,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:04:03.691Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b2a88cd4ef587dd5fae2-4875a55f9396a13e3c09",
+                  "file": "settings/admin-settings-sharing.spec.ts",
+                  "line": 262,
+                  "column": 3
+                },
+                {
+                  "title": "excludes groups from the link password requirement if enabled by the system config",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 45000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "admin-settings",
+                      "projectName": "admin-settings",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4279,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:04:06.597Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b2a88cd4ef587dd5fae2-4c226a221d90fba63145",
+                  "file": "settings/admin-settings-sharing.spec.ts",
+                  "line": 276,
+                  "column": 3
+                },
+                {
+                  "title": "limits sharing to an allow list or block list of groups",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 45000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "admin-settings",
+                      "projectName": "admin-settings",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3024,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:04:10.893Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b2a88cd4ef587dd5fae2-227d91f316777531a20e",
+                  "file": "settings/admin-settings-sharing.spec.ts",
+                  "line": 298,
+                  "column": 3
+                }
+              ]
+            },
+            {
+              "title": "without the sharing app",
+              "file": "settings/admin-settings-sharing.spec.ts",
+              "line": 382,
+              "column": 7,
+              "specs": [
+                {
+                  "title": "asks to enable the sharing app",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 45000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "admin-settings",
+                      "projectName": "admin-settings",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2123,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-11-19T21:04:20.646Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b2a88cd4ef587dd5fae2-8afe9eb17af23c7f07f6",
+                  "file": "settings/admin-settings-sharing.spec.ts",
+                  "line": 387,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-19T20:57:17.996Z",
+    "duration": 425140.71400000004,
+    "expected": 76,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

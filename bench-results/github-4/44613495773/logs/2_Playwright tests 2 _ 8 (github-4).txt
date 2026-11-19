@@ -1,0 +1,201 @@
+﻿2026-11-19T20:57:05.1834944Z Current runner version: '2.338.2'
+2026-11-19T20:57:05.1853079Z ##[group]Runner Image Provisioner
+2026-11-19T20:57:05.1853748Z Hosted Compute Agent
+2026-11-19T20:57:05.1854204Z Version: 20261103.629
+2026-11-19T20:57:05.1854665Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-19T20:57:05.1855231Z Build Date: 2026-11-03T17:26:59Z
+2026-11-19T20:57:05.1856015Z Worker ID: {a6378b46-f4e9-4a47-9b04-f1b6cb1040e5}
+2026-11-19T20:57:05.1856533Z Region: us-east-1
+2026-11-19T20:57:05.1857007Z Cloud: AWS
+2026-11-19T20:57:05.1857382Z ##[endgroup]
+2026-11-19T20:57:05.1858664Z ##[group]Operating System
+2026-11-19T20:57:05.1859113Z Ubuntu
+2026-11-19T20:57:05.1859696Z 24.04.5
+2026-11-19T20:57:05.1860090Z LTS
+2026-11-19T20:57:05.1860483Z ##[endgroup]
+2026-11-19T20:57:05.1860905Z ##[group]Runner Image
+2026-11-19T20:57:05.1861327Z Image: ubuntu-24.04
+2026-11-19T20:57:05.1861768Z Version: 20261111.127.1
+2026-11-19T20:57:05.1862750Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261111.127/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-19T20:57:05.1863847Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261111.127
+2026-11-19T20:57:05.1864527Z ##[endgroup]
+2026-11-19T20:57:05.1865345Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T20:57:05.1867440Z Contents: read
+2026-11-19T20:57:05.1867870Z Metadata: read
+2026-11-19T20:57:05.1868293Z ##[endgroup]
+2026-11-19T20:57:05.1869792Z Secret source: Actions
+2026-11-19T20:57:05.1870511Z Cache mode: write
+2026-11-19T20:57:05.1870979Z Prepare workflow directory
+2026-11-19T20:57:05.2094716Z Prepare all required actions
+2026-11-19T20:57:05.2130914Z Getting action download info
+2026-11-19T20:57:05.4308457Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-19T20:57:07.6627785Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-19T20:57:07.7221852Z Download action repository 'nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92' (SHA:39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92)
+2026-11-19T20:57:07.8689434Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-11-19T20:57:08.1410199Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-19T20:57:08.2473469Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-19T20:57:08.5393916Z Complete job name: Playwright tests 2 / 8 (github-4)
+2026-11-19T20:57:08.5957952Z ##[group]Run actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-19T20:57:08.5958592Z with:
+2026-11-19T20:57:08.5958876Z   key: playwright-context-44613495773
+2026-11-19T20:57:08.5959270Z   path: ./
+2026-11-19T20:57:08.5959550Z   enableCrossOsArchive: false
+2026-11-19T20:57:08.5959881Z   fail-on-cache-miss: false
+2026-11-19T20:57:08.5960177Z   lookup-only: false
+2026-11-19T20:57:08.5960548Z ##[endgroup]
+2026-11-19T20:57:10.8554954Z Cache hit for: playwright-context-44613495773
+2026-11-19T20:57:11.9020951Z Received 268435456 of 306868897 (87.5%), 255.7 MBs/sec
+2026-11-19T20:57:12.0187453Z Received 306868897 of 306868897 (100.0%), 261.8 MBs/sec
+2026-11-19T20:57:12.0192795Z Cache Size: ~293 MB (306868897 B)
+2026-11-19T20:57:12.0251398Z [command]/usr/bin/tar -xf /home/runner/work/_temp/a6178343-3c89-4393-841e-5f1842ca4ad0/cache.tzst -P -C /home/runner/work/nextcloud/nextcloud --use-compress-program unzstd
+2026-11-19T20:57:13.5341461Z Cache restored successfully
+2026-11-19T20:57:13.7921246Z Cache restored from key: playwright-context-44613495773
+2026-11-19T20:57:13.8127632Z ##[group]Run nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92
+2026-11-19T20:57:13.8128145Z with:
+2026-11-19T20:57:13.8128384Z   path: ./package.json
+2026-11-19T20:57:13.8128671Z ##[endgroup]
+2026-11-19T20:57:13.8845709Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-11-19T20:57:13.8846106Z with:
+2026-11-19T20:57:13.8846382Z   node-version: ^24.0.0
+2026-11-19T20:57:13.8846623Z   check-latest: false
+2026-11-19T20:57:13.8848428Z   token: ***
+2026-11-19T20:57:13.8848743Z   package-manager-cache: true
+2026-11-19T20:57:13.8848989Z ##[endgroup]
+2026-11-19T20:57:14.1488946Z Found in cache @ /opt/hostedtoolcache/node/24.22.2/x64
+2026-11-19T20:57:15.1465625Z ##[group]Environment details
+2026-11-19T20:57:17.5824360Z node: v24.22.2
+2026-11-19T20:57:17.5824911Z npm: 11.19.1
+2026-11-19T20:57:17.5825201Z yarn: 1.22.22
+2026-11-19T20:57:17.5828875Z ##[endgroup]
+2026-11-19T20:57:17.5955231Z ##[group]Run npm i -g 'npm@^11.3.0'
+2026-11-19T20:57:17.5955951Z [36;1mnpm i -g 'npm@^11.3.0'[0m
+2026-11-19T20:57:17.8657366Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:57:17.8657841Z ##[endgroup]
+2026-11-19T20:57:22.8178000Z 
+2026-11-19T20:57:22.8183372Z changed 23 packages in 5s
+2026-11-19T20:57:22.8183847Z 
+2026-11-19T20:57:22.8184254Z 15 packages are looking for funding
+2026-11-19T20:57:22.8184733Z   run `npm fund` for details
+2026-11-19T20:57:22.8433688Z ##[group]Run npm run playwright:install-ci --if-present
+2026-11-19T20:57:22.8434127Z [36;1mnpm run playwright:install-ci --if-present[0m
+2026-11-19T20:57:22.8461562Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:57:22.8461871Z ##[endgroup]
+2026-11-19T20:57:22.9289435Z ##[group]Run npm run playwright -- --shard='2/8' --reporter=list,json
+2026-11-19T20:57:22.9289925Z [36;1mnpm run playwright -- --shard='2/8' --reporter=list,json[0m
+2026-11-19T20:57:22.9315047Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:57:22.9315336Z env:
+2026-11-19T20:57:22.9315828Z   PLAYWRIGHT_JSON_OUTPUT_FILE: /home/runner/work/nextcloud/nextcloud/results.json
+2026-11-19T20:57:22.9316227Z ##[endgroup]
+2026-11-19T20:57:23.0037429Z 
+2026-11-19T20:57:23.0038088Z > nextcloud@1.0.0 playwright
+2026-11-19T20:57:23.0038837Z > playwright test --project=default --project=admin-settings --shard=2/8 --reporter=list,json
+2026-11-19T20:57:23.0039211Z 
+2026-11-19T20:57:24.0759845Z [WebServer] 
+2026-11-19T20:57:24.0761097Z [WebServer] Pulling images… ⏳
+2026-11-19T20:57:35.8712022Z [WebServer] └─ Done
+2026-11-19T20:57:35.8712691Z [WebServer] 
+2026-11-19T20:57:35.8713487Z [WebServer] Checking running containers… 🔍
+2026-11-19T20:57:35.8758269Z [WebServer] └─ None found!
+2026-11-19T20:57:35.8759016Z [WebServer] 
+2026-11-19T20:57:35.8759552Z [WebServer] Starting Nextcloud container… 🚀
+2026-11-19T20:57:35.8760173Z [WebServer] ├─ Using branch 'master'
+2026-11-19T20:57:41.6717973Z [WebServer] ├─ Nextcloud container's IP is localhost:8042 🌏
+2026-11-19T20:57:41.6719323Z [WebServer] ├─ Waiting for Nextcloud to be ready… ⏳
+2026-11-19T20:57:49.5441995Z [WebServer] └─ Done
+2026-11-19T20:57:49.5442478Z [WebServer] 
+2026-11-19T20:57:49.5443020Z [WebServer] Configuring Nextcloud…
+2026-11-19T20:57:49.8818382Z [WebServer] ├─ stdout: Nextcloud 36.0.0 dev
+2026-11-19T20:57:50.2228320Z [WebServer] ├─ stdout: System config value default_language set to string en
+2026-11-19T20:57:50.5626153Z [WebServer] ├─ stdout: System config value force_language set to string en
+2026-11-19T20:57:50.8993670Z [WebServer] ├─ stdout: System config value default_locale set to string en_US
+2026-11-19T20:57:51.2373430Z [WebServer] ├─ stdout: System config value force_locale set to string en_US
+2026-11-19T20:57:51.5823833Z [WebServer] ├─ stdout: System config value enforce_theme set to string light
+2026-11-19T20:57:51.5903199Z [WebServer] ├─ Checking APCu configuration... 👀
+2026-11-19T20:57:52.6052608Z [WebServer] │  └─ OK !
+2026-11-19T20:57:52.6053358Z [WebServer] ├─ Using "apps-writable" folder for mounted apps
+2026-11-19T20:57:53.0100987Z [WebServer] └─ Nextcloud is now ready to use 🎉
+2026-11-19T20:57:53.0102109Z [WebServer] 
+2026-11-19T20:57:53.0102617Z [WebServer] Apply custom configuration for Playwright tests
+2026-11-19T20:57:53.0801464Z [WebServer] ├─ Enabled SQLite WAL mode for better performance
+2026-11-19T20:57:53.4232832Z [WebServer] ├─ Disabled caching AppConfig
+2026-11-19T20:57:53.7626286Z [WebServer] ├─ Disabled app store
+2026-11-19T20:57:54.1062258Z [WebServer] ├─ Disabled password policy for random test users
+2026-11-19T20:57:54.1063013Z [WebServer] ├─ Initialize cron job...
+2026-11-19T20:59:37.4853311Z [WebServer] │  └─ OK !
+2026-11-19T20:59:37.4854040Z [WebServer] └─ Nextcloud container ready to run Playwright tests
+2026-11-19T20:59:38.9271270Z 
+2026-11-19T20:59:38.9272569Z Running 43 tests using 1 worker, shard 2 of 8
+2026-11-19T20:59:38.9273899Z 
+2026-11-19T21:00:06.4133826Z   ✓   1 [admin-settings] › tests/playwright/e2e/systemtags/admin-settings-restrictions.spec.ts:21:1 › Cannot create tag if restriction is in place (9.7s)
+2026-11-19T21:00:08.8198246Z   ✓   2 [admin-settings] › tests/playwright/e2e/systemtags/admin-settings.spec.ts:18:2 › System tags admin settings › Can create a tag (2.4s)
+2026-11-19T21:00:11.2953969Z   ✓   3 [admin-settings] › tests/playwright/e2e/systemtags/admin-settings.spec.ts:39:2 › System tags admin settings › Can update a tag (2.5s)
+2026-11-19T21:00:13.4856940Z   ✓   4 [admin-settings] › tests/playwright/e2e/systemtags/admin-settings.spec.ts:71:2 › System tags admin settings › Can delete a tag (2.2s)
+2026-11-19T21:00:15.4276227Z   ✓   5 [admin-settings] › tests/playwright/e2e/theming/admin-settings-background.spec.ts:27:2 › Admin theming background settings › Remove default background and restore it (1.9s)
+2026-11-19T21:00:19.3281372Z   ✓   6 [admin-settings] › tests/playwright/e2e/theming/admin-settings-background.spec.ts:50:2 › Admin theming background settings › Disable user theming (3.9s)
+2026-11-19T21:00:21.4563249Z   ✓   7 [admin-settings] › tests/playwright/e2e/theming/admin-settings-background.spec.ts:67:2 › Admin theming background settings › Remove default background with custom color (2.1s)
+2026-11-19T21:00:26.6190943Z   ✓   8 [admin-settings] › tests/playwright/e2e/theming/admin-settings-background.spec.ts:83:2 › Admin theming background settings › User default background reflects admin custom background and color (5.1s)
+2026-11-19T21:00:30.3024183Z   ✓   9 [admin-settings] › tests/playwright/e2e/theming/admin-settings-background.spec.ts:106:2 › Admin theming background settings › User default background reflects admin removed background (3.7s)
+2026-11-19T21:00:34.1263552Z   ✓  10 [admin-settings] › tests/playwright/e2e/theming/admin-settings-branding.spec.ts:17:2 › Admin theming branding settings › Set project links and verify persisted values (3.8s)
+2026-11-19T21:00:37.8208700Z   ✓  11 [admin-settings] › tests/playwright/e2e/theming/admin-settings-branding.spec.ts:46:2 › Admin theming branding settings › Set and undo login fields (3.7s)
+2026-11-19T21:00:43.5280960Z   ✓  12 [admin-settings] › tests/playwright/e2e/theming/admin-settings-branding.spec.ts:80:2 › Admin theming branding settings › Web link corner cases (5.7s)
+2026-11-19T21:00:46.2731864Z   ✓  13 [admin-settings] › tests/playwright/e2e/theming/admin-settings-colors.spec.ts:15:1 › Change the primary color and reset it (2.7s)
+2026-11-19T21:00:47.8763455Z   ✓  14 [admin-settings] › tests/playwright/e2e/theming/admin-settings-default-app.spec.ts:27:2 › Admin theming set default apps › See the current default app is the dashboard (1.6s)
+2026-11-19T21:00:49.9313302Z   ✓  15 [admin-settings] › tests/playwright/e2e/theming/admin-settings-default-app.spec.ts:35:2 › Admin theming set default apps › Can configure and switch the default app to files (1.7s)
+2026-11-19T21:00:52.8694590Z   ✓  16 [admin-settings] › tests/playwright/e2e/users/admin-settings-account-management.spec.ts:18:2 › Settings: Account management defaults › keeps the default quota (2.9s)
+2026-11-19T21:00:55.4831124Z   ✓  17 [admin-settings] › tests/playwright/e2e/users/admin-settings-account-management.spec.ts:34:2 › Settings: Account management defaults › keeps the welcome email choice (2.6s)
+2026-11-19T21:00:56.8668102Z   ✓  18 [admin-settings] › tests/playwright/e2e/workflowengine/admin-settings.spec.ts:47:2 › Flow admin settings › lists the installed flows and has none configured (1.4s)
+2026-11-19T21:00:58.6781508Z   ✓  19 [admin-settings] › tests/playwright/e2e/workflowengine/admin-settings.spec.ts:64:2 › Flow admin settings › adds a flow and discards it again (1.8s)
+2026-11-19T21:01:01.3804002Z   ✓  20 [admin-settings] › tests/playwright/e2e/workflowengine/admin-settings.spec.ts:79:2 › Flow admin settings › creates a flow and reloads it (2.7s)
+2026-11-19T21:01:03.8732219Z   ✓  21 [admin-settings] › tests/playwright/e2e/workflowengine/admin-settings.spec.ts:110:2 › Flow admin settings › validates the value of a filter before it can be saved (2.5s)
+2026-11-19T21:01:06.5640579Z   ✓  22 [admin-settings] › tests/playwright/e2e/workflowengine/admin-settings.spec.ts:152:2 › Flow admin settings › collects several filters and removes one again (2.7s)
+2026-11-19T21:01:09.0415350Z   ✓  23 [admin-settings] › tests/playwright/e2e/workflowengine/admin-settings.spec.ts:184:2 › Flow admin settings › reverts an edit and deletes a saved flow (2.5s)
+2026-11-19T21:01:10.8338901Z   ✓  24 [admin-settings] › tests/playwright/e2e/workflowengine/admin-settings.spec.ts:208:2 › Flow admin settings › reports why the server rejected a flow (1.8s)
+2026-11-19T21:01:13.9068724Z   ✓  25 [admin-settings] › tests/playwright/e2e/workflowengine/admin-settings.spec.ts:237:3 › Flow admin settings › checks that render a custom element › file MIME type (3.1s)
+2026-11-19T21:01:17.2728350Z   ✓  26 [admin-settings] › tests/playwright/e2e/workflowengine/admin-settings.spec.ts:260:3 › Flow admin settings › checks that render a custom element › file system tag (3.4s)
+2026-11-19T21:01:20.2278987Z   ✓  27 [admin-settings] › tests/playwright/e2e/workflowengine/admin-settings.spec.ts:284:3 › Flow admin settings › checks that render a custom element › request URL (2.9s)
+2026-11-19T21:01:23.1122753Z   ✓  28 [admin-settings] › tests/playwright/e2e/workflowengine/admin-settings.spec.ts:304:3 › Flow admin settings › checks that render a custom element › request user agent (2.9s)
+2026-11-19T21:01:25.9308564Z   ✓  29 [admin-settings] › tests/playwright/e2e/workflowengine/admin-settings.spec.ts:319:3 › Flow admin settings › checks that render a custom element › request time (2.8s)
+2026-11-19T21:01:28.5735617Z   ✓  30 [admin-settings] › tests/playwright/e2e/workflowengine/admin-settings.spec.ts:346:3 › Flow admin settings › checks that render a custom element › group membership (2.6s)
+2026-11-19T21:01:29.6831912Z   ✓  31 [default] › tests/playwright/e2e/core/404-error.spec.ts:9:2 › 404 error page › renders 404 page with a link back to login (625ms)
+2026-11-19T21:01:32.2715001Z   ✓  32 [default] › tests/playwright/e2e/core/header-access-levels.spec.ts:13:2 › Header: Settings menu – regular user › can see the basic items (2.4s)
+2026-11-19T21:01:35.1109725Z   ✓  33 [default] › tests/playwright/e2e/core/header-access-levels.spec.ts:30:2 › Header: Settings menu – regular user › cannot see admin-level items (2.8s)
+2026-11-19T21:01:36.7109731Z   ✓  34 [default] › tests/playwright/e2e/core/header-access-levels.spec.ts:42:2 › Header: Settings menu – admin user › can see the admin-level items (1.6s)
+2026-11-19T21:01:39.5567823Z   ✓  35 [default] › tests/playwright/e2e/core/header-app-menu.spec.ts:13:2 › Header: App menu (waffle launcher) – regular user › opens the popover and navigates when a tile is clicked (2.8s)
+2026-11-19T21:01:41.9497228Z   ✓  36 [default] › tests/playwright/e2e/core/header-app-menu.spec.ts:30:2 › Header: App menu (waffle launcher) – regular user › has the correct app navigation items (2.4s)
+2026-11-19T21:01:42.9124160Z   ✓  37 [default] › tests/playwright/e2e/core/header-app-menu.spec.ts:42:2 › Header: App menu (waffle launcher) – admin › shows the "More apps" tile for admins (950ms)
+2026-11-19T21:01:43.8660500Z   ✓  38 [default] › tests/playwright/e2e/core/header-app-menu.spec.ts:51:2 › Header: App menu (waffle launcher) – admin › has the correct app navigation items (939ms)
+2026-11-19T21:01:46.6333610Z   ✓  39 [default] › tests/playwright/e2e/core/header-contacts-menu.spec.ts:33:2 › Header: Contacts menu › other users are seen in the contacts menu (2.7s)
+2026-11-19T21:01:50.6974039Z   ✓  40 [default] › tests/playwright/e2e/core/header-contacts-menu.spec.ts:43:2 › Header: Contacts menu › just-added users are seen in the contacts menu (4.1s)
+2026-11-19T21:01:55.3384145Z   ✓  41 [default] › tests/playwright/e2e/core/header-contacts-menu.spec.ts:59:2 › Header: Contacts menu › search filters the contact list (4.6s)
+2026-11-19T21:01:58.6881753Z   ✓  42 [default] › tests/playwright/e2e/core/header-contacts-menu.spec.ts:80:2 › Header: Contacts menu › searching for an unknown user shows no results (3.3s)
+2026-11-19T21:02:02.8227728Z   ✓  43 [default] › tests/playwright/e2e/core/header-contacts-menu.spec.ts:95:2 › Header: Contacts menu › users from other groups are not seen when user enumeration is restricted to the same group (4.1s)
+2026-11-19T21:02:02.9476907Z [WebServer] Stopping Nextcloud server…
+2026-11-19T21:02:02.9479088Z [WebServer] Stopping Nextcloud container…
+2026-11-19T21:02:03.0702314Z [WebServer] └─ Nextcloud container removed 🥀
+2026-11-19T21:02:03.0759699Z 
+2026-11-19T21:02:03.0763418Z   43 passed (4.7m)
+2026-11-19T21:02:03.1014994Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-19T21:02:03.1015977Z with:
+2026-11-19T21:02:03.1016293Z   name: results-github-4-2
+2026-11-19T21:02:03.1016569Z   path: results.json
+2026-11-19T21:02:03.1016820Z   retention-days: 30
+2026-11-19T21:02:03.1017045Z   if-no-files-found: ignore
+2026-11-19T21:02:03.1017354Z   compression-level: 6
+2026-11-19T21:02:03.1017589Z   overwrite: false
+2026-11-19T21:02:03.1017837Z   include-hidden-files: false
+2026-11-19T21:02:03.1018103Z   archive: true
+2026-11-19T21:02:03.1018399Z ##[endgroup]
+2026-11-19T21:02:03.2068408Z With the provided path, there will be 1 file uploaded
+2026-11-19T21:02:03.2083827Z Artifact name is valid!
+2026-11-19T21:02:03.2086026Z Root directory input is valid!
+2026-11-19T21:02:03.6715937Z Uploading artifact: results-github-4-2.zip
+2026-11-19T21:02:03.6742853Z Beginning upload of artifact content to blob storage
+2026-11-19T21:02:03.7358473Z Uploaded bytes 6204
+2026-11-19T21:02:03.7507903Z Finished uploading artifact content to blob storage!
+2026-11-19T21:02:03.7508847Z SHA256 digest of uploaded artifact is 3ac7c479a35e9ac6fcf8d05174dc3878023bc57dc2293f1815aa011b1c5d7030
+2026-11-19T21:02:03.7509480Z Finalizing artifact upload
+2026-11-19T21:02:04.2777749Z Artifact results-github-4-2 successfully finalized. Artifact ID 14575005149
+2026-11-19T21:02:04.2778428Z Artifact results-github-4-2 has been successfully uploaded! Final size is 6204 bytes. Artifact ID is 14575005149
+2026-11-19T21:02:04.2779498Z Artifact download URL: https://github.com/boba-benchmarks/nextcloud/actions/runs/44613495773/artifacts/14575005149
+2026-11-19T21:02:04.2949353Z Post job cleanup.
+2026-11-19T21:02:04.3926130Z Cleaning up orphan processes

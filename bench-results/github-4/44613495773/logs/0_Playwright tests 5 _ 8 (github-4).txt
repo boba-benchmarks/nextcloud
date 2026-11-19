@@ -1,0 +1,218 @@
+﻿2026-11-19T20:57:06.3772364Z Current runner version: '2.338.2'
+2026-11-19T20:57:06.3789965Z ##[group]Runner Image Provisioner
+2026-11-19T20:57:06.3790625Z Hosted Compute Agent
+2026-11-19T20:57:06.3791067Z Version: 20261103.629
+2026-11-19T20:57:06.3791874Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-19T20:57:06.3792396Z Build Date: 2026-11-03T17:26:59Z
+2026-11-19T20:57:06.3792942Z Worker ID: {c8be6270-cd31-4d4b-bd19-1270db088bff}
+2026-11-19T20:57:06.3793457Z Region: us-west-2
+2026-11-19T20:57:06.3793868Z Cloud: AWS
+2026-11-19T20:57:06.3794245Z ##[endgroup]
+2026-11-19T20:57:06.3795216Z ##[group]Operating System
+2026-11-19T20:57:06.3795636Z Ubuntu
+2026-11-19T20:57:06.3796022Z 24.04.5
+2026-11-19T20:57:06.3796397Z LTS
+2026-11-19T20:57:06.3796992Z ##[endgroup]
+2026-11-19T20:57:06.3797378Z ##[group]Runner Image
+2026-11-19T20:57:06.3797777Z Image: ubuntu-24.04
+2026-11-19T20:57:06.3798190Z Version: 20261111.127.1
+2026-11-19T20:57:06.3799114Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261111.127/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-19T20:57:06.3800224Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261111.127
+2026-11-19T20:57:06.3800887Z ##[endgroup]
+2026-11-19T20:57:06.3801906Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T20:57:06.3803619Z Contents: read
+2026-11-19T20:57:06.3804055Z Metadata: read
+2026-11-19T20:57:06.3804440Z ##[endgroup]
+2026-11-19T20:57:06.3805923Z Secret source: Actions
+2026-11-19T20:57:06.3806599Z Cache mode: write
+2026-11-19T20:57:06.3807078Z Prepare workflow directory
+2026-11-19T20:57:06.4033766Z Prepare all required actions
+2026-11-19T20:57:06.4069489Z Getting action download info
+2026-11-19T20:57:06.8310776Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-19T20:57:08.9516620Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-19T20:57:09.0337558Z Download action repository 'nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92' (SHA:39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92)
+2026-11-19T20:57:09.2895626Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-11-19T20:57:09.4772477Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-19T20:57:09.7727244Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-19T20:57:09.9990668Z Complete job name: Playwright tests 5 / 8 (github-4)
+2026-11-19T20:57:10.0625382Z ##[group]Run actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-19T20:57:10.0626317Z with:
+2026-11-19T20:57:10.0626769Z   key: playwright-context-44613495773
+2026-11-19T20:57:10.0627348Z   path: ./
+2026-11-19T20:57:10.0627751Z   enableCrossOsArchive: false
+2026-11-19T20:57:10.0628303Z   fail-on-cache-miss: false
+2026-11-19T20:57:10.0628760Z   lookup-only: false
+2026-11-19T20:57:10.0629266Z ##[endgroup]
+2026-11-19T20:57:13.6679051Z Cache hit for: playwright-context-44613495773
+2026-11-19T20:57:15.0547842Z Received 0 of 306868897 (0.0%), 0.0 MBs/sec
+2026-11-19T20:57:16.0551040Z Received 54525952 of 306868897 (17.8%), 26.0 MBs/sec
+2026-11-19T20:57:17.0554945Z Received 138412032 of 306868897 (45.1%), 44.0 MBs/sec
+2026-11-19T20:57:18.0574695Z Received 264241152 of 306868897 (86.1%), 63.0 MBs/sec
+2026-11-19T20:57:18.7089664Z Received 306868897 of 306868897 (100.0%), 62.9 MBs/sec
+2026-11-19T20:57:18.7090270Z Cache Size: ~293 MB (306868897 B)
+2026-11-19T20:57:18.7209044Z [command]/usr/bin/tar -xf /home/runner/work/_temp/c16eb6d1-e969-4c54-a9d6-ebfbd95bf691/cache.tzst -P -C /home/runner/work/nextcloud/nextcloud --use-compress-program unzstd
+2026-11-19T20:57:20.2642668Z Cache restored successfully
+2026-11-19T20:57:20.5437595Z Cache restored from key: playwright-context-44613495773
+2026-11-19T20:57:20.5642493Z ##[group]Run nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92
+2026-11-19T20:57:20.5642957Z with:
+2026-11-19T20:57:20.5643217Z   path: ./package.json
+2026-11-19T20:57:20.5643498Z ##[endgroup]
+2026-11-19T20:57:20.6432872Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-11-19T20:57:20.6433482Z with:
+2026-11-19T20:57:20.6433835Z   node-version: ^24.0.0
+2026-11-19T20:57:20.6434222Z   check-latest: false
+2026-11-19T20:57:20.6437652Z   token: ***
+2026-11-19T20:57:20.6438043Z   package-manager-cache: true
+2026-11-19T20:57:20.6438488Z ##[endgroup]
+2026-11-19T20:57:20.8402371Z Found in cache @ /opt/hostedtoolcache/node/24.22.2/x64
+2026-11-19T20:57:22.2888571Z ##[group]Environment details
+2026-11-19T20:57:24.9662867Z node: v24.22.2
+2026-11-19T20:57:24.9663462Z npm: 11.19.1
+2026-11-19T20:57:24.9664083Z yarn: 1.22.22
+2026-11-19T20:57:24.9665319Z ##[endgroup]
+2026-11-19T20:57:24.9797221Z ##[group]Run npm i -g 'npm@^11.3.0'
+2026-11-19T20:57:24.9797698Z [36;1mnpm i -g 'npm@^11.3.0'[0m
+2026-11-19T20:57:25.1535453Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:57:25.1535828Z ##[endgroup]
+2026-11-19T20:57:29.9619882Z 
+2026-11-19T20:57:29.9625672Z changed 23 packages in 5s
+2026-11-19T20:57:29.9626116Z 
+2026-11-19T20:57:29.9626443Z 15 packages are looking for funding
+2026-11-19T20:57:29.9627084Z   run `npm fund` for details
+2026-11-19T20:57:29.9872233Z ##[group]Run npm run playwright:install-ci --if-present
+2026-11-19T20:57:29.9872667Z [36;1mnpm run playwright:install-ci --if-present[0m
+2026-11-19T20:57:29.9899447Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:57:29.9899832Z ##[endgroup]
+2026-11-19T20:57:30.0748295Z ##[group]Run npm run playwright -- --shard='5/8' --reporter=list,json
+2026-11-19T20:57:30.0748780Z [36;1mnpm run playwright -- --shard='5/8' --reporter=list,json[0m
+2026-11-19T20:57:30.0774810Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:57:30.0775107Z env:
+2026-11-19T20:57:30.0775480Z   PLAYWRIGHT_JSON_OUTPUT_FILE: /home/runner/work/nextcloud/nextcloud/results.json
+2026-11-19T20:57:30.0775883Z ##[endgroup]
+2026-11-19T20:57:30.1465244Z 
+2026-11-19T20:57:30.1466063Z > nextcloud@1.0.0 playwright
+2026-11-19T20:57:31.1223112Z > playwright test --project=default --project=admin-settings --shard=5/8 --reporter=list,json
+2026-11-19T20:57:31.1223574Z 
+2026-11-19T20:57:31.1223700Z [WebServer] 
+2026-11-19T20:57:31.1233602Z [WebServer] Pulling images… ⏳
+2026-11-19T20:57:48.9038567Z [WebServer] └─ Done
+2026-11-19T20:57:48.9039114Z [WebServer] 
+2026-11-19T20:57:48.9039744Z [WebServer] Checking running containers… 🔍
+2026-11-19T20:57:48.9080030Z [WebServer] └─ None found!
+2026-11-19T20:57:48.9080627Z [WebServer] 
+2026-11-19T20:57:48.9081725Z [WebServer] Starting Nextcloud container… 🚀
+2026-11-19T20:57:48.9102870Z [WebServer] ├─ Using branch 'master'
+2026-11-19T20:57:53.8406892Z [WebServer] ├─ Nextcloud container's IP is localhost:8042 🌏
+2026-11-19T20:57:53.8412730Z [WebServer] ├─ Waiting for Nextcloud to be ready… ⏳
+2026-11-19T20:58:01.9731037Z [WebServer] └─ Done
+2026-11-19T20:58:01.9737216Z [WebServer] 
+2026-11-19T20:58:01.9737925Z [WebServer] Configuring Nextcloud…
+2026-11-19T20:58:02.3036611Z [WebServer] ├─ stdout: Nextcloud 36.0.0 dev
+2026-11-19T20:58:02.6432064Z [WebServer] ├─ stdout: System config value default_language set to string en
+2026-11-19T20:58:02.9804878Z [WebServer] ├─ stdout: System config value force_language set to string en
+2026-11-19T20:58:03.3271561Z [WebServer] ├─ stdout: System config value default_locale set to string en_US
+2026-11-19T20:58:03.6664324Z [WebServer] ├─ stdout: System config value force_locale set to string en_US
+2026-11-19T20:58:04.0172664Z [WebServer] ├─ stdout: System config value enforce_theme set to string light
+2026-11-19T20:58:04.0274616Z [WebServer] ├─ Checking APCu configuration... 👀
+2026-11-19T20:58:05.0405254Z [WebServer] │  └─ OK !
+2026-11-19T20:58:05.0406054Z [WebServer] ├─ Using "apps-writable" folder for mounted apps
+2026-11-19T20:58:05.4334560Z [WebServer] └─ Nextcloud is now ready to use 🎉
+2026-11-19T20:58:05.4336185Z [WebServer] 
+2026-11-19T20:58:05.4336896Z [WebServer] Apply custom configuration for Playwright tests
+2026-11-19T20:58:05.5043374Z [WebServer] ├─ Enabled SQLite WAL mode for better performance
+2026-11-19T20:58:05.8447810Z [WebServer] ├─ Disabled caching AppConfig
+2026-11-19T20:58:06.1867524Z [WebServer] ├─ Disabled app store
+2026-11-19T20:58:06.5295476Z [WebServer] ├─ Disabled password policy for random test users
+2026-11-19T20:58:06.5295995Z [WebServer] ├─ Initialize cron job...
+2026-11-19T20:58:48.9144875Z [WebServer] │  └─ OK !
+2026-11-19T20:58:48.9145670Z [WebServer] └─ Nextcloud container ready to run Playwright tests
+2026-11-19T20:58:50.3492287Z 
+2026-11-19T20:58:50.3493341Z Running 57 tests using 1 worker, shard 5 of 8
+2026-11-19T20:58:50.3493741Z 
+2026-11-19T20:59:08.4595293Z   ✓   1 [default] › tests/playwright/e2e/files/files.spec.ts:38:2 › Files › Opens an unknown file show an error (4.9s)
+2026-11-19T20:59:11.1204113Z   ✓   2 [default] › tests/playwright/e2e/files/hotkeys.spec.ts:20:2 › Files hotkey handling › Pressing "arrow down" should go to first file (2.6s)
+2026-11-19T20:59:13.8717045Z   ✓   3 [default] › tests/playwright/e2e/files/hotkeys.spec.ts:28:2 › Files hotkey handling › Pressing "arrow up" should go to last file (2.7s)
+2026-11-19T20:59:16.6795455Z   ✓   4 [default] › tests/playwright/e2e/files/hotkeys.spec.ts:36:2 › Files hotkey handling › Pressing D should open the sidebar once (2.8s)
+2026-11-19T20:59:19.3665475Z   ✓   5 [default] › tests/playwright/e2e/files/hotkeys.spec.ts:45:2 › Files hotkey handling › Pressing F2 should rename the file (2.7s)
+2026-11-19T20:59:22.1352125Z   ✓   6 [default] › tests/playwright/e2e/files/hotkeys.spec.ts:54:2 › Files hotkey handling › Pressing S should toggle favorite (2.8s)
+2026-11-19T20:59:24.9501850Z   ✓   7 [default] › tests/playwright/e2e/files/hotkeys.spec.ts:65:2 › Files hotkey handling › Pressing DELETE should delete the folder after confirmation (2.8s)
+2026-11-19T20:59:27.7365839Z   ✓   8 [default] › tests/playwright/e2e/files/hotkeys.spec.ts:79:2 › Files hotkey handling › Cancelling the confirmation of the DELETE hotkey keeps the folder (2.8s)
+2026-11-19T20:59:30.3285157Z   ✓   9 [default] › tests/playwright/e2e/files/live-photos.spec.ts:20:2 › Files: Live photos › Only renders the .jpg file (2.6s)
+2026-11-19T20:59:33.5712831Z   ✓  10 [default] › tests/playwright/e2e/files/live-photos.spec.ts:32:3 › Files: Live photos › 'Show hidden files' is enabled › Shows both files when 'Show hidden files' is enabled (3.2s)
+2026-11-19T20:59:37.7259364Z   ✓  11 [default] › tests/playwright/e2e/files/live-photos.spec.ts:39:3 › Files: Live photos › 'Show hidden files' is enabled › Copies both files when copying the .jpg (4.1s)
+2026-11-19T20:59:42.1318719Z   ✓  12 [default] › tests/playwright/e2e/files/live-photos.spec.ts:50:3 › Files: Live photos › 'Show hidden files' is enabled › Copies both files when copying the .mov (4.4s)
+2026-11-19T20:59:48.2224171Z   ✓  13 [default] › tests/playwright/e2e/files/live-photos.spec.ts:60:3 › Files: Live photos › 'Show hidden files' is enabled › Keeps live photo link when copying folder (6.1s)
+2026-11-19T20:59:52.8731071Z   ✓  14 [default] › tests/playwright/e2e/files/live-photos.spec.ts:85:3 › Files: Live photos › 'Show hidden files' is enabled › Blocks copying live photo into a folder with a colliding .mov (4.6s)
+2026-11-19T20:59:56.9009052Z   ✓  15 [default] › tests/playwright/e2e/files/live-photos.spec.ts:103:3 › Files: Live photos › 'Show hidden files' is enabled › Moves both files when renaming the .jpg (4.0s)
+2026-11-19T21:00:01.0336998Z   ✓  16 [default] › tests/playwright/e2e/files/live-photos.spec.ts:113:3 › Files: Live photos › 'Show hidden files' is enabled › Moves both files when renaming the .mov (4.1s)
+2026-11-19T21:00:05.6543425Z   ✓  17 [default] › tests/playwright/e2e/files/live-photos.spec.ts:123:3 › Files: Live photos › 'Show hidden files' is enabled › Deletes both files when deleting the .jpg (4.6s)
+2026-11-19T21:00:10.2638378Z   ✓  18 [default] › tests/playwright/e2e/files/live-photos.spec.ts:139:3 › Files: Live photos › 'Show hidden files' is enabled › Blocks deletion when deleting the .mov (4.6s)
+2026-11-19T21:00:15.8369756Z   ✓  19 [default] › tests/playwright/e2e/files/live-photos.spec.ts:152:3 › Files: Live photos › 'Show hidden files' is enabled › Restores both files when restoring the .jpg (5.6s)
+2026-11-19T21:00:21.4843855Z   ✓  20 [default] › tests/playwright/e2e/files/live-photos.spec.ts:169:3 › Files: Live photos › 'Show hidden files' is enabled › Blocks restoration when restoring the .mov (5.6s)
+2026-11-19T21:00:24.7022933Z   ✓  21 [default] › tests/playwright/e2e/files/new-menu.spec.ts:20:2 › "New"-menu › Create new folder (3.2s)
+2026-11-19T21:00:27.6202081Z   ✓  22 [default] › tests/playwright/e2e/files/new-menu.spec.ts:25:2 › "New"-menu › Does not allow creating forbidden folder names (2.9s)
+2026-11-19T21:00:31.1437285Z   ✓  23 [default] › tests/playwright/e2e/files/new-menu.spec.ts:34:2 › "New"-menu › Does not allow creating folders with already existing names (3.5s)
+2026-11-19T21:00:35.4164966Z   ✓  24 [default] › tests/playwright/e2e/files/new-menu.spec.ts:48:2 › "New"-menu › Create same folder in child folder (4.3s)
+2026-11-19T21:00:39.1840301Z   ✓  25 [default] › tests/playwright/e2e/files/recent-view.spec.ts:14:2 › Files: Recent view › shows a recently created file in the recent view (3.7s)
+2026-11-19T21:00:43.3963942Z   ✓  26 [default] › tests/playwright/e2e/files/recent-view.spec.ts:24:2 › Files: Recent view › can delete a file from the recent view (4.2s)
+2026-11-19T21:00:47.0730364Z   ✓  27 [default] › tests/playwright/e2e/files/router-query.spec.ts:41:4 › Check router query flags › "opendetails" › open details for known file type (3.6s)
+2026-11-19T21:00:50.5037744Z   ✓  28 [default] › tests/playwright/e2e/files/router-query.spec.ts:41:4 › Check router query flags › "opendetails" › open details for unknown file type (3.4s)
+2026-11-19T21:00:54.2112237Z   ✓  29 [default] › tests/playwright/e2e/files/router-query.spec.ts:41:4 › Check router query flags › "opendetails" › open details for folder (3.7s)
+2026-11-19T21:00:58.2896584Z   ✓  30 [default] › tests/playwright/e2e/files/router-query.spec.ts:67:3 › Check router query flags › "openfile" › opens files with default action (4.1s)
+2026-11-19T21:01:02.0480609Z   ✓  31 [default] › tests/playwright/e2e/files/router-query.spec.ts:72:3 › Check router query flags › "openfile" › opens files with default action using explicit query state (3.7s)
+2026-11-19T21:01:05.3289984Z   ✓  32 [default] › tests/playwright/e2e/files/router-query.spec.ts:77:3 › Check router query flags › "openfile" › does not open files with default action when using explicit `false` (3.2s)
+2026-11-19T21:01:08.8986128Z   ✓  33 [default] › tests/playwright/e2e/files/router-query.spec.ts:84:3 › Check router query flags › "openfile" › does not open folders but shows details (3.5s)
+2026-11-19T21:01:12.5160030Z   ✓  34 [default] › tests/playwright/e2e/files/router-query.spec.ts:97:3 › Check router query flags › "openfile" › does not open unknown file types but shows details (3.6s)
+2026-11-19T21:01:17.1259039Z   ✓  35 [default] › tests/playwright/e2e/files/scrolling.spec.ts:38:2 › Files: Scrolling to the selected file (list view) › shows the first rows and keeps the rest off-screen (4.6s)
+2026-11-19T21:01:21.5652476Z   ✓  36 [default] › tests/playwright/e2e/files/scrolling.spec.ts:48:2 › Files: Scrolling to the selected file (list view) › scrolls a file below the fold into view (4.4s)
+2026-11-19T21:01:26.2480360Z   ✓  37 [default] › tests/playwright/e2e/files/scrolling.spec.ts:55:2 › Files: Scrolling to the selected file (list view) › scrolls to the last page and reveals the footer (4.7s)
+2026-11-19T21:01:31.1339675Z   ✓  38 [default] › tests/playwright/e2e/files/scrolling.spec.ts:78:2 › Files: Scrolling to the selected file (grid view) › shows the first grid rows and keeps the last off-screen (4.9s)
+2026-11-19T21:01:36.0102192Z   ✓  39 [default] › tests/playwright/e2e/files/scrolling.spec.ts:87:2 › Files: Scrolling to the selected file (grid view) › scrolls the last grid row into view (4.8s)
+2026-11-19T21:01:40.7174757Z   ✓  40 [default] › tests/playwright/e2e/files/search.spec.ts:26:2 › files: search › updates the query on the URL (4.7s)
+2026-11-19T21:01:45.8021598Z   ✓  41 [default] › tests/playwright/e2e/files/search.spec.ts:32:2 › files: search › can search globally (5.1s)
+2026-11-19T21:01:50.1449274Z   ✓  42 [default] › tests/playwright/e2e/files/search.spec.ts:42:2 › files: search › filter does also search locally (4.3s)
+2026-11-19T21:01:54.4105390Z   ✓  43 [default] › tests/playwright/e2e/files/search.spec.ts:54:2 › files: search › See "search everywhere" button (4.2s)
+2026-11-19T21:01:58.8936273Z   ✓  44 [default] › tests/playwright/e2e/files/search.spec.ts:64:2 › files: search › can make local search a global search (4.4s)
+2026-11-19T21:02:03.4703810Z   ✓  45 [default] › tests/playwright/e2e/files/search.spec.ts:86:2 › files: search › shows empty content when there are no results (4.5s)
+2026-11-19T21:02:08.6097390Z   ✓  46 [default] › tests/playwright/e2e/files/search.spec.ts:98:2 › files: search › can alter search (5.1s)
+2026-11-19T21:02:13.0442416Z   ✓  47 [default] › tests/playwright/e2e/files/search.spec.ts:112:2 › files: search › returns to file list if search is cleared (4.4s)
+2026-11-19T21:02:17.8903494Z   ✓  48 [default] › tests/playwright/e2e/files/search.spec.ts:130:2 › files: search › keeps the query in the URL (4.8s)
+2026-11-19T21:02:27.9650416Z   ✓  49 [default] › tests/playwright/e2e/files/transfer-ownership.spec.ts:41:2 › Files: Transfer ownership › transfers a single file (10.0s)
+2026-11-19T21:02:37.6804220Z   ✓  50 [default] › tests/playwright/e2e/files/transfer-ownership.spec.ts:82:2 › Files: Transfer ownership › transfers a folder with all of its content (9.7s)
+2026-11-19T21:02:47.8163390Z   ✓  51 [default] › tests/playwright/e2e/files/transfer-ownership.spec.ts:110:2 › Files: Transfer ownership › transfers all files at once (10.1s)
+2026-11-19T21:02:53.6452457Z   ✓  52 [default] › tests/playwright/e2e/files_external/files-external-failed.spec.ts:19:1 › Create a failed user storage with invalid url (5.1s)
+2026-11-19T21:02:57.6584764Z   ✓  53 [default] › tests/playwright/e2e/files_external/files-external-failed.spec.ts:47:1 › Create a failed user storage with invalid login credentials (4.0s)
+2026-11-19T21:03:02.4235029Z   ✓  54 [default] › tests/playwright/e2e/files_trashbin/files-trash-action.spec.ts:20:2 › files_trashbin: empty trashbin action › can empty trashbin (4.7s)
+2026-11-19T21:03:06.2026885Z   ✓  55 [default] › tests/playwright/e2e/files_trashbin/files-trash-action.spec.ts:41:2 › files_trashbin: empty trashbin action › cancelling the empty trashbin action does not delete anything (3.7s)
+2026-11-19T21:03:10.0958835Z   ✓  56 [default] › tests/playwright/e2e/files_trashbin/files.spec.ts:28:2 › files_trashbin: download files › can download a file (3.8s)
+2026-11-19T21:03:13.4723332Z   ✓  57 [default] › tests/playwright/e2e/files_trashbin/files.spec.ts:35:2 › files_trashbin: download files › can download a file using the default action (3.3s)
+2026-11-19T21:03:15.6802920Z [WebServer] Stopping Nextcloud server…
+2026-11-19T21:03:15.6805617Z [WebServer] Stopping Nextcloud container…
+2026-11-19T21:03:15.8265622Z [WebServer] └─ Nextcloud container removed 🥀
+2026-11-19T21:03:15.8331876Z 
+2026-11-19T21:03:15.8336495Z   57 passed (5.8m)
+2026-11-19T21:03:15.8614086Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-19T21:03:15.8614575Z with:
+2026-11-19T21:03:15.8614807Z   name: results-github-4-5
+2026-11-19T21:03:15.8615072Z   path: results.json
+2026-11-19T21:03:15.8615345Z   retention-days: 30
+2026-11-19T21:03:15.8615584Z   if-no-files-found: ignore
+2026-11-19T21:03:15.8615839Z   compression-level: 6
+2026-11-19T21:03:15.8616075Z   overwrite: false
+2026-11-19T21:03:15.8616348Z   include-hidden-files: false
+2026-11-19T21:03:15.8616611Z   archive: true
+2026-11-19T21:03:15.8616826Z ##[endgroup]
+2026-11-19T21:03:15.9727222Z With the provided path, there will be 1 file uploaded
+2026-11-19T21:03:15.9733272Z Artifact name is valid!
+2026-11-19T21:03:15.9735456Z Root directory input is valid!
+2026-11-19T21:03:16.4108923Z Uploading artifact: results-github-4-5.zip
+2026-11-19T21:03:16.4135613Z Beginning upload of artifact content to blob storage
+2026-11-19T21:03:16.7589252Z Uploaded bytes 6675
+2026-11-19T21:03:16.8454838Z Finished uploading artifact content to blob storage!
+2026-11-19T21:03:16.8455719Z SHA256 digest of uploaded artifact is f26edc6cbd94f4a37a2d3e3bc3cf83609fc02379ec18a8f4d1c865a50fe9f52f
+2026-11-19T21:03:16.8456410Z Finalizing artifact upload
+2026-11-19T21:03:17.4582220Z Artifact results-github-4-5 successfully finalized. Artifact ID 14572993784
+2026-11-19T21:03:17.4583206Z Artifact results-github-4-5 has been successfully uploaded! Final size is 6675 bytes. Artifact ID is 14572993784
+2026-11-19T21:03:17.4584119Z Artifact download URL: https://github.com/boba-benchmarks/nextcloud/actions/runs/44613495773/artifacts/14572993784
+2026-11-19T21:03:17.4739566Z Post job cleanup.
+2026-11-19T21:03:17.5697850Z Cleaning up orphan processes

@@ -1,0 +1,269 @@
+﻿2026-11-19T20:57:06.1399911Z Current runner version: '2.338.2'
+2026-11-19T20:57:06.1418281Z ##[group]Runner Image Provisioner
+2026-11-19T20:57:06.1418963Z Hosted Compute Agent
+2026-11-19T20:57:06.1419397Z Version: 20261111.635
+2026-11-19T20:57:06.1419854Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-19T20:57:06.1420364Z Build Date: 2026-11-11T01:49:01Z
+2026-11-19T20:57:06.1420825Z Worker ID: {637c7164-18d7-4ca3-b6dd-e571e787e310}
+2026-11-19T20:57:06.1421352Z Region: us-west-2
+2026-11-19T20:57:06.1421753Z Cloud: AWS
+2026-11-19T20:57:06.1422151Z ##[endgroup]
+2026-11-19T20:57:06.1423304Z ##[group]Operating System
+2026-11-19T20:57:06.1423725Z Ubuntu
+2026-11-19T20:57:06.1424114Z 24.04.5
+2026-11-19T20:57:06.1424482Z LTS
+2026-11-19T20:57:06.1425038Z ##[endgroup]
+2026-11-19T20:57:06.1425442Z ##[group]Runner Image
+2026-11-19T20:57:06.1425865Z Image: ubuntu-24.04
+2026-11-19T20:57:06.1426268Z Version: 20261116.133.1
+2026-11-19T20:57:06.1427198Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261116.133/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-19T20:57:06.1428335Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261116.133
+2026-11-19T20:57:06.1429006Z ##[endgroup]
+2026-11-19T20:57:06.1429812Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T20:57:06.1431426Z Contents: read
+2026-11-19T20:57:06.1431864Z Metadata: read
+2026-11-19T20:57:06.1432240Z ##[endgroup]
+2026-11-19T20:57:06.1433990Z Secret source: Actions
+2026-11-19T20:57:06.1434749Z Cache mode: write
+2026-11-19T20:57:06.1435236Z Prepare workflow directory
+2026-11-19T20:57:06.1662558Z Prepare all required actions
+2026-11-19T20:57:06.1698881Z Getting action download info
+2026-11-19T20:57:06.5957903Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-19T20:57:08.9442550Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-19T20:57:09.0158046Z Download action repository 'nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92' (SHA:39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92)
+2026-11-19T20:57:09.3059219Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-11-19T20:57:09.5147298Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-19T20:57:09.8576660Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-19T20:57:10.1852576Z Complete job name: Playwright tests 4 / 8 (github-4)
+2026-11-19T20:57:10.2549764Z ##[group]Run actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-19T20:57:10.2551064Z with:
+2026-11-19T20:57:10.2551840Z   key: playwright-context-44613495773
+2026-11-19T20:57:10.2552967Z   path: ./
+2026-11-19T20:57:10.2553666Z   enableCrossOsArchive: false
+2026-11-19T20:57:10.2554663Z   fail-on-cache-miss: false
+2026-11-19T20:57:10.2555456Z   lookup-only: false
+2026-11-19T20:57:10.2556342Z ##[endgroup]
+2026-11-19T20:57:14.8911492Z Cache hit for: playwright-context-44613495773
+2026-11-19T20:57:16.2809963Z Received 0 of 306868897 (0.0%), 0.0 MBs/sec
+2026-11-19T20:57:17.2810808Z Received 58720256 of 306868897 (19.1%), 28.0 MBs/sec
+2026-11-19T20:57:18.2817076Z Received 171966464 of 306868897 (56.0%), 54.6 MBs/sec
+2026-11-19T20:57:19.2864318Z Received 302674593 of 306868897 (98.6%), 72.1 MBs/sec
+2026-11-19T20:57:19.4400158Z Received 306868897 of 306868897 (100.0%), 70.4 MBs/sec
+2026-11-19T20:57:19.4400787Z Cache Size: ~293 MB (306868897 B)
+2026-11-19T20:57:19.4449746Z [command]/usr/bin/tar -xf /home/runner/work/_temp/1398aaaa-4259-4963-8c08-4feb5ec55f33/cache.tzst -P -C /home/runner/work/nextcloud/nextcloud --use-compress-program unzstd
+2026-11-19T20:57:21.1493392Z Cache restored successfully
+2026-11-19T20:57:21.4952719Z Cache restored from key: playwright-context-44613495773
+2026-11-19T20:57:21.5189974Z ##[group]Run nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92
+2026-11-19T20:57:21.5190459Z with:
+2026-11-19T20:57:21.5190690Z   path: ./package.json
+2026-11-19T20:57:21.5190939Z ##[endgroup]
+2026-11-19T20:57:21.5937234Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-11-19T20:57:21.5937754Z with:
+2026-11-19T20:57:21.5938137Z   node-version: ^24.0.0
+2026-11-19T20:57:21.5938476Z   check-latest: false
+2026-11-19T20:57:21.5941432Z   token: ***
+2026-11-19T20:57:21.5941746Z   package-manager-cache: true
+2026-11-19T20:57:21.5942088Z ##[endgroup]
+2026-11-19T20:57:21.9230661Z Found in cache @ /opt/hostedtoolcache/node/24.22.3/x64
+2026-11-19T20:57:23.9521058Z ##[group]Environment details
+2026-11-19T20:57:27.5964925Z node: v24.22.3
+2026-11-19T20:57:27.5965574Z npm: 11.19.1
+2026-11-19T20:57:27.5965817Z yarn: 1.22.22
+2026-11-19T20:57:27.5967041Z ##[endgroup]
+2026-11-19T20:57:27.6119025Z ##[group]Run npm i -g 'npm@^11.3.0'
+2026-11-19T20:57:27.6119443Z [36;1mnpm i -g 'npm@^11.3.0'[0m
+2026-11-19T20:57:27.8064254Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:57:27.8064805Z ##[endgroup]
+2026-11-19T20:57:32.5211520Z 
+2026-11-19T20:57:32.5217535Z changed 23 packages in 5s
+2026-11-19T20:57:32.5217921Z 
+2026-11-19T20:57:32.5218391Z 15 packages are looking for funding
+2026-11-19T20:57:32.5218889Z   run `npm fund` for details
+2026-11-19T20:57:32.5474580Z ##[group]Run npm run playwright:install-ci --if-present
+2026-11-19T20:57:32.5475098Z [36;1mnpm run playwright:install-ci --if-present[0m
+2026-11-19T20:57:32.5501003Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:57:32.5501289Z ##[endgroup]
+2026-11-19T20:57:32.6317961Z ##[group]Run npm run playwright -- --shard='4/8' --reporter=list,json
+2026-11-19T20:57:32.6318472Z [36;1mnpm run playwright -- --shard='4/8' --reporter=list,json[0m
+2026-11-19T20:57:32.6345392Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:57:32.6345684Z env:
+2026-11-19T20:57:32.6346014Z   PLAYWRIGHT_JSON_OUTPUT_FILE: /home/runner/work/nextcloud/nextcloud/results.json
+2026-11-19T20:57:32.6346457Z ##[endgroup]
+2026-11-19T20:57:32.7057116Z 
+2026-11-19T20:57:32.7057969Z > nextcloud@1.0.0 playwright
+2026-11-19T20:57:32.7058826Z > playwright test --project=default --project=admin-settings --shard=4/8 --reporter=list,json
+2026-11-19T20:57:32.7059307Z 
+2026-11-19T20:57:33.8346333Z [WebServer] 
+2026-11-19T20:57:33.8347698Z [WebServer] Pulling images… ⏳
+2026-11-19T20:57:47.8639294Z [WebServer] └─ Done
+2026-11-19T20:57:47.8645713Z [WebServer] 
+2026-11-19T20:57:47.8646687Z [WebServer] Checking running containers… 🔍
+2026-11-19T20:57:47.8685099Z [WebServer] └─ None found!
+2026-11-19T20:57:47.8685735Z [WebServer] 
+2026-11-19T20:57:47.8686617Z [WebServer] Starting Nextcloud container… 🚀
+2026-11-19T20:57:47.8687132Z [WebServer] ├─ Using branch 'master'
+2026-11-19T20:57:53.0827745Z [WebServer] ├─ Nextcloud container's IP is localhost:8042 🌏
+2026-11-19T20:57:53.0828638Z [WebServer] ├─ Waiting for Nextcloud to be ready… ⏳
+2026-11-19T20:58:01.7153904Z [WebServer] └─ Done
+2026-11-19T20:58:01.7156870Z [WebServer] 
+2026-11-19T20:58:01.7157474Z [WebServer] Configuring Nextcloud…
+2026-11-19T20:58:02.0511392Z [WebServer] ├─ stdout: Nextcloud 36.0.0 dev
+2026-11-19T20:58:02.3918306Z [WebServer] ├─ stdout: System config value default_language set to string en
+2026-11-19T20:58:02.7387860Z [WebServer] ├─ stdout: System config value force_language set to string en
+2026-11-19T20:58:03.0799054Z [WebServer] ├─ stdout: System config value default_locale set to string en_US
+2026-11-19T20:58:03.4231771Z [WebServer] ├─ stdout: System config value force_locale set to string en_US
+2026-11-19T20:58:03.7654913Z [WebServer] ├─ stdout: System config value enforce_theme set to string light
+2026-11-19T20:58:03.7757500Z [WebServer] ├─ Checking APCu configuration... 👀
+2026-11-19T20:58:04.8043818Z [WebServer] │  └─ OK !
+2026-11-19T20:58:04.8045040Z [WebServer] ├─ Using "apps-writable" folder for mounted apps
+2026-11-19T20:58:05.2003434Z [WebServer] └─ Nextcloud is now ready to use 🎉
+2026-11-19T20:58:05.2004416Z [WebServer] 
+2026-11-19T20:58:05.2004839Z [WebServer] Apply custom configuration for Playwright tests
+2026-11-19T20:58:05.2743727Z [WebServer] ├─ Enabled SQLite WAL mode for better performance
+2026-11-19T20:58:05.6243357Z [WebServer] ├─ Disabled caching AppConfig
+2026-11-19T20:58:05.9735647Z [WebServer] ├─ Disabled app store
+2026-11-19T20:58:06.3188461Z [WebServer] ├─ Disabled password policy for random test users
+2026-11-19T20:58:06.3189190Z [WebServer] ├─ Initialize cron job...
+2026-11-19T20:59:37.7019439Z [WebServer] │  └─ OK !
+2026-11-19T20:59:37.7020332Z [WebServer] └─ Nextcloud container ready to run Playwright tests
+2026-11-19T20:59:39.2360069Z 
+2026-11-19T20:59:39.2361161Z Running 57 tests using 1 worker, shard 4 of 8
+2026-11-19T20:59:39.2361503Z 
+2026-11-19T21:00:03.4027470Z   ✓   1 [default] › tests/playwright/e2e/files/files-download.spec.ts:169:2 › Files: Download files using selection › can download multiple selected files (6.3s)
+2026-11-19T21:00:06.5118623Z   ✓   2 [default] › tests/playwright/e2e/files/files-download.spec.ts:192:2 › Files: Download files using selection › can download selected files with special characters (3.1s)
+2026-11-19T21:00:11.4880160Z   ✓   3 [default] › tests/playwright/e2e/files/files-download.spec.ts:219:2 › Files: Download files using selection › can download selected files with email uid (5.0s)
+2026-11-19T21:00:14.5709926Z   ✓   4 [default] › tests/playwright/e2e/files/files-favorites.spec.ts:33:2 › Files: Favorites › marks a file as favorite from the row actions (3.1s)
+2026-11-19T21:00:18.0800798Z   ✓   5 [default] › tests/playwright/e2e/files/files-favorites.spec.ts:45:2 › Files: Favorites › un-marks a file as favorite from the row actions (3.5s)
+2026-11-19T21:00:21.6216285Z   ✓   6 [default] › tests/playwright/e2e/files/files-favorites.spec.ts:62:2 › Files: Favorites › shows favorite folders in the navigation (3.5s)
+2026-11-19T21:00:27.4538940Z   ✓   7 [default] › tests/playwright/e2e/files/files-favorites.spec.ts:79:2 › Files: Favorites › marks a folder as favorite from the sidebar (5.8s)
+2026-11-19T21:00:30.2997089Z   ✓   8 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:23:2 › files: Filter in files list › filters current view by name (2.8s)
+2026-11-19T21:00:33.3074161Z   ✓   9 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:34:2 › files: Filter in files list › can reset name filter (3.0s)
+2026-11-19T21:00:36.5607211Z   ✓  10 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:47:2 › files: Filter in files list › filters current view by type (3.2s)
+2026-11-19T21:00:40.1276602Z   ✓  11 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:62:2 › files: Filter in files list › can reset filter by type (3.6s)
+2026-11-19T21:00:43.3383546Z   ✓  12 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:78:2 › files: Filter in files list › can reset filter by clicking chip button (3.2s)
+2026-11-19T21:00:46.6374174Z   ✓  13 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:91:2 › files: Filter in files list › keeps type filter when changing the directory (3.3s)
+2026-11-19T21:00:49.9732585Z   ✓  14 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:108:2 › files: Filter in files list › keeps filter state when changing the directory (3.3s)
+2026-11-19T21:00:53.2956949Z   ✓  15 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:132:2 › files: Filter in files list › resets name filter when changing the directory (3.3s)
+2026-11-19T21:00:56.3470739Z   ✓  16 [default] › tests/playwright/e2e/files/files-filtering.spec.ts:143:2 › files: Filter in files list › resets filter when changing the view (3.0s)
+2026-11-19T21:00:59.5129814Z   ✓  17 [default] › tests/playwright/e2e/files/files-navigation.spec.ts:17:2 › Files: Navigation › shows root folder and can navigate to a deeply nested folder (3.1s)
+2026-11-19T21:01:02.7692657Z   ✓  18 [default] › tests/playwright/e2e/files/files-navigation.spec.ts:25:2 › Files: Navigation › highlights the previous folder when navigating back and forward (3.2s)
+2026-11-19T21:01:06.0878131Z   ✓  19 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:17:2 › Files: Rename nodes › can rename a file (3.3s)
+2026-11-19T21:01:09.6549417Z   ✓  20 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:35:2 › Files: Rename nodes › only selects basename of file on rename open (3.6s)
+2026-11-19T21:01:13.3249906Z   ✓  21 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:50:2 › Files: Rename nodes › shows validation error on invalid filename (3.6s)
+2026-11-19T21:01:17.0149207Z   ✓  22 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:62:2 › Files: Rename nodes › shows accessible loading state while rename MOVE is in-flight (3.7s)
+2026-11-19T21:01:20.6625871Z   ✓  23 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:98:2 › Files: Rename nodes › cancel renaming on Escape (3.6s)
+2026-11-19T21:01:24.1369385Z   ✓  24 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:115:2 › Files: Rename nodes › cancel renaming on Enter when name is unchanged (3.5s)
+2026-11-19T21:02:10.4360087Z   ✘  25 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:134:2 › Files: Rename nodes › correctly resets renaming state after virtual-scroll re-render (45.5s)
+2026-11-19T21:02:16.9855859Z   ✓  26 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:134:2 › Files: Rename nodes › correctly resets renaming state after virtual-scroll re-render (retry #1) (5.6s)
+2026-11-19T21:02:20.2286408Z   ✓  27 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:178:2 › Files: Rename nodes › shows extension-change warning — keep new extension (3.2s)
+2026-11-19T21:02:23.4445139Z   ✓  28 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:193:2 › Files: Rename nodes › shows extension-change warning — keep old extension (3.2s)
+2026-11-19T21:02:27.0400227Z   ✓  29 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:208:2 › Files: Rename nodes › shows extension-removal warning (3.6s)
+2026-11-19T21:02:30.8433004Z   ✓  30 [default] › tests/playwright/e2e/files/files-renaming.spec.ts:224:2 › Files: Rename nodes › does not show extension warning when renaming a folder with a dot (3.8s)
+2026-11-19T21:02:33.8423803Z   ✓  31 [default] › tests/playwright/e2e/files/files-selection.spec.ts:31:2 › Files: Select files › selects and deselects all files (3.0s)
+2026-11-19T21:02:36.8454018Z   ✓  32 [default] › tests/playwright/e2e/files/files-selection.spec.ts:44:2 › Files: Select files › selects an arbitrary subset of files (3.0s)
+2026-11-19T21:02:39.7779995Z   ✓  33 [default] › tests/playwright/e2e/files/files-selection.spec.ts:55:2 › Files: Select files › selects a range of files with the shift key (2.9s)
+2026-11-19T21:02:42.4208278Z   ✓  34 [default] › tests/playwright/e2e/files/files-settings.spec.ts:10:2 › files: Set default view › Defaults to the "files" view (2.6s)
+2026-11-19T21:02:46.2053354Z   ✓  35 [default] › tests/playwright/e2e/files/files-settings.spec.ts:20:2 › files: Set default view › Can set it to personal files (3.8s)
+2026-11-19T21:02:49.3533603Z   ✓  36 [default] › tests/playwright/e2e/files/files-settings.spec.ts:55:4 › files: Hide or show hidden files › view: All files › hides dot-files by default (3.1s)
+2026-11-19T21:02:52.6376027Z   ✓  37 [default] › tests/playwright/e2e/files/files-settings.spec.ts:63:4 › files: Hide or show hidden files › view: All files › can show hidden files (3.3s)
+2026-11-19T21:02:55.3884932Z   ✓  38 [default] › tests/playwright/e2e/files/files-settings.spec.ts:55:4 › files: Hide or show hidden files › view: Personal files › hides dot-files by default (2.7s)
+2026-11-19T21:02:58.7474048Z   ✓  39 [default] › tests/playwright/e2e/files/files-settings.spec.ts:63:4 › files: Hide or show hidden files › view: Personal files › can show hidden files (3.3s)
+2026-11-19T21:03:01.4931758Z   ✓  40 [default] › tests/playwright/e2e/files/files-settings.spec.ts:79:3 › files: Hide or show hidden files › view: Recent files › hides dot-files by default (2.7s)
+2026-11-19T21:03:04.9074745Z   ✓  41 [default] › tests/playwright/e2e/files/files-settings.spec.ts:88:3 › files: Hide or show hidden files › view: Recent files › can show hidden files (3.4s)
+2026-11-19T21:03:08.1175471Z   ✓  42 [default] › tests/playwright/e2e/files/files-sidebar.spec.ts:18:2 › Files: Sidebar › opens the sidebar (3.2s)
+2026-11-19T21:03:11.2747862Z   ✓  43 [default] › tests/playwright/e2e/files/files-sidebar.spec.ts:27:2 › Files: Sidebar › changes the current fileid (3.1s)
+2026-11-19T21:03:15.1032234Z   ✓  44 [default] › tests/playwright/e2e/files/files-sidebar.spec.ts:36:2 › Files: Sidebar › changes the sidebar content on other file (3.8s)
+2026-11-19T21:03:18.7540241Z   ✓  45 [default] › tests/playwright/e2e/files/files-sidebar.spec.ts:50:2 › Files: Sidebar › closes the sidebar on navigation (3.6s)
+2026-11-19T21:03:22.7949287Z   ✓  46 [default] › tests/playwright/e2e/files/files-sidebar.spec.ts:63:2 › Files: Sidebar › closes the sidebar on delete (4.0s)
+2026-11-19T21:03:26.9553485Z   ✓  47 [default] › tests/playwright/e2e/files/files-sidebar.spec.ts:84:2 › Files: Sidebar › changes the fileid on delete (4.1s)
+2026-11-19T21:03:29.8089697Z   ✓  48 [default] › tests/playwright/e2e/files/files-sorting.spec.ts:12:2 › Files: Sorting the file list › Files are sorted by name ascending by default (2.8s)
+2026-11-19T21:03:32.6437769Z   ✓  49 [default] › tests/playwright/e2e/files/files-sorting.spec.ts:35:2 › Files: Sorting the file list › Filenames with numbers are sorted by name ascending by default (2.8s)
+2026-11-19T21:03:35.7071520Z   ✓  50 [default] › tests/playwright/e2e/files/files-sorting.spec.ts:53:2 › Files: Sorting the file list › Can sort by size (3.0s)
+2026-11-19T21:03:38.9195451Z   ✓  51 [default] › tests/playwright/e2e/files/files-sorting.spec.ts:82:2 › Files: Sorting the file list › Can sort by mtime (3.2s)
+2026-11-19T21:03:42.2796032Z   ✓  52 [default] › tests/playwright/e2e/files/files-sorting.spec.ts:99:2 › Files: Sorting the file list › Favorites are sorted first (3.3s)
+2026-11-19T21:03:46.0870015Z   ✓  53 [default] › tests/playwright/e2e/files/files-sorting.spec.ts:138:2 › Files: Sorting the file list › Sorting works after switching view twice (3.8s)
+2026-11-19T21:03:49.9415843Z   ✓  54 [default] › tests/playwright/e2e/files/files-xml-regression.spec.ts:15:2 › Files: XML entities in file names › renames a file to a name with XML entities and keeps it after reload (3.8s)
+2026-11-19T21:03:53.6537856Z   ✓  55 [default] › tests/playwright/e2e/files/files-xml-regression.spec.ts:37:2 › Files: XML entities in file names › can delete a file whose name contains XML entities (3.7s)
+2026-11-19T21:03:56.2623455Z   ✓  56 [default] › tests/playwright/e2e/files/files.spec.ts:11:2 › Files › Login with a user and open the files app (2.6s)
+2026-11-19T21:03:59.1288367Z   ✓  57 [default] › tests/playwright/e2e/files/files.spec.ts:16:2 › Files › Opens a valid file shows it as active (2.8s)
+2026-11-19T21:04:01.7983262Z   ✓  58 [default] › tests/playwright/e2e/files/files.spec.ts:28:2 › Files › Opens a valid folder shows its content (2.6s)
+2026-11-19T21:04:02.7349274Z [WebServer] Stopping Nextcloud server…
+2026-11-19T21:04:02.7351335Z [WebServer] Stopping Nextcloud container…
+2026-11-19T21:04:02.8952726Z [WebServer] └─ Nextcloud container removed 🥀
+2026-11-19T21:04:02.9015219Z 
+2026-11-19T21:04:02.9018684Z 
+2026-11-19T21:04:02.9027799Z   1) [default] › tests/playwright/e2e/files/files-renaming.spec.ts:134:2 › Files: Rename nodes › correctly resets renaming state after virtual-scroll re-render 
+2026-11-19T21:04:02.9028454Z 
+2026-11-19T21:04:02.9028629Z     Test timeout of 45000ms exceeded.
+2026-11-19T21:04:02.9028857Z 
+2026-11-19T21:04:02.9029039Z     Error: locator.hover: Test ended.
+2026-11-19T21:04:02.9029425Z     Call log:
+2026-11-19T21:04:02.9029838Z       - waiting for locator('[data-cy-files-list-row-name="file.txt"]')
+2026-11-19T21:04:02.9030777Z         - locator resolved to <tr index="0" draggable="true" class="files-list__row" data-cy-files-list-row="" data-cy-files-list-row-fileid="332" data-cy-files-list-row-name="file.txt">…</tr>
+2026-11-19T21:04:02.9031636Z       - attempting hover action
+2026-11-19T21:04:02.9032017Z         2 × waiting for element to be visible and stable
+2026-11-19T21:04:02.9033252Z           - element is visible and stable
+2026-11-19T21:04:02.9033572Z           - scrolling into view if needed
+2026-11-19T21:04:02.9033870Z           - done scrolling
+2026-11-19T21:04:02.9034591Z           - <span data-v-47ce59a3="" class="button-vue__wrapper">…</span> from <thead class="files-list__thead" data-cy-files-list-thead="">…</thead> subtree intercepts pointer events
+2026-11-19T21:04:02.9035279Z         - retrying hover action
+2026-11-19T21:04:02.9035569Z         - waiting 20ms
+2026-11-19T21:04:02.9035901Z         2 × waiting for element to be visible and stable
+2026-11-19T21:04:02.9036247Z           - element is visible and stable
+2026-11-19T21:04:02.9036526Z           - scrolling into view if needed
+2026-11-19T21:04:02.9036843Z           - done scrolling
+2026-11-19T21:04:02.9037827Z           - <span data-v-47ce59a3="" class="button-vue__wrapper">…</span> from <thead class="files-list__thead" data-cy-files-list-thead="">…</thead> subtree intercepts pointer events
+2026-11-19T21:04:02.9038625Z         - retrying hover action
+2026-11-19T21:04:02.9038972Z           - waiting 100ms
+2026-11-19T21:04:02.9039478Z         78 × waiting for element to be visible and stable
+2026-11-19T21:04:02.9039923Z            - element is visible and stable
+2026-11-19T21:04:02.9040378Z            - scrolling into view if needed
+2026-11-19T21:04:02.9040737Z            - done scrolling
+2026-11-19T21:04:02.9041880Z            - <span data-v-47ce59a3="" class="button-vue__wrapper">…</span> from <thead class="files-list__thead" data-cy-files-list-thead="">…</thead> subtree intercepts pointer events
+2026-11-19T21:04:02.9042861Z          - retrying hover action
+2026-11-19T21:04:02.9043272Z            - waiting 500ms
+2026-11-19T21:04:02.9043446Z 
+2026-11-19T21:04:02.9043454Z 
+2026-11-19T21:04:02.9043679Z        at ../support/sections/FilesListPage.ts:243
+2026-11-19T21:04:02.9043948Z 
+2026-11-19T21:04:02.9044352Z       241 | 	private async triggerActionForRow(row: Locator, actionId: string): Promise<void> {
+2026-11-19T21:04:02.9045137Z       242 | 		await expect(row).toBeVisible({ timeout: 15_000 })
+2026-11-19T21:04:02.9045505Z     > 243 | 		await row.hover()
+2026-11-19T21:04:02.9045807Z           | 		          ^
+2026-11-19T21:04:02.9046033Z       244 |
+2026-11-19T21:04:02.9046377Z       245 | 		// Inline buttons and the menu button render in the same pass, so once any
+2026-11-19T21:04:02.9046864Z       246 | 		// button of the actions cell is visible the inline button is there if it
+2026-11-19T21:04:02.9047515Z         at FilesListPage.triggerActionForRow (/home/runner/work/nextcloud/nextcloud/tests/playwright/support/sections/FilesListPage.ts:243:13)
+2026-11-19T21:04:02.9048341Z         at FilesListPage.triggerActionForFile (/home/runner/work/nextcloud/nextcloud/tests/playwright/support/sections/FilesListPage.ts:277:3)
+2026-11-19T21:04:02.9049010Z         at /home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/files/files-renaming.spec.ts:160:3
+2026-11-19T21:04:02.9049326Z 
+2026-11-19T21:04:02.9049665Z     Error Context: test-results/files-files-renaming-Files-2d8a2-er-virtual-scroll-re-render-default/error-context.md
+2026-11-19T21:04:02.9050055Z 
+2026-11-19T21:04:02.9050181Z   1 flaky
+2026-11-19T21:04:02.9050815Z     [default] › tests/playwright/e2e/files/files-renaming.spec.ts:134:2 › Files: Rename nodes › correctly resets renaming state after virtual-scroll re-render 
+2026-11-19T21:04:02.9051652Z   56 passed (6.5m)
+2026-11-19T21:04:02.9280692Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-19T21:04:02.9281096Z with:
+2026-11-19T21:04:02.9281332Z   name: results-github-4-4
+2026-11-19T21:04:02.9281574Z   path: results.json
+2026-11-19T21:04:02.9281883Z   retention-days: 30
+2026-11-19T21:04:02.9282121Z   if-no-files-found: ignore
+2026-11-19T21:04:02.9282680Z   compression-level: 6
+2026-11-19T21:04:02.9282911Z   overwrite: false
+2026-11-19T21:04:02.9283304Z   include-hidden-files: false
+2026-11-19T21:04:02.9283569Z   archive: true
+2026-11-19T21:04:02.9283793Z ##[endgroup]
+2026-11-19T21:04:03.0369421Z With the provided path, there will be 1 file uploaded
+2026-11-19T21:04:03.0372604Z Artifact name is valid!
+2026-11-19T21:04:03.0373259Z Root directory input is valid!
+2026-11-19T21:04:03.5252446Z Uploading artifact: results-github-4-4.zip
+2026-11-19T21:04:03.5278835Z Beginning upload of artifact content to blob storage
+2026-11-19T21:04:03.8794109Z Uploaded bytes 7239
+2026-11-19T21:04:03.9660144Z Finished uploading artifact content to blob storage!
+2026-11-19T21:04:03.9661527Z SHA256 digest of uploaded artifact is ff4a322f26a76936d793975e6172355dd5ac0428a50d9574021b84bd028ac7d8
+2026-11-19T21:04:03.9662838Z Finalizing artifact upload
+2026-11-19T21:04:04.5594669Z Artifact results-github-4-4 successfully finalized. Artifact ID 14573688588
+2026-11-19T21:04:04.5595733Z Artifact results-github-4-4 has been successfully uploaded! Final size is 7239 bytes. Artifact ID is 14573688588
+2026-11-19T21:04:04.5603631Z Artifact download URL: https://github.com/boba-benchmarks/nextcloud/actions/runs/44613495773/artifacts/14573688588
+2026-11-19T21:04:04.5753183Z Post job cleanup.
+2026-11-19T21:04:04.6714183Z Cleaning up orphan processes
