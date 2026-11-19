@@ -1,0 +1,216 @@
+﻿2026-11-19T20:45:04.7574057Z Current runner version: '2.338.2'
+2026-11-19T20:45:04.7601089Z ##[group]Runner Image Provisioner
+2026-11-19T20:45:04.7602481Z Hosted Compute Agent
+2026-11-19T20:45:04.7603132Z Version: 20261103.629
+2026-11-19T20:45:04.7603888Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-19T20:45:04.7604694Z Build Date: 2026-11-03T17:26:59Z
+2026-11-19T20:45:04.7605444Z Worker ID: {67c3bf8f-7576-4a8c-b4d0-c92de8227986}
+2026-11-19T20:45:04.7606249Z Region: eastus
+2026-11-19T20:45:04.7606828Z Cloud: Azure
+2026-11-19T20:45:04.7607448Z ##[endgroup]
+2026-11-19T20:45:04.7609559Z ##[group]Operating System
+2026-11-19T20:45:04.7610277Z Ubuntu
+2026-11-19T20:45:04.7611291Z 24.04.5
+2026-11-19T20:45:04.7612165Z LTS
+2026-11-19T20:45:04.7612713Z ##[endgroup]
+2026-11-19T20:45:04.7613375Z ##[group]Runner Image
+2026-11-19T20:45:04.7614039Z Image: ubuntu-24.04
+2026-11-19T20:45:04.7614659Z Version: 20261111.370.1
+2026-11-19T20:45:04.7616178Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261111.370/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-19T20:45:04.7618134Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261111.370
+2026-11-19T20:45:04.7619163Z ##[endgroup]
+2026-11-19T20:45:04.7620405Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T20:45:04.7623062Z Contents: read
+2026-11-19T20:45:04.7623826Z Metadata: read
+2026-11-19T20:45:04.7624458Z ##[endgroup]
+2026-11-19T20:45:04.7626949Z Secret source: Actions
+2026-11-19T20:45:04.7628008Z Cache mode: write
+2026-11-19T20:45:04.7628930Z Prepare workflow directory
+2026-11-19T20:45:04.7994183Z Prepare all required actions
+2026-11-19T20:45:04.8046370Z Getting action download info
+2026-11-19T20:45:05.0887116Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-19T20:45:05.3263018Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-19T20:45:05.3784691Z Download action repository 'nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92' (SHA:39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92)
+2026-11-19T20:45:05.5096332Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-11-19T20:45:05.6133720Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-19T20:45:05.7439505Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-19T20:45:05.9433485Z Complete job name: Playwright tests 8 / 8 (github-4)
+2026-11-19T20:45:06.0333550Z ##[group]Run actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-19T20:45:06.0334690Z with:
+2026-11-19T20:45:06.0335160Z   key: playwright-context-44611526531
+2026-11-19T20:45:06.0335730Z   path: ./
+2026-11-19T20:45:06.0336167Z   enableCrossOsArchive: false
+2026-11-19T20:45:06.0336716Z   fail-on-cache-miss: false
+2026-11-19T20:45:06.0337205Z   lookup-only: false
+2026-11-19T20:45:06.0337921Z ##[endgroup]
+2026-11-19T20:45:06.7740940Z Cache hit for: playwright-context-44611526531
+2026-11-19T20:45:07.8484793Z Received 247463936 of 307038216 (80.6%), 235.5 MBs/sec
+2026-11-19T20:45:08.0932775Z Received 307038216 of 307038216 (100.0%), 234.4 MBs/sec
+2026-11-19T20:45:08.0934839Z Cache Size: ~293 MB (307038216 B)
+2026-11-19T20:45:08.1054603Z [command]/usr/bin/tar -xf /home/runner/work/_temp/b73dedb9-f962-47a8-a748-e426e2d0b844/cache.tzst -P -C /home/runner/work/nextcloud/nextcloud --use-compress-program unzstd
+2026-11-19T20:45:12.5489621Z Cache restored successfully
+2026-11-19T20:45:12.5823980Z Cache restored from key: playwright-context-44611526531
+2026-11-19T20:45:12.6268730Z ##[group]Run nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92
+2026-11-19T20:45:12.6269373Z with:
+2026-11-19T20:45:12.6269636Z   path: ./package.json
+2026-11-19T20:45:12.6269925Z ##[endgroup]
+2026-11-19T20:45:12.7323205Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-11-19T20:45:12.7323763Z with:
+2026-11-19T20:45:12.7324040Z   node-version: ^24.0.0
+2026-11-19T20:45:12.7324345Z   check-latest: false
+2026-11-19T20:45:12.7327467Z   token: ***
+2026-11-19T20:45:12.7327769Z   package-manager-cache: true
+2026-11-19T20:45:12.7328096Z ##[endgroup]
+2026-11-19T20:45:12.8782819Z Found in cache @ /opt/hostedtoolcache/node/24.22.2/x64
+2026-11-19T20:45:13.7203299Z ##[group]Environment details
+2026-11-19T20:45:15.3552525Z node: v24.22.2
+2026-11-19T20:45:15.3553265Z npm: 11.19.1
+2026-11-19T20:45:15.3553688Z yarn: 1.22.22
+2026-11-19T20:45:15.3554831Z ##[endgroup]
+2026-11-19T20:45:15.3757247Z ##[group]Run npm i -g 'npm@^11.3.0'
+2026-11-19T20:45:15.3757668Z [36;1mnpm i -g 'npm@^11.3.0'[0m
+2026-11-19T20:45:15.3820142Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:45:15.3820545Z ##[endgroup]
+2026-11-19T20:45:20.7111440Z 
+2026-11-19T20:45:20.7119924Z changed 23 packages in 5s
+2026-11-19T20:45:20.7120535Z 
+2026-11-19T20:45:20.7120908Z 15 packages are looking for funding
+2026-11-19T20:45:20.7121537Z   run `npm fund` for details
+2026-11-19T20:45:20.7726498Z ##[group]Run npm run playwright:install-ci --if-present
+2026-11-19T20:45:20.7727086Z [36;1mnpm run playwright:install-ci --if-present[0m
+2026-11-19T20:45:20.7751246Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:45:20.7751571Z ##[endgroup]
+2026-11-19T20:45:20.9002410Z ##[group]Run npm run playwright -- --shard='8/8' --reporter=list,json
+2026-11-19T20:45:20.9003059Z [36;1mnpm run playwright -- --shard='8/8' --reporter=list,json[0m
+2026-11-19T20:45:20.9023779Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:45:20.9024068Z env:
+2026-11-19T20:45:20.9024445Z   PLAYWRIGHT_JSON_OUTPUT_FILE: /home/runner/work/nextcloud/nextcloud/results.json
+2026-11-19T20:45:20.9024908Z ##[endgroup]
+2026-11-19T20:45:21.0072099Z 
+2026-11-19T20:45:21.0073555Z > nextcloud@1.0.0 playwright
+2026-11-19T20:45:21.0074743Z > playwright test --project=default --project=admin-settings --shard=8/8 --reporter=list,json
+2026-11-19T20:45:21.0075447Z 
+2026-11-19T20:45:22.2001393Z [WebServer] 
+2026-11-19T20:45:22.2003667Z [WebServer] Pulling images… ⏳
+2026-11-19T20:45:47.4266099Z [WebServer] └─ Done
+2026-11-19T20:45:47.4266600Z [WebServer] 
+2026-11-19T20:45:47.4267292Z [WebServer] Checking running containers… 🔍
+2026-11-19T20:45:47.4324659Z [WebServer] └─ None found!
+2026-11-19T20:45:47.4326409Z [WebServer] 
+2026-11-19T20:45:47.4327770Z [WebServer] Starting Nextcloud container… 🚀
+2026-11-19T20:45:47.4329361Z [WebServer] ├─ Using branch 'master'
+2026-11-19T20:45:47.7783652Z [WebServer] ├─ Nextcloud container's IP is localhost:8042 🌏
+2026-11-19T20:45:47.7785084Z [WebServer] ├─ Waiting for Nextcloud to be ready… ⏳
+2026-11-19T20:45:58.8727090Z [WebServer] └─ Done
+2026-11-19T20:45:58.8728435Z [WebServer] 
+2026-11-19T20:45:58.8729613Z [WebServer] Configuring Nextcloud…
+2026-11-19T20:45:59.3782960Z [WebServer] ├─ stdout: Nextcloud 36.0.0 dev
+2026-11-19T20:45:59.8860221Z [WebServer] ├─ stdout: System config value default_language set to string en
+2026-11-19T20:46:00.3937911Z [WebServer] ├─ stdout: System config value force_language set to string en
+2026-11-19T20:46:00.9019982Z [WebServer] ├─ stdout: System config value default_locale set to string en_US
+2026-11-19T20:46:01.4046658Z [WebServer] ├─ stdout: System config value force_locale set to string en_US
+2026-11-19T20:46:01.9168488Z [WebServer] ├─ stdout: System config value enforce_theme set to string light
+2026-11-19T20:46:01.9382456Z [WebServer] ├─ Checking APCu configuration... 👀
+2026-11-19T20:46:03.4665140Z [WebServer] │  └─ OK !
+2026-11-19T20:46:03.4666339Z [WebServer] ├─ Using "apps-writable" folder for mounted apps
+2026-11-19T20:46:04.0668762Z [WebServer] └─ Nextcloud is now ready to use 🎉
+2026-11-19T20:46:04.0670086Z [WebServer] 
+2026-11-19T20:46:04.0671049Z [WebServer] Apply custom configuration for Playwright tests
+2026-11-19T20:46:04.1834267Z [WebServer] ├─ Enabled SQLite WAL mode for better performance
+2026-11-19T20:46:04.6957306Z [WebServer] ├─ Disabled caching AppConfig
+2026-11-19T20:46:05.1954083Z [WebServer] ├─ Disabled app store
+2026-11-19T20:46:05.6893956Z [WebServer] ├─ Disabled password policy for random test users
+2026-11-19T20:46:05.6895224Z [WebServer] ├─ Initialize cron job...
+2026-11-19T20:48:09.2546671Z [WebServer] │  └─ OK !
+2026-11-19T20:48:09.2547403Z [WebServer] └─ Nextcloud container ready to run Playwright tests
+2026-11-19T20:48:11.5935198Z 
+2026-11-19T20:48:11.5936093Z Running 57 tests using 1 worker, shard 8 of 8
+2026-11-19T20:48:11.5936580Z 
+2026-11-19T20:48:25.8199887Z   ✓   1 [default] › tests/playwright/e2e/users/users-search.spec.ts:37:2 › Settings: Unified search for accounts and groups › shows the search input in the navigation sidebar (4.6s)
+2026-11-19T20:48:27.8335393Z   ✓   2 [default] › tests/playwright/e2e/users/users-search.spec.ts:46:2 › Settings: Unified search for accounts and groups › dispatches the query to both the users and groups API (2.0s)
+2026-11-19T20:48:29.7773960Z   ✓   3 [default] › tests/playwright/e2e/users/users-search.spec.ts:66:2 › Settings: Unified search for accounts and groups › filters the group list when the query matches a group name (1.9s)
+2026-11-19T20:48:34.7189855Z   ✓   4 [default] › tests/playwright/e2e/users/users-search.spec.ts:82:2 › Settings: Unified search for accounts and groups › resets both lists when the clear button is clicked (2.5s)
+2026-11-19T20:48:37.8932515Z   ✓   5 [default] › tests/playwright/e2e/users/users.spec.ts:13:2 › Settings: Create and delete accounts › can create a user with username and password (3.2s)
+2026-11-19T20:48:42.1307991Z   ✓   6 [default] › tests/playwright/e2e/users/users.spec.ts:34:2 › Settings: Create and delete accounts › can create a user with display name and email (4.2s)
+2026-11-19T20:48:46.1615701Z   ✓   7 [default] › tests/playwright/e2e/users/users.spec.ts:57:2 › Settings: Create and delete accounts › can delete a user (4.0s)
+2026-11-19T20:48:51.2739200Z   ✓   8 [default] › tests/playwright/e2e/viewer/a11y.spec.ts:17:2 › Viewer accessibility › exposes the viewer as a labelled dialog with accessible controls (5.1s)
+2026-11-19T20:48:55.7982872Z   ✓   9 [default] › tests/playwright/e2e/viewer/actions/close.spec.ts:15:2 › Viewer close on click outside › closes when clicking outside the media (4.5s)
+2026-11-19T20:49:01.0842497Z   ✓  10 [default] › tests/playwright/e2e/viewer/actions/delete.spec.ts:11:2 › Viewer delete action › advances to the next file, then closes when the list is empty (5.3s)
+2026-11-19T20:49:08.2168787Z   ✓  11 [default] › tests/playwright/e2e/viewer/actions/download.spec.ts:13:2 › Viewer download restrictions › does not expose a download control when download is forbidden (7.1s)
+2026-11-19T20:49:13.6309462Z   ✓  12 [default] › tests/playwright/e2e/viewer/actions/edit.spec.ts:16:2 › Viewer image editor action › opens the image editor and closes it on cancel (5.4s)
+2026-11-19T20:49:19.9824462Z   ✓  13 [default] › tests/playwright/e2e/viewer/actions/edit.spec.ts:32:2 › Viewer image editor action › saves and shows the edited image without a refetch (6.3s)
+2026-11-19T20:49:26.4260937Z   ✓  14 [default] › tests/playwright/e2e/viewer/actions/edit.spec.ts:45:2 › Viewer image editor action › reopens the editor from an editing=true URL (6.4s)
+2026-11-19T20:49:31.3636301Z   ✓  15 [default] › tests/playwright/e2e/viewer/actions/menu.spec.ts:12:2 › Viewer actions menu › does not render blank entries for custom-rendered file actions (4.9s)
+2026-11-19T20:49:36.4249535Z   ✓  16 [default] › tests/playwright/e2e/viewer/actions/rename.spec.ts:11:2 › Viewer rename action › renames the current file from the viewer (5.0s)
+2026-11-19T20:49:41.3924129Z   ✓  17 [default] › tests/playwright/e2e/viewer/actions/sidebar.spec.ts:15:2 › Viewer sidebar action › opens the Files sidebar for the current file (4.9s)
+2026-11-19T20:49:46.4897975Z   ✓  18 [default] › tests/playwright/e2e/viewer/actions/sidebar.spec.ts:28:2 › Viewer sidebar action › shows the sidebar full height next to the viewer (5.1s)
+2026-11-19T20:49:51.6589931Z   ✓  19 [default] › tests/playwright/e2e/viewer/actions/sidebar.spec.ts:52:2 › Viewer sidebar action › opens the sidebar right after opening a file (5.2s)
+2026-11-19T20:49:56.6597748Z   ✓  20 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens audio.mp3 in the viewer (5.0s)
+2026-11-19T20:50:01.8265066Z   ✓  21 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens audio.ogg in the viewer (5.1s)
+2026-11-19T20:50:07.9374822Z   ✓  22 [default] › tests/playwright/e2e/viewer/compare.spec.ts:12:2 › Viewer compare API › renders two files side by side (6.1s)
+2026-11-19T20:50:14.3318764Z   ✓  23 [default] › tests/playwright/e2e/viewer/custom-list.spec.ts:96:2 › Viewer custom list › pages through the list it was handed, not the folder (6.4s)
+2026-11-19T20:50:21.0121978Z   ✓  24 [default] › tests/playwright/e2e/viewer/custom-list.spec.ts:113:2 › Viewer custom list › asks for more files when it runs out (6.7s)
+2026-11-19T20:50:25.8060742Z   ✓  25 [default] › tests/playwright/e2e/viewer/error.spec.ts:11:2 › Viewer error handling › shows an error when the media fails to load (4.8s)
+2026-11-19T20:50:31.7541116Z   ✓  26 [default] › tests/playwright/e2e/viewer/history.spec.ts:14:2 › Viewer browser history › reflects the open file in the URL and re-opens on refresh (5.9s)
+2026-11-19T20:50:37.1609033Z   ✓  27 [default] › tests/playwright/e2e/viewer/history.spec.ts:27:2 › Viewer browser history › back and forward move between the shown files (5.4s)
+2026-11-19T20:50:42.4205011Z   ✓  28 [default] › tests/playwright/e2e/viewer/history.spec.ts:50:2 › Viewer browser history › closing resets history so back does not re-open a file (5.2s)
+2026-11-19T20:50:47.1329956Z   ✓  29 [default] › tests/playwright/e2e/viewer/history.spec.ts:67:2 › Viewer browser history › navigating out of the openfile range closes the viewer (4.7s)
+2026-11-19T20:50:52.0897545Z   ✓  30 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image1.jpg in the viewer (4.9s)
+2026-11-19T20:50:56.9813032Z   ✓  31 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image.png in the viewer (4.9s)
+2026-11-19T20:51:02.1286565Z   ✓  32 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image.gif in the viewer (5.1s)
+2026-11-19T20:51:07.2079138Z   ✓  33 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image.webp in the viewer (5.1s)
+2026-11-19T20:51:12.2305592Z   ✓  34 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image.svg in the viewer (5.0s)
+2026-11-19T20:51:17.4118484Z   ✓  35 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image.ico in the viewer (5.2s)
+2026-11-19T20:51:22.3539539Z   ✓  36 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image-apng.png in the viewer (4.9s)
+2026-11-19T20:51:27.1965913Z   ✓  37 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens image-small.png in the viewer (4.8s)
+2026-11-19T20:51:37.1359704Z   ✓  38 [default] › tests/playwright/e2e/viewer/large-folder.spec.ts:16:2 › Viewer in a large folder › opens quickly and navigates in a folder with many files (9.9s)
+2026-11-19T20:51:43.3687546Z   ✓  39 [default] › tests/playwright/e2e/viewer/navigation.spec.ts:19:2 › Viewer navigation › navigates forward through the list and loops back to the first image (6.2s)
+2026-11-19T20:51:48.7145135Z   ✓  40 [default] › tests/playwright/e2e/viewer/navigation.spec.ts:41:2 › Viewer navigation › navigates backward and loops from the first image to the last (5.3s)
+2026-11-19T20:51:53.5429272Z   ✓  41 [default] › tests/playwright/e2e/viewer/navigation.spec.ts:51:2 › Viewer navigation › closes the viewer when navigating back in the browser (4.8s)
+2026-11-19T20:51:59.4035239Z   ✓  42 [default] › tests/playwright/e2e/viewer/oddname.spec.ts:66:3 › Odd file name (image.png) › opens a file with an odd name in the viewer (5.8s)
+2026-11-19T20:52:04.9390548Z   ✓  43 [default] › tests/playwright/e2e/viewer/oddname.spec.ts:66:3 › Odd file name (video1.mp4) › opens a file with an odd name in the viewer (5.5s)
+2026-11-19T20:52:10.4125321Z   ✓  44 [default] › tests/playwright/e2e/viewer/oddname.spec.ts:66:3 › Odd file name (audio.mp3) › opens a file with an odd name in the viewer (5.4s)
+2026-11-19T20:52:15.3033670Z   ✓  45 [default] › tests/playwright/e2e/viewer/oddname.spec.ts:92:2 › Odd file name (image, sidebar and public share) › opens the sidebar for an odd file name (4.9s)
+2026-11-19T20:52:22.0633194Z   ✓  46 [default] › tests/playwright/e2e/viewer/oddname.spec.ts:104:2 › Odd file name (image, sidebar and public share) › opens an odd file name from a public link share (6.7s)
+2026-11-19T20:52:26.1489301Z   ✓  47 [default] › tests/playwright/e2e/viewer/sharing.spec.ts:11:2 › Viewer on public link shares › opens a single shared image in the viewer (4.0s)
+2026-11-19T20:52:30.5708336Z   ✓  48 [default] › tests/playwright/e2e/viewer/sharing.spec.ts:24:2 › Viewer on public link shares › opens a single shared video in the viewer (4.4s)
+2026-11-19T20:52:36.4260643Z   ✓  49 [default] › tests/playwright/e2e/viewer/sharing.spec.ts:38:2 › Viewer on public link shares › navigates through a shared folder of images (5.8s)
+2026-11-19T20:52:42.4205405Z   ✓  50 [default] › tests/playwright/e2e/viewer/sort.spec.ts:12:2 › Viewer follows the files list order › steps through underscore-suffixed names in list order (6.0s)
+2026-11-19T20:52:48.1173778Z   ✓  51 [default] › tests/playwright/e2e/viewer/sort.spec.ts:31:2 › Viewer follows the files list order › steps through a folder sorted by modification time, not by name (5.7s)
+2026-11-19T20:52:54.2225417Z   ✓  52 [default] › tests/playwright/e2e/viewer/sort.spec.ts:62:2 › Viewer follows the files list order › steps backwards through a descending sort (6.1s)
+2026-11-19T20:52:59.2732418Z   ✓  53 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens video1.mp4 in the viewer (5.0s)
+2026-11-19T20:53:04.6046010Z   ✓  54 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens video.webm in the viewer (5.3s)
+2026-11-19T20:53:09.9153446Z   ✓  55 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens video.mkv in the viewer (5.3s)
+2026-11-19T20:53:12.5647323Z   -  56 [default] › tests/playwright/e2e/viewer/media.ts:71:3 › opens video.ogv in the viewer
+2026-11-19T20:53:16.0475924Z   ✓  57 [default] › tests/playwright/e2e/workflowengine/personal-settings.spec.ts:11:2 › Flow personal settings › offers nothing while no flow is available to users (3.4s)
+2026-11-19T20:53:18.2453844Z [WebServer] Stopping Nextcloud server…
+2026-11-19T20:53:18.2456437Z [WebServer] Stopping Nextcloud container…
+2026-11-19T20:53:18.4880728Z [WebServer] └─ Nextcloud container removed 🥀
+2026-11-19T20:53:18.4988742Z 
+2026-11-19T20:53:18.4995386Z   1 skipped
+2026-11-19T20:53:18.4996031Z   56 passed (7.9m)
+2026-11-19T20:53:18.5437574Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-19T20:53:18.5438061Z with:
+2026-11-19T20:53:18.5438288Z   name: results-github-4-8
+2026-11-19T20:53:18.5438548Z   path: results.json
+2026-11-19T20:53:18.5438785Z   retention-days: 30
+2026-11-19T20:53:18.5439027Z   if-no-files-found: ignore
+2026-11-19T20:53:18.5439296Z   compression-level: 6
+2026-11-19T20:53:18.5439561Z   overwrite: false
+2026-11-19T20:53:18.5439805Z   include-hidden-files: false
+2026-11-19T20:53:18.5440068Z   archive: true
+2026-11-19T20:53:18.5440289Z ##[endgroup]
+2026-11-19T20:53:18.6991326Z With the provided path, there will be 1 file uploaded
+2026-11-19T20:53:18.7012637Z Artifact name is valid!
+2026-11-19T20:53:18.7032461Z Root directory input is valid!
+2026-11-19T20:53:18.8957643Z Uploading artifact: results-github-4-8.zip
+2026-11-19T20:53:18.9007831Z Beginning upload of artifact content to blob storage
+2026-11-19T20:53:18.9792676Z Uploaded bytes 7082
+2026-11-19T20:53:18.9946284Z Finished uploading artifact content to blob storage!
+2026-11-19T20:53:18.9947755Z SHA256 digest of uploaded artifact is b3dc5a968fd079155ee2a5459b8b2330305577b8eff100ac987ff6a53efd19f6
+2026-11-19T20:53:18.9948817Z Finalizing artifact upload
+2026-11-19T20:53:19.4132748Z Artifact results-github-4-8 successfully finalized. Artifact ID 14573357361
+2026-11-19T20:53:19.4134344Z Artifact results-github-4-8 has been successfully uploaded! Final size is 7082 bytes. Artifact ID is 14573357361
+2026-11-19T20:53:19.4137132Z Artifact download URL: https://github.com/boba-benchmarks/nextcloud/actions/runs/44611526531/artifacts/14573357361
+2026-11-19T20:53:19.4355228Z Post job cleanup.
+2026-11-19T20:53:19.5679633Z Cleaning up orphan processes

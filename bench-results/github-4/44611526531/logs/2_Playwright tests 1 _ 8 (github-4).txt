@@ -1,0 +1,270 @@
+﻿2026-11-19T20:45:05.9340822Z Current runner version: '2.338.2'
+2026-11-19T20:45:05.9359776Z ##[group]Runner Image Provisioner
+2026-11-19T20:45:05.9360485Z Hosted Compute Agent
+2026-11-19T20:45:05.9360953Z Version: 20261111.635
+2026-11-19T20:45:05.9361402Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-19T20:45:05.9361957Z Build Date: 2026-11-11T01:49:01Z
+2026-11-19T20:45:05.9362505Z Worker ID: {6b04e254-ff60-45eb-83bb-4c2078e43eba}
+2026-11-19T20:45:05.9363027Z Region: us-west-2
+2026-11-19T20:45:05.9363433Z Cloud: AWS
+2026-11-19T20:45:05.9363805Z ##[endgroup]
+2026-11-19T20:45:05.9364697Z ##[group]Operating System
+2026-11-19T20:45:05.9365154Z Ubuntu
+2026-11-19T20:45:05.9365541Z 24.04.5
+2026-11-19T20:45:05.9366075Z LTS
+2026-11-19T20:45:05.9366491Z ##[endgroup]
+2026-11-19T20:45:05.9366874Z ##[group]Runner Image
+2026-11-19T20:45:05.9367343Z Image: ubuntu-24.04
+2026-11-19T20:45:05.9367989Z Version: 20261116.133.1
+2026-11-19T20:45:05.9368930Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261116.133/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-19T20:45:05.9370014Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261116.133
+2026-11-19T20:45:05.9370732Z ##[endgroup]
+2026-11-19T20:45:05.9371503Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T20:45:05.9373214Z Contents: read
+2026-11-19T20:45:05.9373620Z Metadata: read
+2026-11-19T20:45:05.9374017Z ##[endgroup]
+2026-11-19T20:45:05.9375525Z Secret source: Actions
+2026-11-19T20:45:05.9376172Z Cache mode: write
+2026-11-19T20:45:05.9376661Z Prepare workflow directory
+2026-11-19T20:45:05.9608232Z Prepare all required actions
+2026-11-19T20:45:05.9644669Z Getting action download info
+2026-11-19T20:45:06.3922418Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-19T20:45:09.1028974Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-19T20:45:09.2211354Z Download action repository 'nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92' (SHA:39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92)
+2026-11-19T20:45:09.4927877Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-11-19T20:45:09.7905764Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-19T20:45:10.1041678Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-19T20:45:10.4356386Z Complete job name: Playwright tests 1 / 8 (github-4)
+2026-11-19T20:45:10.5098501Z ##[group]Run actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-19T20:45:10.5099808Z with:
+2026-11-19T20:45:10.5100558Z   key: playwright-context-44611526531
+2026-11-19T20:45:10.5101395Z   path: ./
+2026-11-19T20:45:10.5102061Z   enableCrossOsArchive: false
+2026-11-19T20:45:10.5103025Z   fail-on-cache-miss: false
+2026-11-19T20:45:10.5104037Z   lookup-only: false
+2026-11-19T20:45:10.5105178Z ##[endgroup]
+2026-11-19T20:45:15.1745283Z Cache hit for: playwright-context-44611526531
+2026-11-19T20:45:16.5569689Z Received 0 of 307038216 (0.0%), 0.0 MBs/sec
+2026-11-19T20:45:17.5576669Z Received 46137344 of 307038216 (15.0%), 22.0 MBs/sec
+2026-11-19T20:45:18.5578840Z Received 130023424 of 307038216 (42.3%), 41.3 MBs/sec
+2026-11-19T20:45:19.5580911Z Received 159383552 of 307038216 (51.9%), 38.0 MBs/sec
+2026-11-19T20:45:20.5594141Z Received 272629760 of 307038216 (88.8%), 52.0 MBs/sec
+2026-11-19T20:45:21.0091171Z Received 307038216 of 307038216 (100.0%), 53.7 MBs/sec
+2026-11-19T20:45:21.0092169Z Cache Size: ~293 MB (307038216 B)
+2026-11-19T20:45:21.0145782Z [command]/usr/bin/tar -xf /home/runner/work/_temp/66a02ec2-0a63-4412-93da-68f4ccb3d7da/cache.tzst -P -C /home/runner/work/nextcloud/nextcloud --use-compress-program unzstd
+2026-11-19T20:45:22.5951320Z Cache restored successfully
+2026-11-19T20:45:23.0090792Z Cache restored from key: playwright-context-44611526531
+2026-11-19T20:45:23.0295823Z ##[group]Run nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92
+2026-11-19T20:45:23.0296284Z with:
+2026-11-19T20:45:23.0296536Z   path: ./package.json
+2026-11-19T20:45:23.0296805Z ##[endgroup]
+2026-11-19T20:45:23.1068324Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-11-19T20:45:23.1069566Z with:
+2026-11-19T20:45:23.1070333Z   node-version: ^24.0.0
+2026-11-19T20:45:23.1071269Z   check-latest: false
+2026-11-19T20:45:23.1073898Z   token: ***
+2026-11-19T20:45:23.1074278Z   package-manager-cache: true
+2026-11-19T20:45:23.1074614Z ##[endgroup]
+2026-11-19T20:45:23.4341425Z Found in cache @ /opt/hostedtoolcache/node/24.22.3/x64
+2026-11-19T20:45:25.2191437Z ##[group]Environment details
+2026-11-19T20:45:28.4875308Z node: v24.22.3
+2026-11-19T20:45:28.4875806Z npm: 11.19.1
+2026-11-19T20:45:28.4876109Z yarn: 1.22.22
+2026-11-19T20:45:28.4877567Z ##[endgroup]
+2026-11-19T20:45:28.5018209Z ##[group]Run npm i -g 'npm@^11.3.0'
+2026-11-19T20:45:28.5018661Z [36;1mnpm i -g 'npm@^11.3.0'[0m
+2026-11-19T20:45:28.7723665Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:45:28.7724078Z ##[endgroup]
+2026-11-19T20:45:33.4555903Z 
+2026-11-19T20:45:33.4562415Z changed 23 packages in 5s
+2026-11-19T20:45:33.4562820Z 
+2026-11-19T20:45:33.4563678Z 15 packages are looking for funding
+2026-11-19T20:45:33.4564290Z   run `npm fund` for details
+2026-11-19T20:45:33.4802499Z ##[group]Run npm run playwright:install-ci --if-present
+2026-11-19T20:45:33.4802941Z [36;1mnpm run playwright:install-ci --if-present[0m
+2026-11-19T20:45:33.4830075Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:45:33.4830398Z ##[endgroup]
+2026-11-19T20:45:33.5658239Z ##[group]Run npm run playwright -- --shard='1/8' --reporter=list,json
+2026-11-19T20:45:33.5658743Z [36;1mnpm run playwright -- --shard='1/8' --reporter=list,json[0m
+2026-11-19T20:45:33.5681876Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:45:33.5682142Z env:
+2026-11-19T20:45:33.5682596Z   PLAYWRIGHT_JSON_OUTPUT_FILE: /home/runner/work/nextcloud/nextcloud/results.json
+2026-11-19T20:45:33.5682960Z ##[endgroup]
+2026-11-19T20:45:33.6401885Z 
+2026-11-19T20:45:33.6402522Z > nextcloud@1.0.0 playwright
+2026-11-19T20:45:33.6403510Z > playwright test --project=default --project=admin-settings --shard=1/8 --reporter=list,json
+2026-11-19T20:45:33.6403950Z 
+2026-11-19T20:45:34.6672101Z [WebServer] 
+2026-11-19T20:45:34.6673659Z [WebServer] Pulling images… ⏳
+2026-11-19T20:45:47.1580643Z [WebServer] └─ Done
+2026-11-19T20:45:47.1581221Z [WebServer] 
+2026-11-19T20:45:47.1581733Z [WebServer] Checking running containers… 🔍
+2026-11-19T20:45:47.1624078Z [WebServer] └─ None found!
+2026-11-19T20:45:47.1624885Z [WebServer] 
+2026-11-19T20:45:47.1626794Z [WebServer] Starting Nextcloud container… 🚀
+2026-11-19T20:45:47.1628016Z [WebServer] ├─ Using branch 'master'
+2026-11-19T20:45:52.6004639Z [WebServer] ├─ Nextcloud container's IP is localhost:8042 🌏
+2026-11-19T20:45:52.6005421Z [WebServer] ├─ Waiting for Nextcloud to be ready… ⏳
+2026-11-19T20:46:00.7264857Z [WebServer] └─ Done
+2026-11-19T20:46:00.7265490Z [WebServer] 
+2026-11-19T20:46:00.7266000Z [WebServer] Configuring Nextcloud…
+2026-11-19T20:46:01.0585572Z [WebServer] ├─ stdout: Nextcloud 36.0.0 dev
+2026-11-19T20:46:01.4017093Z [WebServer] ├─ stdout: System config value default_language set to string en
+2026-11-19T20:46:01.7359850Z [WebServer] ├─ stdout: System config value force_language set to string en
+2026-11-19T20:46:02.0718897Z [WebServer] ├─ stdout: System config value default_locale set to string en_US
+2026-11-19T20:46:02.4069253Z [WebServer] ├─ stdout: System config value force_locale set to string en_US
+2026-11-19T20:46:02.7432055Z [WebServer] ├─ stdout: System config value enforce_theme set to string light
+2026-11-19T20:46:02.7540372Z [WebServer] ├─ Checking APCu configuration... 👀
+2026-11-19T20:46:03.7699575Z [WebServer] │  └─ OK !
+2026-11-19T20:46:03.7700404Z [WebServer] ├─ Using "apps-writable" folder for mounted apps
+2026-11-19T20:46:04.1548028Z [WebServer] └─ Nextcloud is now ready to use 🎉
+2026-11-19T20:46:04.1548589Z [WebServer] 
+2026-11-19T20:46:04.1548930Z [WebServer] Apply custom configuration for Playwright tests
+2026-11-19T20:46:04.2231757Z [WebServer] ├─ Enabled SQLite WAL mode for better performance
+2026-11-19T20:46:04.5640626Z [WebServer] ├─ Disabled caching AppConfig
+2026-11-19T20:46:04.9056931Z [WebServer] ├─ Disabled app store
+2026-11-19T20:46:05.2392298Z [WebServer] ├─ Disabled password policy for random test users
+2026-11-19T20:46:05.2392981Z [WebServer] ├─ Initialize cron job...
+2026-11-19T20:48:35.6230631Z [WebServer] │  └─ OK !
+2026-11-19T20:48:35.6231452Z [WebServer] └─ Nextcloud container ready to run Playwright tests
+2026-11-19T20:48:37.0475156Z 
+2026-11-19T20:48:37.0476196Z Running 76 tests using 1 worker, shard 1 of 8
+2026-11-19T20:48:37.0476514Z 
+2026-11-19T20:49:27.2066499Z   ✘   1 [admin-settings] › tests/playwright/e2e/appstore/admin-settings-apps.spec.ts:31:2 › Settings: App management › Can enable an installed app (34.0s)
+2026-11-19T20:49:30.6553731Z   ✓   2 [admin-settings] › tests/playwright/e2e/appstore/admin-settings-apps.spec.ts:31:2 › Settings: App management › Can enable an installed app (retry #1) (2.7s)
+2026-11-19T20:49:32.6960641Z   ✓   3 [admin-settings] › tests/playwright/e2e/appstore/admin-settings-apps.spec.ts:57:2 › Settings: App management › Can disable an installed app (2.0s)
+2026-11-19T20:49:34.6750247Z   ✓   4 [admin-settings] › tests/playwright/e2e/appstore/admin-settings-apps.spec.ts:83:2 › Settings: App management › Browse enabled apps (2.0s)
+2026-11-19T20:49:36.6661988Z   ✓   5 [admin-settings] › tests/playwright/e2e/appstore/admin-settings-apps.spec.ts:106:2 › Settings: App management › Browse disabled apps (2.0s)
+2026-11-19T20:49:38.5335206Z   ✓   6 [admin-settings] › tests/playwright/e2e/appstore/admin-settings-apps.spec.ts:129:2 › Settings: App management › Browse app bundles (1.9s)
+2026-11-19T20:49:40.4850727Z   ✓   7 [admin-settings] › tests/playwright/e2e/appstore/admin-settings-apps.spec.ts:141:2 › Settings: App management › View app details (1.9s)
+2026-11-19T20:49:44.8770329Z   ✓   8 [admin-settings] › tests/playwright/e2e/appstore/admin-settings-apps.spec.ts:159:2 › Settings: App management › Limit app usage to group (3.7s)
+2026-11-19T20:49:48.7608904Z   ✓   9 [admin-settings] › tests/playwright/e2e/core/admin-settings-appstore-link.spec.ts:28:2 › core: app store link visibility › offers the "App store" tile only while an admin allows it (3.5s)
+2026-11-19T20:49:50.8594390Z   ✓  10 [admin-settings] › tests/playwright/e2e/files_external/admin-settings-external-storage.spec.ts:23:2 › files_external settings › can see the settings section (1.6s)
+2026-11-19T20:49:52.3470362Z   ✓  11 [admin-settings] › tests/playwright/e2e/files_external/admin-settings-external-storage.spec.ts:28:2 › files_external settings › can see the dialog (1.5s)
+2026-11-19T20:49:54.6370440Z   ✓  12 [admin-settings] › tests/playwright/e2e/files_external/admin-settings-external-storage.spec.ts:41:2 › files_external settings › can create storage using the dialog (2.3s)
+2026-11-19T20:50:02.5137138Z   ✓  13 [admin-settings] › tests/playwright/e2e/files_external/admin-settings-home-folder-root-mount.spec.ts:22:1 › Does not show write actions on read-only storage mounted at the root of the user's home folder (7.5s)
+2026-11-19T20:50:14.1298590Z   ✓  14 [admin-settings] › tests/playwright/e2e/files_external/admin-settings-user-credentials.spec.ts:57:2 › Files user credentials › Create a user storage with user credentials (8.3s)
+2026-11-19T20:50:18.7738014Z   ✓  15 [admin-settings] › tests/playwright/e2e/files_external/admin-settings-user-credentials.spec.ts:78:2 › Files user credentials › Create a user storage with GLOBAL user credentials (4.6s)
+2026-11-19T20:50:23.9882050Z   ✓  16 [admin-settings] › tests/playwright/e2e/files_external/admin-settings-user-credentials.spec.ts:96:2 › Files user credentials › Create another user storage while reusing GLOBAL user credentials (3.9s)
+2026-11-19T20:50:26.1821301Z   ✓  17 [admin-settings] › tests/playwright/e2e/settings/admin-settings-ai-security.spec.ts:39:2 › Settings: artificial intelligence › guest usage setting is saved (1.8s)
+2026-11-19T20:50:27.2505914Z   ✓  18 [admin-settings] › tests/playwright/e2e/settings/admin-settings-ai-security.spec.ts:51:2 › Settings: artificial intelligence › guest usage setting is reset when saving fails (1.1s)
+2026-11-19T20:50:29.3147934Z   ✓  19 [admin-settings] › tests/playwright/e2e/settings/admin-settings-ai-security.spec.ts:64:2 › Settings: artificial intelligence › legacy image generation provider is saved (1.7s)
+2026-11-19T20:50:32.6002627Z   ✓  20 [admin-settings] › tests/playwright/e2e/settings/admin-settings-ai-security.spec.ts:91:2 › Settings: security › two-factor enforcement for a group is saved (2.9s)
+2026-11-19T20:50:34.8178141Z   ✓  21 [admin-settings] › tests/playwright/e2e/settings/admin-settings-ai-security.spec.ts:105:2 › Settings: security › cancelling the encryption warning keeps encryption off (1.5s)
+2026-11-19T20:50:40.3539159Z   ✓  22 [admin-settings] › tests/playwright/e2e/settings/admin-settings-declarative-forms.spec.ts:71:2 › Settings: declarative forms › saves a text field and shows it after reload (2.7s)
+2026-11-19T20:50:41.7409799Z   ✓  23 [admin-settings] › tests/playwright/e2e/settings/admin-settings-declarative-forms.spec.ts:79:2 › Settings: declarative forms › saves a select (1.4s)
+2026-11-19T20:50:43.2690801Z   ✓  24 [admin-settings] › tests/playwright/e2e/settings/admin-settings-declarative-forms.spec.ts:84:2 › Settings: declarative forms › saves a multi-select (1.5s)
+2026-11-19T20:50:44.6623727Z   ✓  25 [admin-settings] › tests/playwright/e2e/settings/admin-settings-declarative-forms.spec.ts:89:2 › Settings: declarative forms › saves a switch (1.4s)
+2026-11-19T20:50:45.9865699Z   ✓  26 [admin-settings] › tests/playwright/e2e/settings/admin-settings-declarative-forms.spec.ts:95:2 › Settings: declarative forms › saves a group of checkboxes (1.3s)
+2026-11-19T20:50:47.2644229Z   ✓  27 [admin-settings] › tests/playwright/e2e/settings/admin-settings-declarative-forms.spec.ts:101:2 › Settings: declarative forms › saves a radio group (1.3s)
+2026-11-19T20:50:52.4254556Z   ✓  28 [admin-settings] › tests/playwright/e2e/settings/admin-settings-declarative-forms.spec.ts:107:2 › Settings: declarative forms › stores a sensitive field encrypted (2.3s)
+2026-11-19T20:50:53.4970602Z   ✓  29 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sections.spec.ts:30:2 › Settings: admin sections › overview shows the setup checks (1.1s)
+2026-11-19T20:50:54.5634407Z   ✓  30 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sections.spec.ts:35:2 › Settings: admin sections › server page shows the email server and profile sections (1.1s)
+2026-11-19T20:50:56.6038954Z   ✓  31 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sections.spec.ts:42:2 › Settings: admin sections › background jobs mode is saved (2.0s)
+2026-11-19T20:50:57.6449626Z   ✓  32 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sections.spec.ts:55:2 › Settings: admin sections › background jobs mode is reset when saving fails (1.0s)
+2026-11-19T20:50:59.0678262Z   ✓  33 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sections.spec.ts:70:2 › Settings: admin sections › profile setting is reset when saving fails (1.4s)
+2026-11-19T20:51:00.0040263Z   ✓  34 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sections.spec.ts:86:2 › Settings: admin sections › delegation page renders (923ms)
+2026-11-19T20:51:00.8752576Z   ✓  35 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sections.spec.ts:91:2 › Settings: admin sections › presets page renders (860ms)
+2026-11-19T20:51:02.5776149Z   ✓  36 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sections.spec.ts:96:2 › Settings: admin sections › sharing setting is saved (1.7s)
+2026-11-19T20:51:04.4394451Z   ✓  37 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:102:2 › Settings: Admin sharing settings › shows the section with its documentation (1.5s)
+2026-11-19T20:51:26.5529898Z   ✓  38 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:110:2 › Settings: Admin sharing settings › shows the current configuration (22.1s)
+2026-11-19T20:51:28.8253325Z   ✓  39 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Allow apps to use the Share API" (2.3s)
+2026-11-19T20:51:31.0409065Z   ✓  40 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Allow resharing" (2.2s)
+2026-11-19T20:51:33.1860356Z   ✓  41 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Allow sharing with groups" (2.1s)
+2026-11-19T20:51:35.4431155Z   ✓  42 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Restrict users to only share with users in their groups" (2.2s)
+2026-11-19T20:51:37.6612358Z   ✓  43 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Allow users to preview files even if download is disabled" (2.2s)
+2026-11-19T20:51:39.8841282Z   ✓  44 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Allow users to share via link and emails" (2.2s)
+2026-11-19T20:51:42.0514368Z   ✓  45 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Allow public uploads" (2.2s)
+2026-11-19T20:51:44.2181496Z   ✓  46 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Allow public shares to be added to other clouds by federation. This will add share permissions to all newly created link shares." (2.2s)
+2026-11-19T20:51:46.3691925Z   ✓  47 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Always ask for a password" (2.1s)
+2026-11-19T20:51:49.2624859Z   ✓  48 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Enforce password protection" (2.9s)
+2026-11-19T20:51:51.6881599Z   ✓  49 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Allow users to set custom share link tokens" (2.4s)
+2026-11-19T20:51:53.8360578Z   ✓  50 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Set default expiration date for internal shares" (2.1s)
+2026-11-19T20:51:56.6484174Z   ✓  51 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Enforce expiration date" (2.8s)
+2026-11-19T20:51:58.9274554Z   ✓  52 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Set default expiration date for shares to other servers" (2.3s)
+2026-11-19T20:52:01.8930613Z   ✓  53 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Enforce expiration date for remote shares" (3.0s)
+2026-11-19T20:52:04.0333046Z   ✓  54 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Set default expiration date for shares via link or mail" (2.1s)
+2026-11-19T20:52:06.9815968Z   ✓  55 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Enforce expiration date for link or mail shares" (2.9s)
+2026-11-19T20:52:09.1360990Z   ✓  56 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Allow account name autocompletion in share dialog and allow access to the system address book" (2.1s)
+2026-11-19T20:52:11.3020721Z   ✓  57 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Restrict account name autocompletion and system address book access to users within the same groups" (2.2s)
+2026-11-19T20:52:13.6112693Z   ✓  58 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Restrict account name autocompletion to users based on their phonebook" (2.3s)
+2026-11-19T20:52:15.7709850Z   ✓  59 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Allow autocompletion to full match when entering the full name (ignoring restrictions like group membership or missing phonebook match)" (2.2s)
+2026-11-19T20:52:18.0421384Z   ✓  60 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Also allow autocompletion on full match of the user ID" (2.3s)
+2026-11-19T20:52:20.2131698Z   ✓  61 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Also allow autocompletion on full match of the display name" (2.2s)
+2026-11-19T20:52:22.4250304Z   ✓  62 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Also allow autocompletion on full match of the user email" (2.2s)
+2026-11-19T20:52:24.5961130Z   ✓  63 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:142:3 › Settings: Admin sharing settings › stores "Do not use second user displayname for full match" (2.2s)
+2026-11-19T20:52:26.3995979Z   ✓  64 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:160:2 › Settings: Admin sharing settings › hides all sharing settings but the default permissions when the Share API is disabled (1.8s)
+2026-11-19T20:52:28.2180951Z   ✓  65 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:178:2 › Settings: Admin sharing settings › shows the link share settings only while link sharing is allowed (1.8s)
+2026-11-19T20:52:30.0748050Z   ✓  66 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:195:2 › Settings: Admin sharing settings › only offers to enforce link passwords when asking for them (1.8s)
+2026-11-19T20:52:31.9872603Z   ✓  67 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:204:2 › Settings: Admin sharing settings › warns that previews do not protect against screenshots (1.9s)
+2026-11-19T20:52:34.5302527Z   ✓  68 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:221:4 › Settings: Admin sharing settings › expiration dates › stores the days of "Set default expiration date for internal shares" (2.5s)
+2026-11-19T20:52:37.1035331Z   ✓  69 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:221:4 › Settings: Admin sharing settings › expiration dates › stores the days of "Set default expiration date for shares to other servers" (2.6s)
+2026-11-19T20:52:39.5586251Z   ✓  70 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:221:4 › Settings: Admin sharing settings › expiration dates › stores the days of "Set default expiration date for shares via link or mail" (2.4s)
+2026-11-19T20:52:42.0410699Z   ✓  71 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:251:3 › Settings: Admin sharing settings › group selection › excludes groups from creating link shares (2.1s)
+2026-11-19T20:52:44.6490836Z   ✓  72 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:262:3 › Settings: Admin sharing settings › group selection › ignores groups when restricting sharing to group members (2.6s)
+2026-11-19T20:52:48.7574124Z   ✓  73 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:276:3 › Settings: Admin sharing settings › group selection › excludes groups from the link password requirement if enabled by the system config (4.1s)
+2026-11-19T20:52:52.2616829Z   ✓  74 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:298:3 › Settings: Admin sharing settings › group selection › limits sharing to an allow list or block list of groups (2.8s)
+2026-11-19T20:52:55.4487160Z   ✓  75 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:334:2 › Settings: Admin sharing settings › stores the public share disclaimer (3.2s)
+2026-11-19T20:52:57.7028849Z   ✓  76 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:359:2 › Settings: Admin sharing settings › stores the default share permissions (2.2s)
+2026-11-19T20:52:59.8591186Z   ✓  77 [admin-settings] › tests/playwright/e2e/settings/admin-settings-sharing.spec.ts:387:3 › Settings: Admin sharing settings › without the sharing app › asks to enable the sharing app (2.1s)
+2026-11-19T20:52:59.9677856Z [WebServer] Stopping Nextcloud server…
+2026-11-19T20:52:59.9678378Z [WebServer] Stopping Nextcloud container…
+2026-11-19T20:53:00.0907167Z [WebServer] └─ Nextcloud container removed 🥀
+2026-11-19T20:53:00.0964480Z 
+2026-11-19T20:53:00.0968836Z 
+2026-11-19T20:53:00.0976970Z   1) [admin-settings] › tests/playwright/e2e/appstore/admin-settings-apps.spec.ts:31:2 › Settings: App management › Can enable an installed app 
+2026-11-19T20:53:00.0981578Z 
+2026-11-19T20:53:00.0982352Z     Error: the guarded request did not complete
+2026-11-19T20:53:00.0982675Z 
+2026-11-19T20:53:00.0983222Z     expect(received).toBe(expected) // Object.is equality
+2026-11-19T20:53:00.0983463Z 
+2026-11-19T20:53:00.0983771Z     Expected: true
+2026-11-19T20:53:00.0984055Z     Received: false
+2026-11-19T20:53:00.0984236Z 
+2026-11-19T20:53:00.0984395Z     Call Log:
+2026-11-19T20:53:00.0984814Z     - Timeout 30000ms exceeded while waiting on the predicate
+2026-11-19T20:53:00.0985092Z 
+2026-11-19T20:53:00.0985303Z        at ../support/utils/password-confirmation.ts:63
+2026-11-19T20:53:00.0985607Z 
+2026-11-19T20:53:00.0985850Z       61 | 		await expect(dialog).toBeHidden({ timeout: 1_000 })
+2026-11-19T20:53:00.0986373Z       62 | 		expect(settled, 'the guarded request did not complete').toBe(true)
+2026-11-19T20:53:00.0986952Z     > 63 | 	}).toPass({ timeout: GUARDED_REQUEST_TIMEOUT })
+2026-11-19T20:53:00.0987263Z          | 	   ^
+2026-11-19T20:53:00.0987840Z       64 |
+2026-11-19T20:53:00.0988141Z       65 | 	return tracked
+2026-11-19T20:53:00.0988502Z       66 | }
+2026-11-19T20:53:00.0989058Z         at awaitPasswordGuardedRequest (/home/runner/work/nextcloud/nextcloud/tests/playwright/support/utils/password-confirmation.ts:63:5)
+2026-11-19T20:53:00.0989792Z         at /home/runner/work/nextcloud/nextcloud/tests/playwright/e2e/appstore/admin-settings-apps.spec.ts:43:9
+2026-11-19T20:53:00.0990147Z 
+2026-11-19T20:53:00.0990677Z     Error Context: test-results/appstore-admin-settings-ap-bbcf8-Can-enable-an-installed-app-admin-settings/error-context.md
+2026-11-19T20:53:00.0991182Z 
+2026-11-19T20:53:00.0991624Z     Error Context: test-results/appstore-admin-settings-ap-bbcf8-Can-enable-an-installed-app-admin-settings/error-context.md
+2026-11-19T20:53:00.0992159Z 
+2026-11-19T20:53:00.0992328Z   1 flaky
+2026-11-19T20:53:00.0993212Z     [admin-settings] › tests/playwright/e2e/appstore/admin-settings-apps.spec.ts:31:2 › Settings: App management › Can enable an installed app 
+2026-11-19T20:53:00.0993983Z   75 passed (7.4m)
+2026-11-19T20:53:00.1232756Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-19T20:53:00.1233176Z with:
+2026-11-19T20:53:00.1233443Z   name: results-github-4-1
+2026-11-19T20:53:00.1233684Z   path: results.json
+2026-11-19T20:53:00.1233916Z   retention-days: 30
+2026-11-19T20:53:00.1234203Z   if-no-files-found: ignore
+2026-11-19T20:53:00.1234451Z   compression-level: 6
+2026-11-19T20:53:00.1235069Z   overwrite: false
+2026-11-19T20:53:00.1235374Z   include-hidden-files: false
+2026-11-19T20:53:00.1235643Z   archive: true
+2026-11-19T20:53:00.1235889Z ##[endgroup]
+2026-11-19T20:53:00.2308929Z With the provided path, there will be 1 file uploaded
+2026-11-19T20:53:00.2314103Z Artifact name is valid!
+2026-11-19T20:53:00.2315594Z Root directory input is valid!
+2026-11-19T20:53:00.7429355Z Uploading artifact: results-github-4-1.zip
+2026-11-19T20:53:00.7457123Z Beginning upload of artifact content to blob storage
+2026-11-19T20:53:01.0955595Z Uploaded bytes 8303
+2026-11-19T20:53:01.1864110Z Finished uploading artifact content to blob storage!
+2026-11-19T20:53:01.1865107Z SHA256 digest of uploaded artifact is 29e95a56b148c278be7a8da8e41387913cef13b94550018e277905db6926d451
+2026-11-19T20:53:01.1865763Z Finalizing artifact upload
+2026-11-19T20:53:01.7545924Z Artifact results-github-4-1 successfully finalized. Artifact ID 14571269479
+2026-11-19T20:53:01.7547137Z Artifact results-github-4-1 has been successfully uploaded! Final size is 8303 bytes. Artifact ID is 14571269479
+2026-11-19T20:53:01.7548407Z Artifact download URL: https://github.com/boba-benchmarks/nextcloud/actions/runs/44611526531/artifacts/14571269479
+2026-11-19T20:53:01.7693559Z Post job cleanup.
+2026-11-19T20:53:01.8677937Z Cleaning up orphan processes

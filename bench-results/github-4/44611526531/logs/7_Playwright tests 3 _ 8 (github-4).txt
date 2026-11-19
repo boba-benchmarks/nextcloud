@@ -1,0 +1,211 @@
+﻿2026-11-19T20:45:04.7694837Z Current runner version: '2.338.2'
+2026-11-19T20:45:04.7717337Z ##[group]Runner Image Provisioner
+2026-11-19T20:45:04.7718216Z Hosted Compute Agent
+2026-11-19T20:45:04.7718833Z Version: 20261103.629
+2026-11-19T20:45:04.7719451Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-19T20:45:04.7720240Z Build Date: 2026-11-03T17:26:59Z
+2026-11-19T20:45:04.7721034Z Worker ID: {30a9146d-4fcb-4b37-a879-d478986b1ddf}
+2026-11-19T20:45:04.7721769Z Region: us-east-1
+2026-11-19T20:45:04.7722296Z Cloud: AWS
+2026-11-19T20:45:04.7722788Z ##[endgroup]
+2026-11-19T20:45:04.7724557Z ##[group]Operating System
+2026-11-19T20:45:04.7725224Z Ubuntu
+2026-11-19T20:45:04.7726206Z 24.04.5
+2026-11-19T20:45:04.7726755Z LTS
+2026-11-19T20:45:04.7727265Z ##[endgroup]
+2026-11-19T20:45:04.7727838Z ##[group]Runner Image
+2026-11-19T20:45:04.7728497Z Image: ubuntu-24.04
+2026-11-19T20:45:04.7729083Z Version: 20261111.127.1
+2026-11-19T20:45:04.7730430Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261111.127/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-19T20:45:04.7732068Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261111.127
+2026-11-19T20:45:04.7733126Z ##[endgroup]
+2026-11-19T20:45:04.7734538Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T20:45:04.7736719Z Contents: read
+2026-11-19T20:45:04.7737341Z Metadata: read
+2026-11-19T20:45:04.7737952Z ##[endgroup]
+2026-11-19T20:45:04.7739820Z Secret source: Actions
+2026-11-19T20:45:04.7740776Z Cache mode: write
+2026-11-19T20:45:04.7741562Z Prepare workflow directory
+2026-11-19T20:45:04.8066416Z Prepare all required actions
+2026-11-19T20:45:04.8117906Z Getting action download info
+2026-11-19T20:45:05.0281491Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-19T20:45:07.1618323Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-19T20:45:07.2584245Z Download action repository 'nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92' (SHA:39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92)
+2026-11-19T20:45:07.3771247Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-11-19T20:45:07.5790272Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-19T20:45:07.6932160Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-19T20:45:08.0292554Z Complete job name: Playwright tests 3 / 8 (github-4)
+2026-11-19T20:45:08.1012301Z ##[group]Run actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-19T20:45:08.1013957Z with:
+2026-11-19T20:45:08.1014783Z   key: playwright-context-44611526531
+2026-11-19T20:45:08.1015719Z   path: ./
+2026-11-19T20:45:08.1016440Z   enableCrossOsArchive: false
+2026-11-19T20:45:08.1017337Z   fail-on-cache-miss: false
+2026-11-19T20:45:08.1018187Z   lookup-only: false
+2026-11-19T20:45:08.1019079Z ##[endgroup]
+2026-11-19T20:45:12.0848038Z Cache hit for: playwright-context-44611526531
+2026-11-19T20:45:13.1695951Z Received 260046848 of 307038216 (84.7%), 247.8 MBs/sec
+2026-11-19T20:45:13.4306017Z Received 307038216 of 307038216 (100.0%), 231.8 MBs/sec
+2026-11-19T20:45:13.4315370Z Cache Size: ~293 MB (307038216 B)
+2026-11-19T20:45:13.4393012Z [command]/usr/bin/tar -xf /home/runner/work/_temp/f575bab9-ed89-436b-8803-d380cafa0c57/cache.tzst -P -C /home/runner/work/nextcloud/nextcloud --use-compress-program unzstd
+2026-11-19T20:45:15.0025627Z Cache restored successfully
+2026-11-19T20:45:15.3578244Z Cache restored from key: playwright-context-44611526531
+2026-11-19T20:45:15.3790255Z ##[group]Run nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92
+2026-11-19T20:45:15.3790723Z with:
+2026-11-19T20:45:15.3790938Z   path: ./package.json
+2026-11-19T20:45:15.3791254Z ##[endgroup]
+2026-11-19T20:45:15.4558770Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-11-19T20:45:15.4559365Z with:
+2026-11-19T20:45:15.4559679Z   node-version: ^24.0.0
+2026-11-19T20:45:15.4560051Z   check-latest: false
+2026-11-19T20:45:15.4564275Z   token: ***
+2026-11-19T20:45:15.4565323Z   package-manager-cache: true
+2026-11-19T20:45:15.4565800Z ##[endgroup]
+2026-11-19T20:45:15.6930723Z Found in cache @ /opt/hostedtoolcache/node/24.22.2/x64
+2026-11-19T20:45:17.0745730Z ##[group]Environment details
+2026-11-19T20:45:19.6307988Z node: v24.22.2
+2026-11-19T20:45:19.6308417Z npm: 11.19.1
+2026-11-19T20:45:19.6308659Z yarn: 1.22.22
+2026-11-19T20:45:19.6309474Z ##[endgroup]
+2026-11-19T20:45:19.6437259Z ##[group]Run npm i -g 'npm@^11.3.0'
+2026-11-19T20:45:19.6437663Z [36;1mnpm i -g 'npm@^11.3.0'[0m
+2026-11-19T20:45:19.9662747Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:45:19.9663270Z ##[endgroup]
+2026-11-19T20:45:24.1582245Z 
+2026-11-19T20:45:24.1587244Z changed 23 packages in 4s
+2026-11-19T20:45:24.1588106Z 
+2026-11-19T20:45:24.1588351Z 15 packages are looking for funding
+2026-11-19T20:45:24.1588755Z   run `npm fund` for details
+2026-11-19T20:45:24.1842168Z ##[group]Run npm run playwright:install-ci --if-present
+2026-11-19T20:45:24.1842573Z [36;1mnpm run playwright:install-ci --if-present[0m
+2026-11-19T20:45:24.1870888Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:45:24.1871177Z ##[endgroup]
+2026-11-19T20:45:24.2680326Z ##[group]Run npm run playwright -- --shard='3/8' --reporter=list,json
+2026-11-19T20:45:24.2680773Z [36;1mnpm run playwright -- --shard='3/8' --reporter=list,json[0m
+2026-11-19T20:45:24.2706138Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:45:24.2706438Z env:
+2026-11-19T20:45:24.2706828Z   PLAYWRIGHT_JSON_OUTPUT_FILE: /home/runner/work/nextcloud/nextcloud/results.json
+2026-11-19T20:45:24.2707179Z ##[endgroup]
+2026-11-19T20:45:24.3448451Z 
+2026-11-19T20:45:24.3449221Z > nextcloud@1.0.0 playwright
+2026-11-19T20:45:24.3450101Z > playwright test --project=default --project=admin-settings --shard=3/8 --reporter=list,json
+2026-11-19T20:45:24.3450766Z 
+2026-11-19T20:45:25.2865367Z [WebServer] 
+2026-11-19T20:45:25.2866651Z [WebServer] Pulling images… ⏳
+2026-11-19T20:45:37.1904721Z [WebServer] └─ Done
+2026-11-19T20:45:37.1905199Z [WebServer] 
+2026-11-19T20:45:37.1905719Z [WebServer] Checking running containers… 🔍
+2026-11-19T20:45:37.1954179Z [WebServer] └─ None found!
+2026-11-19T20:45:37.1954933Z [WebServer] 
+2026-11-19T20:45:37.1955901Z [WebServer] Starting Nextcloud container… 🚀
+2026-11-19T20:45:37.1956549Z [WebServer] ├─ Using branch 'master'
+2026-11-19T20:45:42.8624297Z [WebServer] ├─ Nextcloud container's IP is localhost:8042 🌏
+2026-11-19T20:45:42.8625144Z [WebServer] ├─ Waiting for Nextcloud to be ready… ⏳
+2026-11-19T20:45:50.9891856Z [WebServer] └─ Done
+2026-11-19T20:45:50.9892347Z [WebServer] 
+2026-11-19T20:45:50.9892704Z [WebServer] Configuring Nextcloud…
+2026-11-19T20:45:51.3197252Z [WebServer] ├─ stdout: Nextcloud 36.0.0 dev
+2026-11-19T20:45:51.6582651Z [WebServer] ├─ stdout: System config value default_language set to string en
+2026-11-19T20:45:51.9973181Z [WebServer] ├─ stdout: System config value force_language set to string en
+2026-11-19T20:45:52.3385185Z [WebServer] ├─ stdout: System config value default_locale set to string en_US
+2026-11-19T20:45:52.6776867Z [WebServer] ├─ stdout: System config value force_locale set to string en_US
+2026-11-19T20:45:53.0187429Z [WebServer] ├─ stdout: System config value enforce_theme set to string light
+2026-11-19T20:45:53.0305460Z [WebServer] ├─ Checking APCu configuration... 👀
+2026-11-19T20:45:54.0712839Z [WebServer] │  └─ OK !
+2026-11-19T20:45:54.0713689Z [WebServer] ├─ Using "apps-writable" folder for mounted apps
+2026-11-19T20:45:54.4605781Z [WebServer] └─ Nextcloud is now ready to use 🎉
+2026-11-19T20:45:54.4615014Z [WebServer] 
+2026-11-19T20:45:54.4617972Z [WebServer] Apply custom configuration for Playwright tests
+2026-11-19T20:45:54.5305626Z [WebServer] ├─ Enabled SQLite WAL mode for better performance
+2026-11-19T20:45:54.8688694Z [WebServer] ├─ Disabled caching AppConfig
+2026-11-19T20:45:55.2131343Z [WebServer] ├─ Disabled app store
+2026-11-19T20:45:55.5526159Z [WebServer] ├─ Disabled password policy for random test users
+2026-11-19T20:45:55.5527070Z [WebServer] ├─ Initialize cron job...
+2026-11-19T20:48:14.9303355Z [WebServer] │  └─ OK !
+2026-11-19T20:48:14.9304232Z [WebServer] └─ Nextcloud container ready to run Playwright tests
+2026-11-19T20:48:16.3728741Z 
+2026-11-19T20:48:16.3731750Z Running 53 tests using 1 worker, shard 3 of 8
+2026-11-19T20:48:16.3732262Z 
+2026-11-19T20:48:35.3827331Z   ✓   1 [default] › tests/playwright/e2e/core/header-unified-search.spec.ts:27:2 › Header: unified search keyboard navigation › Ctrl+K focuses the header search input (5.8s)
+2026-11-19T20:48:38.3668416Z   ✓   2 [default] › tests/playwright/e2e/core/header-unified-search.spec.ts:36:2 › Header: unified search keyboard navigation › Escape drops focus from the empty resting input (3.0s)
+2026-11-19T20:48:42.2504628Z   ✓   3 [default] › tests/playwright/e2e/core/header-unified-search.spec.ts:48:2 › Header: unified search keyboard navigation › typing auto-selects the first result (3.9s)
+2026-11-19T20:48:46.1259379Z   ✓   4 [default] › tests/playwright/e2e/core/header-unified-search.spec.ts:63:2 › Header: unified search keyboard navigation › arrow keys move the selection while focus stays in the input (3.9s)
+2026-11-19T20:48:50.7676155Z   ✓   5 [default] › tests/playwright/e2e/core/header-unified-search.spec.ts:82:2 › Header: unified search keyboard navigation › Enter opens the selected result (4.6s)
+2026-11-19T20:48:53.6825711Z   ✓   6 [default] › tests/playwright/e2e/core/header-unified-search.spec.ts:105:2 › Header: unified search keyboard navigation › Escape closes the open results popover (2.9s)
+2026-11-19T20:48:56.9476242Z   ✓   7 [default] › tests/playwright/e2e/core/header-unified-search.spec.ts:115:2 › Header: unified search keyboard navigation › closing a funnel-opened popover returns focus to the input (3.3s)
+2026-11-19T20:49:00.0834918Z   ✓   8 [default] › tests/playwright/e2e/core/header-unified-search.spec.ts:132:2 › Header: unified search keyboard navigation › the trailing X clears a query, then dismisses the empty field (3.1s)
+2026-11-19T20:49:04.8308813Z   ✓   9 [default] › tests/playwright/e2e/core/header-unified-search.spec.ts:148:2 › Header: unified search keyboard navigation › "More from" opens the uncapped detail view, pages it, and Back returns to the aggregate list (4.7s)
+2026-11-19T20:49:08.5078815Z   ✓  10 [default] › tests/playwright/e2e/core/header-unified-search.spec.ts:179:2 › Header: unified search keyboard navigation › the open search overlay suppresses the app keyboard shortcuts behind it (3.7s)
+2026-11-19T20:49:11.3596630Z   ✓  11 [default] › tests/playwright/e2e/core/login-flow.spec.ts:12:2 › core: Login flow › v1 grants a client access and hands it the app password (2.8s)
+2026-11-19T20:49:14.7146119Z   ✓  12 [default] › tests/playwright/e2e/core/login-flow.spec.ts:33:2 › core: Login flow › v2 grants a client access and hands it the app password (3.3s)
+2026-11-19T20:49:16.9966454Z   ✓  13 [default] › tests/playwright/e2e/core/public-share-auth.spec.ts:13:2 › core: Password-protected share › asks for the password (2.3s)
+2026-11-19T20:49:19.5697795Z   ✓  14 [default] › tests/playwright/e2e/core/public-share-auth.spec.ts:19:2 › core: Password-protected share › shows an error and keeps the form for a wrong password (2.6s)
+2026-11-19T20:49:22.5066723Z   ✓  15 [default] › tests/playwright/e2e/core/public-share-auth.spec.ts:27:2 › core: Password-protected share › opens the share with the correct password (2.9s)
+2026-11-19T20:49:25.3624429Z   ✓  16 [default] › tests/playwright/e2e/core/unsupported-browser.spec.ts:11:2 › core: Unsupported browser › lets the user continue and remembers the choice (2.8s)
+2026-11-19T20:49:28.0742162Z   ✓  17 [default] › tests/playwright/e2e/core/unsupported-browser.spec.ts:23:2 › core: Unsupported browser › continues to the page the user was redirected from (2.7s)
+2026-11-19T20:49:32.7546033Z   ✓  18 [default] › tests/playwright/e2e/dashboard/widget-performance.spec.ts:17:1 › dashboard: only loads the data of enabled widgets (4.7s)
+2026-11-19T20:49:35.7761492Z   ✓  19 [default] › tests/playwright/e2e/dav/availability.spec.ts:12:2 › Calendar: Availability › User can see the availability section in settings (3.0s)
+2026-11-19T20:49:38.8529806Z   ✓  20 [default] › tests/playwright/e2e/dav/availability.spec.ts:22:2 › Calendar: Availability › Users can set their availability status (3.1s)
+2026-11-19T20:49:43.8583784Z   ✓  21 [default] › tests/playwright/e2e/dav/availability.spec.ts:48:2 › Calendar: Availability › Users can set their absence (5.0s)
+2026-11-19T20:49:46.7863333Z   ✓  22 [default] › tests/playwright/e2e/files/drag-n-drop.spec.ts:16:2 › files: Drag and Drop › can drop a file (2.9s)
+2026-11-19T20:49:49.6685589Z   ✓  23 [default] › tests/playwright/e2e/files/drag-n-drop.spec.ts:30:2 › files: Drag and Drop › can drop multiple files (2.9s)
+2026-11-19T20:49:52.4214835Z   ✓  24 [default] › tests/playwright/e2e/files/drag-n-drop.spec.ts:45:2 › files: Drag and Drop › ignores dropped folders (legacy File API) (2.7s)
+2026-11-19T20:49:55.2239842Z   ✓  25 [default] › tests/playwright/e2e/files/drag-n-drop.spec.ts:77:2 › files: Drag and Drop onto a folder row › can drop a single file onto a subfolder row (2.8s)
+2026-11-19T20:49:58.1825511Z   ✓  26 [default] › tests/playwright/e2e/files/drag-n-drop.spec.ts:88:2 › files: Drag and Drop onto a folder row › can drop multiple files onto a subfolder row (2.9s)
+2026-11-19T20:50:01.4595058Z   ✓  27 [default] › tests/playwright/e2e/files/drag-n-drop.spec.ts:106:2 › files: Drag and Drop onto a folder row › opens the conflict picker when dropping a colliding name onto a subfolder row (3.3s)
+2026-11-19T20:50:04.7702876Z   ✓  28 [default] › tests/playwright/e2e/files/duplicated-node-regression.spec.ts:19:2 › Files: Duplicated node regression › does not duplicate a node after delete and recreate (3.3s)
+2026-11-19T20:50:07.6064432Z   ✓  29 [default] › tests/playwright/e2e/files/files-actions.spec.ts:21:2 › Files: Actions › shows the standard row actions (2.8s)
+2026-11-19T20:50:10.4552727Z   ✓  30 [default] › tests/playwright/e2e/files/files-actions.spec.ts:30:2 › Files: Actions › shows the standard actions for a selection (2.8s)
+2026-11-19T20:50:14.8879655Z   ✓  31 [default] › tests/playwright/e2e/files/files-context-menu.spec.ts:102:2 › Files: right click actions menu › menu stays at one position when opened (4.4s)
+2026-11-19T20:50:19.8304341Z   ✓  32 [default] › tests/playwright/e2e/files/files-context-menu.spec.ts:111:2 › Files: right click actions menu › no menu moves when switching rows (4.9s)
+2026-11-19T20:50:24.8065449Z   ✓  33 [default] › tests/playwright/e2e/files/files-context-menu.spec.ts:122:2 › Files: right click actions menu › menu opened by its trigger after a right click opens under the trigger (5.0s)
+2026-11-19T20:50:29.3646136Z   ✓  34 [default] › tests/playwright/e2e/files/files-context-menu.spec.ts:141:2 › Files: right click actions menu › menu near the bottom opens next to the cursor (4.5s)
+2026-11-19T20:50:32.6880036Z   ✓  35 [default] › tests/playwright/e2e/files/files-copy-move.spec.ts:12:2 › Files: Move or copy files › can copy a file to a new folder (3.3s)
+2026-11-19T20:50:36.2243827Z   ✓  36 [default] › tests/playwright/e2e/files/files-copy-move.spec.ts:26:2 › Files: Move or copy files › can move a file to a new folder (3.5s)
+2026-11-19T20:50:39.8462671Z   ✓  37 [default] › tests/playwright/e2e/files/files-copy-move.spec.ts:45:2 › Files: Move or copy files › can move a file to a folder with a similar name (3.6s)
+2026-11-19T20:50:43.7845182Z   ✓  38 [default] › tests/playwright/e2e/files/files-copy-move.spec.ts:62:2 › Files: Move or copy files › can move a file to its parent folder (3.9s)
+2026-11-19T20:50:47.1276303Z   ✓  39 [default] › tests/playwright/e2e/files/files-copy-move.spec.ts:84:2 › Files: Move or copy files › can copy a file to the same folder (3.3s)
+2026-11-19T20:50:50.4037591Z   ✓  40 [default] › tests/playwright/e2e/files/files-copy-move.spec.ts:95:2 › Files: Move or copy files › can copy a file multiple times to the same folder (3.3s)
+2026-11-19T20:50:53.5643464Z   ✓  41 [default] › tests/playwright/e2e/files/files-copy-move.spec.ts:111:2 › Files: Move or copy files › can copy a folder to the same folder (3.1s)
+2026-11-19T20:50:57.0935860Z   ✓  42 [default] › tests/playwright/e2e/files/files-copy-move.spec.ts:124:3 › Files: Move or copy files › escaping file and folder names › can handle files with special characters (3.5s)
+2026-11-19T20:51:00.6271334Z   ✓  43 [default] › tests/playwright/e2e/files/files-copy-move.spec.ts:142:3 › Files: Move or copy files › escaping file and folder names › does not incorrectly sanitize file names (3.5s)
+2026-11-19T20:51:03.7468919Z   ✓  44 [default] › tests/playwright/e2e/files/files-delete.spec.ts:10:2 › Files: Delete › can delete a file (3.1s)
+2026-11-19T20:51:07.1246978Z   ✓  45 [default] › tests/playwright/e2e/files/files-delete.spec.ts:27:2 › Files: Delete › can delete multiple files (3.4s)
+2026-11-19T20:51:10.1799350Z   ✓  46 [default] › tests/playwright/e2e/files/files-download.spec.ts:39:2 › Files: Download files using file actions › can download file (3.0s)
+2026-11-19T20:51:13.2632756Z   ✓  47 [default] › tests/playwright/e2e/files/files-download.spec.ts:51:2 › Files: Download files using file actions › can download folder (3.1s)
+2026-11-19T20:51:16.6304919Z   ✓  48 [default] › tests/playwright/e2e/files/files-download.spec.ts:70:2 › Files: Download files using file actions › can download file with hash name (3.3s)
+2026-11-19T20:51:19.8798733Z   ✓  49 [default] › tests/playwright/e2e/files/files-download.spec.ts:85:2 › Files: Download files using file actions › can download file from folder with hash name (3.2s)
+2026-11-19T20:51:23.2253985Z   ✓  50 [default] › tests/playwright/e2e/files/files-download.spec.ts:102:2 › Files: Download files using default action › can download file (3.3s)
+2026-11-19T20:51:26.1106093Z   ✓  51 [default] › tests/playwright/e2e/files/files-download.spec.ts:117:2 › Files: Download files using default action › can download file with hash name (2.9s)
+2026-11-19T20:51:29.0719592Z   ✓  52 [default] › tests/playwright/e2e/files/files-download.spec.ts:132:2 › Files: Download files using default action › can download file from folder with hash name (2.9s)
+2026-11-19T20:51:31.8995771Z   ✓  53 [default] › tests/playwright/e2e/files/files-download.spec.ts:149:2 › Files: Download files using selection › can download selected files (2.8s)
+2026-11-19T20:51:33.1852171Z [WebServer] Stopping Nextcloud server…
+2026-11-19T20:51:33.1853008Z [WebServer] Stopping Nextcloud container…
+2026-11-19T20:51:33.3344496Z [WebServer] └─ Nextcloud container removed 🥀
+2026-11-19T20:51:33.3394449Z 
+2026-11-19T20:51:33.3398805Z   53 passed (6.1m)
+2026-11-19T20:51:33.3634646Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-11-19T20:51:33.3635136Z with:
+2026-11-19T20:51:33.3635394Z   name: results-github-4-3
+2026-11-19T20:51:33.3635642Z   path: results.json
+2026-11-19T20:51:33.3635891Z   retention-days: 30
+2026-11-19T20:51:33.3636189Z   if-no-files-found: ignore
+2026-11-19T20:51:33.3636431Z   compression-level: 6
+2026-11-19T20:51:33.3636690Z   overwrite: false
+2026-11-19T20:51:33.3636921Z   include-hidden-files: false
+2026-11-19T20:51:33.3637185Z   archive: true
+2026-11-19T20:51:33.3637443Z ##[endgroup]
+2026-11-19T20:51:33.4668351Z With the provided path, there will be 1 file uploaded
+2026-11-19T20:51:33.4672091Z Artifact name is valid!
+2026-11-19T20:51:33.4672573Z Root directory input is valid!
+2026-11-19T20:51:33.6964848Z Uploading artifact: results-github-4-3.zip
+2026-11-19T20:51:33.6990820Z Beginning upload of artifact content to blob storage
+2026-11-19T20:51:33.7596100Z Uploaded bytes 7501
+2026-11-19T20:51:33.7734504Z Finished uploading artifact content to blob storage!
+2026-11-19T20:51:33.7735683Z SHA256 digest of uploaded artifact is 66b1323230bc183493291aa54714ee4c24699da1247f8527c21a45e9ab1770ce
+2026-11-19T20:51:33.7736473Z Finalizing artifact upload
+2026-11-19T20:51:34.1862027Z Artifact results-github-4-3 successfully finalized. Artifact ID 14573117669
+2026-11-19T20:51:34.1863010Z Artifact results-github-4-3 has been successfully uploaded! Final size is 7501 bytes. Artifact ID is 14573117669
+2026-11-19T20:51:34.1864959Z Artifact download URL: https://github.com/boba-benchmarks/nextcloud/actions/runs/44611526531/artifacts/14573117669
+2026-11-19T20:51:34.2005289Z Post job cleanup.
+2026-11-19T20:51:34.2987192Z Cleaning up orphan processes
