@@ -1,0 +1,102 @@
+[
+ {
+  "name": "Boba / Playwright tests 8 / 8 (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/nextcloud/runs/136423271075",
+  "conclusion": "success",
+  "started_at": "2026-11-20T16:32:09Z",
+  "completed_at": "2026-11-20T16:37:40Z",
+  "title": "56 passed",
+  "summary": "### \u2705 All 56 tests passed in 5 min 32 s\n\nOn 3af9e8e \u00b7 7 min 2 s into the job \u00b7 1 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_54dcc68d8caa92e3/af7a91634a3b1918a2d51b9a68bba516/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / Playwright tests for installer (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/nextcloud/runs/136422929588",
+  "conclusion": "success",
+  "started_at": "2026-11-20T16:32:33Z",
+  "completed_at": "2026-11-20T16:37:05Z",
+  "title": "7 passed",
+  "summary": "### \u2705 All 7 tests passed in 4 min 32 s\n\nOn 3af9e8e \u00b7 6 min 27 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_fe5b3bc1e9f9bbff/1db6cfd864e7e9a5fdd5eee586a96bb3/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / Playwright tests 4 / 8 (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/nextcloud/runs/136422746081",
+  "conclusion": "success",
+  "started_at": "2026-11-20T16:32:00Z",
+  "completed_at": "2026-11-20T16:36:46Z",
+  "title": "57 passed",
+  "summary": "### \u2705 All 57 tests passed in 4 min 46 s\n\nOn 3af9e8e \u00b7 6 min 8 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_7bbc0bf4ff017692/9a57ba742927f7cb7265d3f0f8589d84/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / Playwright tests 2 / 8 (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/nextcloud/runs/136422602129",
+  "conclusion": "success",
+  "started_at": "2026-11-20T16:32:09Z",
+  "completed_at": "2026-11-20T16:36:31Z",
+  "title": "43 passed",
+  "summary": "### \u2705 All 43 tests passed in 4 min 23 s\n\nOn 3af9e8e \u00b7 5 min 53 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_68b8892ccc1e1866/588018008751fd976080810a69e6eb6a/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / Playwright tests 7 / 8 (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/nextcloud/runs/136422579765",
+  "conclusion": "success",
+  "started_at": "2026-11-20T16:32:07Z",
+  "completed_at": "2026-11-20T16:36:27Z",
+  "title": "56 passed, 1 flaky",
+  "summary": "### \u2705 All 56 tests passed in 4 min 20 s\n\nOn 3af9e8e \u00b7 5 min 50 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_6ca2b6244737a94f/b27bc499598d805590a30c815bdce4df/html/index.html)\n\n<details>\n<summary>1 flaky test, not blocking</summary>\n\n`can show the Language column` failed once here, then passed on retry\n\n</details>",
+  "text": null
+ },
+ {
+  "name": "Boba / Playwright tests 5 / 8 (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/nextcloud/runs/136421938658",
+  "conclusion": "success",
+  "started_at": "2026-11-20T16:32:10Z",
+  "completed_at": "2026-11-20T16:35:21Z",
+  "title": "57 passed",
+  "summary": "### \u2705 All 57 tests passed in 3 min 12 s\n\nOn 3af9e8e \u00b7 4 min 43 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_748230a4e140a667/8f3380446f8f5b6795ddafa535792e49/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / Playwright tests 6 / 8 (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/nextcloud/runs/136421792690",
+  "conclusion": "success",
+  "started_at": "2026-11-20T16:31:03Z",
+  "completed_at": "2026-11-20T16:35:07Z",
+  "title": "58 passed",
+  "summary": "### \u2705 All 58 tests passed in 4 min 3 s\n\nOn 3af9e8e \u00b7 4 min 29 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_5f3353ca062203e5/af83c96cd5ce28ca18947847dc56d61f/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / Playwright tests 3 / 8 (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/nextcloud/runs/136421742593",
+  "conclusion": "success",
+  "started_at": "2026-11-20T16:32:10Z",
+  "completed_at": "2026-11-20T16:35:01Z",
+  "title": "53 passed",
+  "summary": "### \u2705 All 53 tests passed in 2 min 51 s\n\nOn 3af9e8e \u00b7 4 min 23 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_48b688d313429790/7c6c265a4cb5216fefc5870814221d44/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / Playwright tests 1 / 8 (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/nextcloud/runs/136420887436",
+  "conclusion": "success",
+  "started_at": "2026-11-20T16:31:06Z",
+  "completed_at": "2026-11-20T16:33:34Z",
+  "title": "76 passed",
+  "summary": "### \u2705 All 76 tests passed in 2 min 28 s\n\nOn 3af9e8e \u00b7 2 min 53 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_5a1c6b275f541c05/9e4ee9f97ce1d789e910513e849fa18b/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/nextcloud/runs/136419138252",
+  "conclusion": "success",
+  "started_at": "2026-11-20T16:30:37Z",
+  "completed_at": "2026-11-20T16:37:52Z",
+  "title": "All 10 Boba jobs passed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| Playwright setup (boba-standard) | Passed | The job ended (success) |\n| [Playwright tests 1 / 8 (boba-standard)](https://github.com/boba-benchmarks/nextcloud/runs/136420887436) | Passed | 76 passed |\n| [Playwright tests 2 / 8 (boba-standard)](https://github.com/boba-benchmarks/nextcloud/runs/136422602129) | Passed | 43 passed |\n| [Playwright tests 3 / 8 (boba-standard)](https://github.com/boba-benchmarks/nextcloud/runs/136421742593) | Passed | 53 passed |\n| [Playwright tests 4 / 8 (boba-standard)](https://github.com/boba-benchmarks/nextcloud/runs/136422746081) | Passed | 57 passed |\n| [Playwright tests 5 / 8 (boba-standard)](https://github.com/boba-benchmarks/nextcloud/runs/136421938658) | Passed | 57 passed |\n| [Playwright tests 6 / 8 (boba-standard)](https://github.com/boba-benchmarks/nextcloud/runs/136421792690) | Passed | 58 passed |\n| [Playwright tests 7 / 8 (boba-standard)](https://github.com/boba-benchmarks/nextcloud/runs/136422579765) | Passed | 56 passed, 1 flaky |\n| [Playwright tests 8 / 8 (boba-standard)](https://github.com/boba-benchmarks/nextcloud/runs/136423271075) | Passed | 56 passed |\n| [Playwright tests for installer (boba-standard)](https://github.com/boba-benchmarks/nextcloud/runs/136422929588) | Passed | 7 passed |",
+  "text": null
+ }
+]
