@@ -1,0 +1,1356 @@
+[
+ {
+  "id": 137300370649,
+  "name": "Playwright setup (boba-turbo)",
+  "html_url": "https://github.com/boba-benchmarks/nextcloud/actions/runs/45052448460/job/137300370649",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-22T17:59:04Z",
+  "started_at": "2026-11-22T17:59:18Z",
+  "completed_at": "2026-11-22T18:00:30Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-137300370649-1",
+  "runner_group_name": "coldtea boba - nextcloud",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-22T17:59:19Z",
+    "completed_at": "2026-11-22T17:59:20Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-22T17:59:20Z",
+    "completed_at": "2026-11-22T17:59:20Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-22T17:59:20Z",
+    "completed_at": "2026-11-22T17:59:23Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-22T17:59:23Z",
+    "completed_at": "2026-11-22T17:59:23Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-22T17:59:23Z",
+    "completed_at": "2026-11-22T17:59:24Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-22T17:59:24Z",
+    "completed_at": "2026-11-22T17:59:25Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-22T17:59:25Z",
+    "completed_at": "2026-11-22T18:00:24Z"
+   },
+   {
+    "name": "Save context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-22T18:00:24Z",
+    "completed_at": "2026-11-22T18:00:27Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 15,
+    "started_at": "2026-11-22T18:00:27Z",
+    "completed_at": "2026-11-22T18:00:27Z"
+   },
+   {
+    "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 16,
+    "started_at": "2026-11-22T18:00:27Z",
+    "completed_at": "2026-11-22T18:00:27Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 17,
+    "started_at": "2026-11-22T18:00:27Z",
+    "completed_at": "2026-11-22T18:00:27Z"
+   }
+  ]
+ },
+ {
+  "id": 137300777502,
+  "name": "Playwright tests for installer (boba-turbo)",
+  "html_url": "https://github.com/boba-benchmarks/nextcloud/actions/runs/45052448460/job/137300777502",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-22T18:00:30Z",
+  "started_at": "2026-11-22T18:00:39Z",
+  "completed_at": "2026-11-22T18:05:02Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-137300777602-1",
+  "runner_group_name": "coldtea boba - nextcloud",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-22T18:00:39Z",
+    "completed_at": "2026-11-22T18:00:41Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-22T18:00:41Z",
+    "completed_at": "2026-11-22T18:00:41Z"
+   },
+   {
+    "name": "Initialize containers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-22T18:00:41Z",
+    "completed_at": "2026-11-22T18:01:06Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-22T18:01:06Z",
+    "completed_at": "2026-11-22T18:01:13Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 5,
+    "started_at": "2026-11-22T18:01:13Z",
+    "completed_at": "2026-11-22T18:01:13Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-22T18:01:13Z",
+    "completed_at": "2026-11-22T18:01:13Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-22T18:01:13Z",
+    "completed_at": "2026-11-22T18:01:13Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-22T18:01:13Z",
+    "completed_at": "2026-11-22T18:01:15Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 9,
+    "started_at": "2026-11-22T18:01:15Z",
+    "completed_at": "2026-11-22T18:01:15Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-22T18:01:15Z",
+    "completed_at": "2026-11-22T18:01:15Z"
+   },
+   {
+    "name": "Run Playwright setup tests on Boba",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-22T18:01:15Z",
+    "completed_at": "2026-11-22T18:04:57Z"
+   },
+   {
+    "name": "Run Playwright setup tests",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 12,
+    "started_at": "2026-11-22T18:04:57Z",
+    "completed_at": "2026-11-22T18:04:57Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-22T18:04:57Z",
+    "completed_at": "2026-11-22T18:04:57Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 14,
+    "started_at": "2026-11-22T18:04:57Z",
+    "completed_at": "2026-11-22T18:04:57Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-22T18:04:57Z",
+    "completed_at": "2026-11-22T18:04:57Z"
+   },
+   {
+    "name": "Stop containers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 28,
+    "started_at": "2026-11-22T18:04:57Z",
+    "completed_at": "2026-11-22T18:04:59Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 29,
+    "started_at": "2026-11-22T18:04:59Z",
+    "completed_at": "2026-11-22T18:04:59Z"
+   }
+  ]
+ },
+ {
+  "id": 137300777574,
+  "name": "Playwright tests 2 / 8 (boba-turbo)",
+  "html_url": "https://github.com/boba-benchmarks/nextcloud/actions/runs/45052448460/job/137300777574",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-22T18:00:30Z",
+  "started_at": "2026-11-22T18:00:43Z",
+  "completed_at": "2026-11-22T18:03:34Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-137300777653-1",
+  "runner_group_name": "coldtea boba - nextcloud",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-22T18:00:44Z",
+    "completed_at": "2026-11-22T18:00:45Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-22T18:00:45Z",
+    "completed_at": "2026-11-22T18:00:45Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-22T18:00:45Z",
+    "completed_at": "2026-11-22T18:00:52Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-22T18:00:52Z",
+    "completed_at": "2026-11-22T18:00:52Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-22T18:00:52Z",
+    "completed_at": "2026-11-22T18:00:52Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-22T18:00:52Z",
+    "completed_at": "2026-11-22T18:00:52Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-22T18:00:52Z",
+    "completed_at": "2026-11-22T18:00:53Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-22T18:00:53Z",
+    "completed_at": "2026-11-22T18:00:53Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-22T18:00:53Z",
+    "completed_at": "2026-11-22T18:00:53Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-22T18:00:53Z",
+    "completed_at": "2026-11-22T18:03:31Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-22T18:03:31Z",
+    "completed_at": "2026-11-22T18:03:31Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 12,
+    "started_at": "2026-11-22T18:03:31Z",
+    "completed_at": "2026-11-22T18:03:31Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-22T18:03:31Z",
+    "completed_at": "2026-11-22T18:03:31Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-22T18:03:31Z",
+    "completed_at": "2026-11-22T18:03:31Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-22T18:03:31Z",
+    "completed_at": "2026-11-22T18:03:31Z"
+   }
+  ]
+ },
+ {
+  "id": 137300777578,
+  "name": "Playwright tests 5 / 8 (boba-turbo)",
+  "html_url": "https://github.com/boba-benchmarks/nextcloud/actions/runs/45052448460/job/137300777578",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-22T18:00:30Z",
+  "started_at": "2026-11-22T18:00:39Z",
+  "completed_at": "2026-11-22T18:06:29Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-137300777578-1",
+  "runner_group_name": "coldtea boba - nextcloud",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-22T18:00:40Z",
+    "completed_at": "2026-11-22T18:00:42Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-22T18:00:42Z",
+    "completed_at": "2026-11-22T18:00:42Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-22T18:00:42Z",
+    "completed_at": "2026-11-22T18:00:52Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-22T18:00:52Z",
+    "completed_at": "2026-11-22T18:00:52Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-22T18:00:52Z",
+    "completed_at": "2026-11-22T18:00:52Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-22T18:00:52Z",
+    "completed_at": "2026-11-22T18:00:52Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-22T18:00:52Z",
+    "completed_at": "2026-11-22T18:00:53Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-22T18:00:53Z",
+    "completed_at": "2026-11-22T18:00:53Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-22T18:00:53Z",
+    "completed_at": "2026-11-22T18:00:53Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-22T18:00:53Z",
+    "completed_at": "2026-11-22T18:06:26Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-22T18:06:26Z",
+    "completed_at": "2026-11-22T18:06:26Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 12,
+    "started_at": "2026-11-22T18:06:26Z",
+    "completed_at": "2026-11-22T18:06:26Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-22T18:06:26Z",
+    "completed_at": "2026-11-22T18:06:26Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-22T18:06:26Z",
+    "completed_at": "2026-11-22T18:06:26Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-22T18:06:26Z",
+    "completed_at": "2026-11-22T18:06:26Z"
+   }
+  ]
+ },
+ {
+  "id": 137300777590,
+  "name": "Playwright tests 8 / 8 (boba-turbo)",
+  "html_url": "https://github.com/boba-benchmarks/nextcloud/actions/runs/45052448460/job/137300777590",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-22T18:00:30Z",
+  "started_at": "2026-11-22T18:00:38Z",
+  "completed_at": "2026-11-22T18:06:41Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-137300777651-1",
+  "runner_group_name": "coldtea boba - nextcloud",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-22T18:00:38Z",
+    "completed_at": "2026-11-22T18:00:40Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-22T18:00:40Z",
+    "completed_at": "2026-11-22T18:00:40Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-22T18:00:40Z",
+    "completed_at": "2026-11-22T18:00:50Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-22T18:00:50Z",
+    "completed_at": "2026-11-22T18:00:50Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-22T18:00:50Z",
+    "completed_at": "2026-11-22T18:00:50Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-22T18:00:50Z",
+    "completed_at": "2026-11-22T18:00:51Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-22T18:00:51Z",
+    "completed_at": "2026-11-22T18:00:52Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-22T18:00:52Z",
+    "completed_at": "2026-11-22T18:00:52Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-22T18:00:52Z",
+    "completed_at": "2026-11-22T18:00:52Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-22T18:00:52Z",
+    "completed_at": "2026-11-22T18:06:38Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-22T18:06:38Z",
+    "completed_at": "2026-11-22T18:06:38Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 12,
+    "started_at": "2026-11-22T18:06:38Z",
+    "completed_at": "2026-11-22T18:06:38Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-22T18:06:38Z",
+    "completed_at": "2026-11-22T18:06:38Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-22T18:06:38Z",
+    "completed_at": "2026-11-22T18:06:38Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-22T18:06:38Z",
+    "completed_at": "2026-11-22T18:06:38Z"
+   }
+  ]
+ },
+ {
+  "id": 137300777602,
+  "name": "Playwright tests 1 / 8 (boba-turbo)",
+  "html_url": "https://github.com/boba-benchmarks/nextcloud/actions/runs/45052448460/job/137300777602",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-22T18:00:30Z",
+  "started_at": "2026-11-22T18:00:38Z",
+  "completed_at": "2026-11-22T18:05:27Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-137300777502-1",
+  "runner_group_name": "coldtea boba - nextcloud",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-22T18:00:39Z",
+    "completed_at": "2026-11-22T18:00:41Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-22T18:00:41Z",
+    "completed_at": "2026-11-22T18:00:41Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-22T18:00:41Z",
+    "completed_at": "2026-11-22T18:00:48Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-22T18:00:48Z",
+    "completed_at": "2026-11-22T18:00:48Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-22T18:00:48Z",
+    "completed_at": "2026-11-22T18:00:48Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-22T18:00:48Z",
+    "completed_at": "2026-11-22T18:00:48Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-22T18:00:48Z",
+    "completed_at": "2026-11-22T18:00:49Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-22T18:00:49Z",
+    "completed_at": "2026-11-22T18:00:49Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-22T18:00:49Z",
+    "completed_at": "2026-11-22T18:00:49Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-22T18:00:49Z",
+    "completed_at": "2026-11-22T18:05:24Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-22T18:05:24Z",
+    "completed_at": "2026-11-22T18:05:24Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 12,
+    "started_at": "2026-11-22T18:05:24Z",
+    "completed_at": "2026-11-22T18:05:24Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-22T18:05:24Z",
+    "completed_at": "2026-11-22T18:05:24Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-22T18:05:24Z",
+    "completed_at": "2026-11-22T18:05:24Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-22T18:05:24Z",
+    "completed_at": "2026-11-22T18:05:24Z"
+   }
+  ]
+ },
+ {
+  "id": 137300777645,
+  "name": "Playwright tests 3 / 8 (boba-turbo)",
+  "html_url": "https://github.com/boba-benchmarks/nextcloud/actions/runs/45052448460/job/137300777645",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-22T18:00:30Z",
+  "started_at": "2026-11-22T18:00:40Z",
+  "completed_at": "2026-11-22T18:03:20Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-137300777574-1",
+  "runner_group_name": "coldtea boba - nextcloud",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-22T18:00:41Z",
+    "completed_at": "2026-11-22T18:00:42Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-22T18:00:42Z",
+    "completed_at": "2026-11-22T18:00:42Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-22T18:00:42Z",
+    "completed_at": "2026-11-22T18:00:56Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-22T18:00:56Z",
+    "completed_at": "2026-11-22T18:00:56Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-22T18:00:56Z",
+    "completed_at": "2026-11-22T18:00:56Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-22T18:00:56Z",
+    "completed_at": "2026-11-22T18:00:56Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-22T18:00:56Z",
+    "completed_at": "2026-11-22T18:00:57Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-22T18:00:57Z",
+    "completed_at": "2026-11-22T18:00:57Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-22T18:00:57Z",
+    "completed_at": "2026-11-22T18:00:57Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-22T18:00:57Z",
+    "completed_at": "2026-11-22T18:03:17Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-22T18:03:17Z",
+    "completed_at": "2026-11-22T18:03:17Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 12,
+    "started_at": "2026-11-22T18:03:17Z",
+    "completed_at": "2026-11-22T18:03:17Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-22T18:03:17Z",
+    "completed_at": "2026-11-22T18:03:17Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-22T18:03:17Z",
+    "completed_at": "2026-11-22T18:03:17Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-22T18:03:17Z",
+    "completed_at": "2026-11-22T18:03:17Z"
+   }
+  ]
+ },
+ {
+  "id": 137300777651,
+  "name": "Playwright tests 7 / 8 (boba-turbo)",
+  "html_url": "https://github.com/boba-benchmarks/nextcloud/actions/runs/45052448460/job/137300777651",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-22T18:00:30Z",
+  "started_at": "2026-11-22T18:00:42Z",
+  "completed_at": "2026-11-22T18:09:11Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-137300777590-1",
+  "runner_group_name": "coldtea boba - nextcloud",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-22T18:00:43Z",
+    "completed_at": "2026-11-22T18:00:44Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-22T18:00:44Z",
+    "completed_at": "2026-11-22T18:00:45Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-22T18:00:45Z",
+    "completed_at": "2026-11-22T18:00:51Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-22T18:00:51Z",
+    "completed_at": "2026-11-22T18:00:51Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-22T18:00:51Z",
+    "completed_at": "2026-11-22T18:00:51Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-22T18:00:51Z",
+    "completed_at": "2026-11-22T18:00:52Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-22T18:00:52Z",
+    "completed_at": "2026-11-22T18:00:53Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-22T18:00:53Z",
+    "completed_at": "2026-11-22T18:00:53Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-22T18:00:53Z",
+    "completed_at": "2026-11-22T18:00:53Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-22T18:00:53Z",
+    "completed_at": "2026-11-22T18:09:08Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-22T18:09:08Z",
+    "completed_at": "2026-11-22T18:09:08Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 12,
+    "started_at": "2026-11-22T18:09:08Z",
+    "completed_at": "2026-11-22T18:09:08Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-22T18:09:08Z",
+    "completed_at": "2026-11-22T18:09:08Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-22T18:09:08Z",
+    "completed_at": "2026-11-22T18:09:08Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-22T18:09:08Z",
+    "completed_at": "2026-11-22T18:09:08Z"
+   }
+  ]
+ },
+ {
+  "id": 137300777653,
+  "name": "Playwright tests 6 / 8 (boba-turbo)",
+  "html_url": "https://github.com/boba-benchmarks/nextcloud/actions/runs/45052448460/job/137300777653",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-22T18:00:30Z",
+  "started_at": "2026-11-22T18:00:41Z",
+  "completed_at": "2026-11-22T18:11:32Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-137300777645-1",
+  "runner_group_name": "coldtea boba - nextcloud",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-22T18:00:42Z",
+    "completed_at": "2026-11-22T18:00:44Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-22T18:00:44Z",
+    "completed_at": "2026-11-22T18:00:44Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-22T18:00:44Z",
+    "completed_at": "2026-11-22T18:00:50Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-22T18:00:50Z",
+    "completed_at": "2026-11-22T18:00:50Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-22T18:00:50Z",
+    "completed_at": "2026-11-22T18:00:50Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-22T18:00:50Z",
+    "completed_at": "2026-11-22T18:00:51Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-22T18:00:51Z",
+    "completed_at": "2026-11-22T18:00:52Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-22T18:00:52Z",
+    "completed_at": "2026-11-22T18:00:52Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-22T18:00:52Z",
+    "completed_at": "2026-11-22T18:00:52Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-22T18:00:52Z",
+    "completed_at": "2026-11-22T18:11:29Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-22T18:11:29Z",
+    "completed_at": "2026-11-22T18:11:29Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 12,
+    "started_at": "2026-11-22T18:11:29Z",
+    "completed_at": "2026-11-22T18:11:29Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-22T18:11:29Z",
+    "completed_at": "2026-11-22T18:11:29Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-22T18:11:29Z",
+    "completed_at": "2026-11-22T18:11:29Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-22T18:11:29Z",
+    "completed_at": "2026-11-22T18:11:29Z"
+   }
+  ]
+ },
+ {
+  "id": 137300777689,
+  "name": "Playwright tests 4 / 8 (boba-turbo)",
+  "html_url": "https://github.com/boba-benchmarks/nextcloud/actions/runs/45052448460/job/137300777689",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-22T18:00:30Z",
+  "started_at": "2026-11-22T18:00:43Z",
+  "completed_at": "2026-11-22T18:06:25Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-137300777689-1",
+  "runner_group_name": "coldtea boba - nextcloud",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-22T18:00:44Z",
+    "completed_at": "2026-11-22T18:00:45Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-22T18:00:45Z",
+    "completed_at": "2026-11-22T18:00:45Z"
+   },
+   {
+    "name": "Restore context",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-22T18:00:45Z",
+    "completed_at": "2026-11-22T18:00:57Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 4,
+    "started_at": "2026-11-22T18:00:57Z",
+    "completed_at": "2026-11-22T18:00:57Z"
+   },
+   {
+    "name": "Read package.json",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-22T18:00:57Z",
+    "completed_at": "2026-11-22T18:00:57Z"
+   },
+   {
+    "name": "Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-22T18:00:57Z",
+    "completed_at": "2026-11-22T18:00:58Z"
+   },
+   {
+    "name": "Set up npm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-22T18:00:58Z",
+    "completed_at": "2026-11-22T18:00:59Z"
+   },
+   {
+    "name": "Install dependencies and build",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-22T18:00:59Z",
+    "completed_at": "2026-11-22T18:00:59Z"
+   },
+   {
+    "name": "Install Playwright browsers",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-22T18:00:59Z",
+    "completed_at": "2026-11-22T18:00:59Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-22T18:00:59Z",
+    "completed_at": "2026-11-22T18:06:21Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-22T18:06:21Z",
+    "completed_at": "2026-11-22T18:06:21Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 12,
+    "started_at": "2026-11-22T18:06:21Z",
+    "completed_at": "2026-11-22T18:06:21Z"
+   },
+   {
+    "name": "Show logs",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-22T18:06:21Z",
+    "completed_at": "2026-11-22T18:06:21Z"
+   },
+   {
+    "name": "Post Set up node",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 26,
+    "started_at": "2026-11-22T18:06:21Z",
+    "completed_at": "2026-11-22T18:06:21Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 27,
+    "started_at": "2026-11-22T18:06:21Z",
+    "completed_at": "2026-11-22T18:06:21Z"
+   }
+  ]
+ }
+]
