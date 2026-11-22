@@ -1,0 +1,83 @@
+﻿2026-11-22T13:54:14.0947961Z Current runner version: '2.338.2'
+2026-11-22T13:54:14.0953707Z Runner name: 'boba-137230961060-1'
+2026-11-22T13:54:14.0954470Z Runner group name: 'coldtea boba - nextcloud'
+2026-11-22T13:54:14.0955346Z Machine name: 'ubuntu'
+2026-11-22T13:54:14.0957978Z ##[group]GITHUB_TOKEN Permissions
+2026-11-22T13:54:14.0959958Z Contents: read
+2026-11-22T13:54:14.0960564Z Metadata: read
+2026-11-22T13:54:14.0961198Z ##[endgroup]
+2026-11-22T13:54:14.0963157Z Secret source: Actions
+2026-11-22T13:54:14.0964216Z Cache mode: write
+2026-11-22T13:54:14.0965153Z Prepare workflow directory
+2026-11-22T13:54:14.1502827Z Prepare all required actions
+2026-11-22T13:54:14.1536163Z Getting action download info
+2026-11-22T13:54:14.6035123Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-22T13:54:14.7546511Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-22T13:54:14.7837678Z Download action repository 'nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92' (SHA:39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92)
+2026-11-22T13:54:15.0921198Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-11-22T13:54:15.1721834Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-22T13:54:15.4579507Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-22T13:54:15.6097062Z Complete job name: Playwright tests 2 / 8 (boba-standard)
+2026-11-22T13:54:15.6521050Z A job started hook has been configured by the self-hosted runner administrator
+2026-11-22T13:54:15.6750709Z ##[group]Run '/run/boba/job-started.sh'
+2026-11-22T13:54:15.6763152Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-22T13:54:15.6763755Z ##[endgroup]
+2026-11-22T13:54:15.8390956Z Boba checked this job in 151 ms; dependency cache: box disk; databases: fresh
+2026-11-22T13:54:15.8561706Z ##[group]Run actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-22T13:54:15.8562232Z with:
+2026-11-22T13:54:15.8562507Z   key: playwright-context-45029779438
+2026-11-22T13:54:15.8562847Z   path: ./
+2026-11-22T13:54:15.8563111Z   enableCrossOsArchive: false
+2026-11-22T13:54:15.8563424Z   fail-on-cache-miss: false
+2026-11-22T13:54:15.8563732Z   lookup-only: false
+2026-11-22T13:54:15.8564042Z ##[endgroup]
+2026-11-22T13:54:26.0870865Z Cache hit for: playwright-context-45029779438
+2026-11-22T13:54:26.7758274Z Cache Size: ~292 MB (305801151 B)
+2026-11-22T13:54:26.7783227Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/8d87c677-3116-41a9-a53a-776ccdc39aef/cache.tzst -P -C /home/runner/work/nextcloud/nextcloud --use-compress-program unzstd
+2026-11-22T13:54:32.2270881Z Cache restored successfully
+2026-11-22T13:54:32.3016451Z Cache restored from key: playwright-context-45029779438
+2026-11-22T13:54:32.3284617Z ##[group]Run nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92
+2026-11-22T13:54:32.3284947Z with:
+2026-11-22T13:54:32.3285079Z   path: ./package.json
+2026-11-22T13:54:32.3285296Z ##[endgroup]
+2026-11-22T13:54:32.4033161Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-11-22T13:54:32.4033398Z with:
+2026-11-22T13:54:32.4033528Z   node-version: ^24.0.0
+2026-11-22T13:54:32.4033671Z   check-latest: false
+2026-11-22T13:54:32.4035167Z   token: ***
+2026-11-22T13:54:32.4035314Z   package-manager-cache: true
+2026-11-22T13:54:32.4035514Z ##[endgroup]
+2026-11-22T13:54:32.4914371Z Found in cache @ /opt/hostedtoolcache/node/24.22.3/x64
+2026-11-22T13:54:32.5525765Z ##[group]Environment details
+2026-11-22T13:54:32.7669068Z node: v24.22.3
+2026-11-22T13:54:32.7669346Z npm: 11.21.3
+2026-11-22T13:54:32.7669503Z yarn: 1.22.22
+2026-11-22T13:54:32.7670149Z ##[endgroup]
+2026-11-22T13:54:32.7830156Z ##[group]Run npm i -g 'npm@^11.3.0'
+2026-11-22T13:54:32.7830391Z [36;1mnpm i -g 'npm@^11.3.0'[0m
+2026-11-22T13:54:32.7850407Z shell: /usr/bin/bash -e {0}
+2026-11-22T13:54:32.7850595Z ##[endgroup]
+2026-11-22T13:54:33.9927323Z 
+2026-11-22T13:54:33.9930890Z changed 10 packages in 1s
+2026-11-22T13:54:34.0357991Z ##[group]Run npm run playwright:install-ci --if-present
+2026-11-22T13:54:34.0358298Z [36;1mnpm run playwright:install-ci --if-present[0m
+2026-11-22T13:54:34.0370682Z shell: /usr/bin/bash -e {0}
+2026-11-22T13:54:34.0370898Z ##[endgroup]
+2026-11-22T13:54:34.1247626Z ##[group]Run coldteadotai/boba@v1
+2026-11-22T13:54:34.1247820Z with:
+2026-11-22T13:54:34.1248058Z   playwright-args: --project=default --project=admin-settings --shard=2/8
+2026-11-22T13:54:34.1248294Z   turbo: false
+2026-11-22T13:54:34.1248429Z   fail-fast: false
+2026-11-22T13:54:34.1249975Z   github-token: ***
+2026-11-22T13:54:34.1250115Z   timeout-minutes: 60
+2026-11-22T13:54:34.1250252Z   check-name: Boba
+2026-11-22T13:54:34.1250380Z   post: true
+2026-11-22T13:54:34.1250520Z ##[endgroup]
+2026-11-22T13:54:35.6301869Z Waiting for Boba job bj_6ea4e8f111dbe2b5
+2026-11-22T13:54:35.8435809Z Boba history read in 213 ms
+2026-11-22T13:54:37.0838316Z Boba job bj_6ea4e8f111dbe2b5: running, listing
+2026-11-22T13:58:30.1073828Z Boba job bj_6ea4e8f111dbe2b5: done
+2026-11-22T13:58:30.1382599Z Merged report unpacked into /home/runner/work/_temp/boba-report
+2026-11-22T13:58:31.0216334Z Check run: https://github.com/boba-benchmarks/nextcloud/runs/137232116971
+2026-11-22T13:58:31.0406403Z Post job cleanup.
+2026-11-22T13:58:31.1313320Z Cleaning up orphan processes
