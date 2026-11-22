@@ -1,0 +1,263 @@
+# One-job variant of bench.yml with the Nextcloud server started BEFORE the Boba step, so each fork
+# starts with the server already running (playwright.boba.config.ts turns the config's webServer off).
+# Boba runners only. Not part of the cross-runner comparison.
+# Benchmark copy of nextcloud/server's playwright.yml: the setup (build) job, the 8 Playwright
+# shards and the installer job, as upstream runs them. Left out on every runner: the
+# change-detection gate (it reads the pull request's labels and files) and the report merge and
+# summary jobs. Same steps and commit on every runner; only the test steps differ. Upstream's
+# config runs one worker on CI against one Nextcloud container per job (started by the
+# config's webServer). The rival test steps add --reporter=list,json to upstream's npm scripts.
+name: bench-prestart
+on:
+  workflow_dispatch:
+    inputs:
+      runner:
+        type: choice
+        options: [boba-turbo, boba-standard, github-16, blacksmith-16, github-4, blacksmith-4]
+permissions:
+  contents: read
+  checks: write
+  pull-requests: write
+  actions: read
+  id-token: write
+
+jobs:
+  playwright-setup:
+    timeout-minutes: 15
+    name: Playwright setup (${{ inputs.runner }})
+    runs-on: ${{ startsWith(inputs.runner, 'boba') && 'coldtea-boba' || inputs.runner == 'github-16' && 'bench-16' || inputs.runner == 'github-4' && 'ubuntu-24.04' || inputs.runner == 'blacksmith-4' && 'blacksmith-4vcpu-ubuntu-2404' || 'blacksmith-16vcpu-ubuntu-2404' }}
+    permissions:
+      contents: read
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      with:
+        persist-credentials: false
+        submodules: true # for 3rdparty
+    - name: Read package.json
+      uses: nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92 # v0.2.0
+      id: versions
+    - name: Set up node
+      uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+      with:
+        node-version: ${{ steps.versions.outputs.node-version }}
+    - name: Set up npm
+      run: npm i -g 'npm@${{ steps.versions.outputs.package-manager-version }}'
+    - name: Install dependencies and build
+      run: |
+        npm ci
+        npm run build --if-present
+    - name: Save context
+      uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        key: playwright-context-${{ github.run_id }}
+        path: ./
+
+  playwright-tests:
+    needs: [playwright-setup]
+    timeout-minutes: 60
+    name: Playwright tests, one job (${{ inputs.runner }})
+    runs-on: ${{ startsWith(inputs.runner, 'boba') && 'coldtea-boba' || inputs.runner == 'github-16' && 'bench-16' || inputs.runner == 'github-4' && 'ubuntu-24.04' || inputs.runner == 'blacksmith-4' && 'blacksmith-4vcpu-ubuntu-2404' || 'blacksmith-16vcpu-ubuntu-2404' }}
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+    - name: Restore context
+      id: cache
+      uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        key: playwright-context-${{ github.run_id }}
+        path: ./
+
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      if: steps.cache.outputs.cache-hit != 'true'
+      with:
+        persist-credentials: false
+        submodules: true # for 3rdparty
+
+    - name: Read package.json
+      uses: nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92 # v0.2.0
+      id: versions
+
+    - name: Set up node
+      uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+      with:
+        node-version: ${{ steps.versions.outputs.node-version }}
+
+    - name: Set up npm
+      run: npm i -g 'npm@${{ steps.versions.outputs.package-manager-version }}'
+
+    - name: Install dependencies and build
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: |
+        npm ci
+        npm run build --if-present
+
+    - name: Install Playwright browsers
+      run: npm run playwright:install-ci --if-present
+
+    - name: Start Nextcloud before the tests
+      if: startsWith(inputs.runner, 'boba')
+      run: |
+        nohup node tests/playwright/start-nextcloud-server.js > nextcloud-start.log 2>&1 &
+        for i in $(seq 1 150); do grep -q "Nextcloud container ready to run Playwright tests" nextcloud-start.log && break; sleep 2; done
+        grep -q "Nextcloud container ready to run Playwright tests" nextcloud-start.log || { cat nextcloud-start.log; exit 1; }
+
+    # Upstream's `npm run playwright` is `playwright test --project=default --project=admin-settings`.
+    - name: Run Playwright tests on Boba
+      if: startsWith(inputs.runner, 'boba')
+      uses: coldteadotai/boba@v1
+      with:
+        playwright-args: --config=playwright.boba.config.ts --project=default --project=admin-settings
+        turbo: ${{ inputs.runner == 'boba-turbo' }}
+        fail-fast: false
+
+    - name: Run Playwright tests
+      if: ${{ !startsWith(inputs.runner, 'boba') }}
+      env:
+        PLAYWRIGHT_JSON_OUTPUT_FILE: ${{ github.workspace }}/results.json
+      run: npm run playwright -- --reporter=list,json
+
+    - name: Upload JSON results
+      if: ${{ always() && !startsWith(inputs.runner, 'boba') }}
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+      with:
+        name: results-${{ inputs.runner }}
+        path: results.json
+        retention-days: 30
+        if-no-files-found: ignore
+
+    - name: Show logs
+      if: failure()
+      run: |
+        for id in $(docker ps -aq); do
+          docker container inspect "$id" --format '=== Logs for container {{.Name}} ==='
+          docker logs "$id" >> nextcloud.log
+        done
+        echo '=== Nextcloud server logs ==='
+        docker exec nextcloud-e2e-test-server_server cat data/nextcloud.log
+
+  playwright-installer-tests:
+    needs: [playwright-setup]
+    timeout-minutes: 30
+    name: Playwright tests for installer (${{ inputs.runner }})
+    runs-on: ${{ startsWith(inputs.runner, 'boba') && 'coldtea-boba' || inputs.runner == 'github-16' && 'bench-16' || inputs.runner == 'github-4' && 'ubuntu-24.04' || inputs.runner == 'blacksmith-4' && 'blacksmith-4vcpu-ubuntu-2404' || 'blacksmith-16vcpu-ubuntu-2404' }}
+    permissions:
+      contents: read
+      id-token: write
+
+    # The installation-wizard tests exercise every supported database backend, so
+    # they need reachable database service containers. The Nextcloud container is
+    # joined to the GitHub Actions network at startup so it can resolve these by
+    # hostname (see tests/playwright/start-nextcloud-server.js).
+    services:
+      mysql:
+        image: mysql:9.7 # zizmor: ignore[unpinned-images]
+        ports:
+          - '3306/tcp'
+        env:
+          MYSQL_ROOT_PASSWORD: rootpassword
+          MYSQL_USER: nextcloud
+          MYSQL_PASSWORD: nextcloud
+          MYSQL_DATABASE: nextcloud
+        options: --health-cmd="mysqladmin ping" --health-interval 5s --health-timeout 2s --health-retries 10
+
+      mariadb:
+        image: mariadb:12.3 # zizmor: ignore[unpinned-images]
+        ports:
+          - '3306/tcp'
+        env:
+          MARIADB_ROOT_PASSWORD: rootpassword
+          MARIADB_USER: nextcloud
+          MARIADB_PASSWORD: nextcloud
+          MARIADB_DATABASE: nextcloud
+        options: --health-cmd="mariadb-admin ping" --health-interval 5s --health-timeout 2s --health-retries 5
+
+      postgres:
+        image: postgres:18 # zizmor: ignore[unpinned-images]
+        ports:
+          - '5432/tcp'
+        env:
+          POSTGRES_USER: root
+          POSTGRES_PASSWORD: rootpassword
+          POSTGRES_DB: nextcloud
+        options: --health-cmd pg_isready --health-interval 5s --health-timeout 2s --health-retries 5
+
+      oracle:
+        image: ghcr.io/gvenzl/oracle-free:23 # zizmor: ignore[unpinned-images]
+        ports:
+          - '1521'
+        env:
+          ORACLE_PASSWORD: oracle
+        options: --health-cmd healthcheck.sh --health-interval 20s --health-timeout 10s --health-retries 10
+
+    steps:
+    - name: Restore context
+      id: cache
+      uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        key: playwright-context-${{ github.run_id }}
+        path: ./
+
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      if: steps.cache.outputs.cache-hit != 'true'
+      with:
+        persist-credentials: false
+        submodules: true # for 3rdparty
+
+    - name: Read package.json
+      uses: nextcloud-libraries/parse-package-engines-action@39fcc545a815c353dd0a3fd8fd2ef6e59fd02b92 # v0.2.0
+      id: versions
+
+    - name: Set up node
+      uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+      with:
+        node-version: ${{ steps.versions.outputs.node-version }}
+
+    - name: Set up npm
+      run: npm i -g 'npm@${{ steps.versions.outputs.package-manager-version }}'
+
+    - name: Install dependencies and build
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: |
+        npm ci
+        npm run build --if-present
+
+    - name: Install Playwright browsers
+      run: npm run playwright:install-ci --if-present
+
+    # Upstream's `npm run playwright:setup` is `playwright test --project=setup`.
+    - name: Run Playwright setup tests on Boba
+      if: startsWith(inputs.runner, 'boba')
+      uses: coldteadotai/boba@v1
+      with:
+        project: setup
+        turbo: ${{ inputs.runner == 'boba-turbo' }}
+        fail-fast: false
+      env:
+        PLAYWRIGHT_SETUP: 'true'
+
+    - name: Run Playwright setup tests
+      if: ${{ !startsWith(inputs.runner, 'boba') }}
+      run: npm run playwright:setup -- --reporter=list,json
+      env:
+        PLAYWRIGHT_SETUP: 'true'
+        PLAYWRIGHT_JSON_OUTPUT_FILE: ${{ github.workspace }}/results.json
+
+    - name: Upload JSON results
+      if: ${{ always() && !startsWith(inputs.runner, 'boba') }}
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+      with:
+        name: results-${{ inputs.runner }}-setup
+        path: results.json
+        retention-days: 30
+        if-no-files-found: ignore
+
+    - name: Show logs
+      if: failure()
+      run: |
+        for id in $(docker ps -aq); do
+          docker container inspect "$id" --format '=== Logs for container {{.Name}} ==='
+          docker logs "$id" >> nextcloud.log
+        done
+        echo '=== Nextcloud server logs ==='
+        docker exec nextcloud-e2e-test-server_server cat data/nextcloud.log || true
