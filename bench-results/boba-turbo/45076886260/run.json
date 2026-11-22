@@ -1,0 +1,13 @@
+{
+ "id": 45076886260,
+ "html_url": "https://github.com/boba-benchmarks/nextcloud/actions/runs/45076886260",
+ "head_sha": "91af7b69bca424a680041463e429c654e2247050",
+ "head_branch": "main",
+ "event": "workflow_dispatch",
+ "status": "completed",
+ "conclusion": "success",
+ "created_at": "2026-11-22T22:17:32Z",
+ "updated_at": "2026-11-22T22:25:00Z",
+ "run_started_at": "2026-11-22T22:17:32Z",
+ "run_attempt": 1
+}
